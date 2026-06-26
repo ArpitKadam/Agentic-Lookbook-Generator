@@ -1,94 +1,94 @@
 {
     "0c584326b7967f056f136de723d728697a1a44dcaaddc92665eb23fff8b1dcd6": {
         "parsed": {
-            "garment_type": "t-shirt",
+            "garment_type": "T-shirt",
             "color_palette": [
-                "pale pink",
-                "black",
-                "white"
+                "Blush Pink",
+                "Charcoal Grey",
+                "White"
             ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "cotton",
-            "style_era": "contemporary",
-            "occasion": "casual",
-            "standout_detail": "anime graphic print",
+            "silhouette": "Oversized",
+            "texture_or_fabric": "Cotton",
+            "style_era": "Contemporary",
+            "occasion": "Casual",
+            "standout_detail": "Anime-inspired graphic print",
             "image_index": 1,
             "filename": "Anime Tshirt.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
             "input_tokens": 617,
-            "output_tokens": 64,
-            "total_tokens": 681
+            "output_tokens": 66,
+            "total_tokens": 683
         }
     },
     "a7d4fe9429d09bff022c47fe1ac508fe5fe7c1445c314ea364baa940ed73d47f": {
         "parsed": {
-            "garment_type": "Casual shirt",
+            "garment_type": "dress shirt",
             "color_palette": [
-                "Light blue",
-                "White"
+                "sky blue",
+                "white"
             ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Modern",
-            "occasion": "Casual outing",
-            "standout_detail": "Striped pattern",
+            "silhouette": "relaxed fit",
+            "texture_or_fabric": "cotton",
+            "style_era": "contemporary",
+            "occasion": "casual",
+            "standout_detail": "striped pattern",
             "image_index": 2,
             "filename": "Quiet Luxury Style Shirt.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
             "input_tokens": 618,
-            "output_tokens": 62,
-            "total_tokens": 680
+            "output_tokens": 61,
+            "total_tokens": 679
         }
     },
     "cef405cc0231438e482d6d32d4e985bd0aa6e01220d3c7882da35a9d1cc05c1c": {
         "parsed": {
             "garment_type": "Short-sleeved button-down shirt",
             "color_palette": [
-                "Mocha",
-                "Cream"
+                "Sand",
+                "Ivory"
             ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Smooth cotton",
+            "silhouette": "Classic fit",
+            "texture_or_fabric": "Smooth, lightweight fabric",
             "style_era": "Modern streetwear",
-            "occasion": "Casual outing",
-            "standout_detail": "Oversized white sunglasses",
+            "occasion": "Casual summer outing",
+            "standout_detail": "Contrasting white sunglasses",
             "image_index": 3,
             "filename": "Summer Luxury Streetwear.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
             "input_tokens": 618,
-            "output_tokens": 69,
-            "total_tokens": 687
+            "output_tokens": 71,
+            "total_tokens": 689
         }
     },
     "f080010db769788ac794a56c03cb97325713361a5b34af61b7ea42f59f978584": {
         "parsed": {
-            "garment_type": "t-shirt",
+            "garment_type": "long sleeve t-shirt",
             "color_palette": [
-                "baby blue",
-                "blush",
+                "powder blue",
                 "lavender",
+                "mauve",
                 "mint",
-                "periwinkle"
+                "blush"
             ],
-            "silhouette": "oversized",
+            "silhouette": "relaxed fit",
             "texture_or_fabric": "cotton",
             "style_era": "contemporary",
             "occasion": "casual",
-            "standout_detail": "anime-inspired graphic",
+            "standout_detail": "anime-inspired graphic print",
             "image_index": 4,
             "filename": "Girl's Anime Long Sleeve T-shirt.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
             "input_tokens": 621,
-            "output_tokens": 70,
-            "total_tokens": 691
+            "output_tokens": 75,
+            "total_tokens": 696
         }
     }
 }
