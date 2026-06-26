@@ -4,7 +4,6 @@ from datetime import datetime
 from logging.handlers import RotatingFileHandler
 import colorlog
 
-
 class Logger:
     _logger_instance = None
 

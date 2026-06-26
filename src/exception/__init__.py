@@ -3,7 +3,6 @@ import traceback
 from types import ModuleType
 from src.logger import logger
 
-
 class CustomException(Exception):
     def __init__(self, error_message: str, error_details: ModuleType):
         """

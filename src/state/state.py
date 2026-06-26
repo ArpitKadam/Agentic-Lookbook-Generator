@@ -10,7 +10,6 @@ from src.schemas.schema import (
     TokenUsage
 )
 
-
 class LookbookState(TypedDict):
     """Typed state object shared across all agent nodes."""
 

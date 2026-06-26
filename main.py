@@ -9,7 +9,7 @@ import os
 
 load_dotenv()
 
-os.environ['LANGSMITH_API_KEY'] = os.getenv("LANGSMITH_API_KEY")
+os.environ['LANGSMITH_API_KEY'] = os.getenv("LANGSMITH_API_KEY", "")
 os.environ['LANGSMITH_TRACING'] = "true"
 
 logger.info("============================================================")

@@ -54,7 +54,7 @@ def stylist_node(state: LookbookState) -> dict:
 
         clusters, usage = stylist.create_moods(
             theme_prompt=theme,
-            curator_analyses=state["image_analyses"]
+            curator_analyses=state.get("image_analyses") or []
         )
 
         logger.info("<<< Completed [Stylist Node] synthesis safely.")

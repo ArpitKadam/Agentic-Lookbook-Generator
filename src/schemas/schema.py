@@ -1,6 +1,6 @@
 from typing import List
 from pydantic import BaseModel, Field
-
+from typing import Optional
 
 class TokenUsage(BaseModel):
     """Aggregated token usage across all agents."""
@@ -21,7 +21,6 @@ class ImageAnalysis(BaseModel):
     style_era: str
     occasion: str
     standout_detail: str
-
     image_index: int | None = None
     filename: str | None = None
 
@@ -52,6 +51,7 @@ class EditorialCard(BaseModel):
 
 class EditorialCards(BaseModel):
     """Group of Editorial Cards"""
+
     cards: List[EditorialCard]
 
 
