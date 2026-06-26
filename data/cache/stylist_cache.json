@@ -1,0 +1,51 @@
+{
+    "a607735b8650ca32c7a874fc91745a74e07d2de11d5d23668cbb62df4fb81bb8": {
+        "clusters": {
+            "clusters": [
+                {
+                    "mood_title": "Cosmic Breeze",
+                    "sub_tags": [
+                        "Pastel",
+                        "Anime Inspired",
+                        "Whimsical"
+                    ],
+                    "image_indices": [
+                        1,
+                        4
+                    ],
+                    "styling_rationale": "Whimsical anime graphics and pastel hues evoke a sense of ethereal wonder."
+                },
+                {
+                    "mood_title": "Quiet Luxury",
+                    "sub_tags": [
+                        "Classic",
+                        "Subdued",
+                        "Understated"
+                    ],
+                    "image_indices": [
+                        2
+                    ],
+                    "styling_rationale": "Subdued color palette and classic design exude understated sophistication."
+                },
+                {
+                    "mood_title": "Summer Night",
+                    "sub_tags": [
+                        "Relaxed",
+                        "Evening Stroll",
+                        "Oversized"
+                    ],
+                    "image_indices": [
+                        3
+                    ],
+                    "styling_rationale": "Mocha and cream tones, paired with oversized sunglasses, evoke a sense of relaxed evening strolls."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Stylist Agent",
+            "input_tokens": 946,
+            "output_tokens": 152,
+            "total_tokens": 1098
+        }
+    }
+}

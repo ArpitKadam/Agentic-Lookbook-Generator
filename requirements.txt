@@ -1,0 +1,14 @@
+ipykernel
+fastapi
+pydantic
+langgraph
+langchain
+langchain-anthropic
+langchain-core
+langchain_community
+pillow
+langchain-nvidia-ai-endpoints
+python-dotenv
+langchain-groq
+langsmith
+tiktoken
