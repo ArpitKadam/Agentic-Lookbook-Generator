@@ -1,0 +1,83 @@
+[2026-06-27 14:52:16]   11 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-06-27 14:52:16]   20 | INFO     | Initializing CuratorAgent...
+[2026-06-27 14:52:17]   42 | DEBUG    | Curator cache loaded successfully from data\cache\curator_cache.json (10 entries found).
+[2026-06-27 14:52:17]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-06-27 14:52:17]   22 | INFO     | Initializing StylistAgent...
+[2026-06-27 14:52:18]   43 | DEBUG    | Stylist cache loaded successfully from data\cache\stylist_cache.json (5 entries found).
+[2026-06-27 14:52:18]   33 | INFO     | StylistAgent initialized successfully.
+[2026-06-27 14:52:18]   20 | INFO     | Initializing EditorAgent...
+[2026-06-27 14:52:19]   41 | DEBUG    | Editor cache loaded successfully from data\cache\editor_cache.json (5 entries found).
+[2026-06-27 14:52:19]   31 | INFO     | EditorAgent initialized successfully.
+[2026-06-27 14:52:19]   22 | INFO     | Initializing DirectorAgent...
+[2026-06-27 14:52:20]   43 | DEBUG    | Director cache loaded successfully from data\cache\director_cache.json (5 entries found).
+[2026-06-27 14:52:20]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-06-27 14:52:20]   17 | INFO     | All Agent nodes initialized successfully.
+[2026-06-27 14:52:20]   46 | INFO     | Loading LangGraph Pipeline...
+[2026-06-27 14:52:20]  112 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-06-27 14:52:20]  128 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-06-27 14:52:22]  134 | INFO     | Pipeline graph visualization saved as 'pipeline_graph.png'
+[2026-06-27 14:52:22]   48 | INFO     | Pipeline ready.
+[2026-06-27 14:52:46]  251 | INFO     | Theme: Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia
+[2026-06-27 14:52:46]  252 | INFO     | Processing 6 images...
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 92748
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 69559 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 280348
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 210260 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 48008
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 36006 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_6c38ae29891db2e9319306d19f39a592.jpg
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 24908
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 18680 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_22796eea566def392deb000124daa886.jpg
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 39736
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 29800 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_a895b7d462020b5501fe423869113cbd.jpg
+[2026-06-27 14:52:47]  154 | INFO     | Parsing base64 image - Format: jpeg, Data length: 50532
+[2026-06-27 14:52:47]  170 | INFO     | Decoded base64 to 37898 bytes
+[2026-06-27 14:52:47]  182 | INFO     | Cache hit! Image already saved: uploaded_3b1bca33efd7967b8ade94a134384b67.jpg
+[2026-06-27 14:52:47]  259 | INFO     | Processing complete. Results: ['data\\uploads\\uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg', 'data\\uploads\\uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg', 'data\\uploads\\uploaded_6c38ae29891db2e9319306d19f39a592.jpg', 'data\\uploads\\uploaded_22796eea566def392deb000124daa886.jpg', 'data\\uploads\\uploaded_a895b7d462020b5501fe423869113cbd.jpg', 'data\\uploads\\uploaded_3b1bca33efd7967b8ade94a134384b67.jpg']
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 1: data\uploads\uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 2: data\uploads\uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 3: data\uploads\uploaded_6c38ae29891db2e9319306d19f39a592.jpg
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 4: data\uploads\uploaded_22796eea566def392deb000124daa886.jpg
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 5: data\uploads\uploaded_a895b7d462020b5501fe423869113cbd.jpg
+[2026-06-27 14:52:47]  271 | INFO     | Successfully processed image 6: data\uploads\uploaded_3b1bca33efd7967b8ade94a134384b67.jpg
+[2026-06-27 14:52:47]  284 | INFO     | Successfully processed 6 images.
+[2026-06-27 14:52:47]   23 | INFO     | >>> Entering [Curator Node] execution frame
+[2026-06-27 14:52:47]   29 | INFO     | Curator Node received 6 images to process.
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 1/6: data\uploads\uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg (Index: 1)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 2/6: data\uploads\uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg (Index: 2)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 3/6: data\uploads\uploaded_6c38ae29891db2e9319306d19f39a592.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_6c38ae29891db2e9319306d19f39a592.jpg (Index: 3)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_6c38ae29891db2e9319306d19f39a592.jpg
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 4/6: data\uploads\uploaded_22796eea566def392deb000124daa886.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_22796eea566def392deb000124daa886.jpg (Index: 4)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_22796eea566def392deb000124daa886.jpg
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 5/6: data\uploads\uploaded_a895b7d462020b5501fe423869113cbd.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_a895b7d462020b5501fe423869113cbd.jpg (Index: 5)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_a895b7d462020b5501fe423869113cbd.jpg
+[2026-06-27 14:52:47]   32 | DEBUG    | Processing image 6/6: data\uploads\uploaded_3b1bca33efd7967b8ade94a134384b67.jpg
+[2026-06-27 14:52:47]   81 | INFO     | Processing image analysis for: uploaded_3b1bca33efd7967b8ade94a134384b67.jpg (Index: 6)
+[2026-06-27 14:52:47]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: uploaded_3b1bca33efd7967b8ade94a134384b67.jpg
+[2026-06-27 14:52:47]   40 | INFO     | <<< Completed [Curator Node] execution loops safely.
+[2026-06-27 14:52:47]   50 | INFO     | >>> Entering [Stylist Node] execution frame
+[2026-06-27 14:52:47]   53 | INFO     | Synthesizing creative layout options for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   76 | INFO     | Processing mood clusters generation for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   90 | INFO     | [CACHE HIT] Reusing cached mood clusters for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   60 | INFO     | <<< Completed [Stylist Node] synthesis safely.
+[2026-06-27 14:52:47]   70 | INFO     | >>> Entering [Editor Node] execution frame
+[2026-06-27 14:52:47]   73 | INFO     | Drafting structural descriptions layout for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   75 | INFO     | Processing editorial cards generation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]  107 | INFO     | [CACHE HIT] Reusing cached editorial cards for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   81 | INFO     | <<< Completed [Editor Node] copywriting safely.
+[2026-06-27 14:52:47]   91 | INFO     | >>> Entering [Director Node] execution frame
+[2026-06-27 14:52:47]   94 | INFO     | Finalizing lookbook asset generation metrics for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   69 | INFO     | Finalizing lookbook compilation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]   95 | INFO     | [CACHE HIT] Reusing cached lookbook finalization for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 14:52:47]  102 | INFO     | <<< Completed [Director Node] aggregation safely.
