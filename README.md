@@ -672,6 +672,59 @@ LANGSMITH_API_KEY=lsv2_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ---
 
+## 🐳 Docker Deployment
+
+AINAA features a production-ready, multi-stage Docker build optimized for minimal final image sizes, complete dependency isolation, and fast deployment footprints.
+
+### Docker Architecture
+
+The container deployment pipeline utilizes a decoupled, two-stage container design layout:
+
+* **Builder Stage**: Installs system tools, provisions an isolated build environment, and caches dependencies.
+* **Runtime Stage**: Minimizes surface vulnerabilities by only pulling the built execution layer and application source files.
+
+### Build Docker Image
+
+To compile the lightweight target image manually, execute the build engine step inside your local root tree:
+
+```bash
+docker build -t ainaa:latest .
+```
+
+### Run Container
+
+Launch the application microservice detached in the background by passing your target runtime environment parameters:
+
+```bash
+docker run -d \
+  -p 8000:8000 \
+  -e NVIDIA_API_KEY="nvapi-YOUR_API_KEY" \
+  -e GROQ_API_KEY="gsk_YOUR_API_KEY" \
+  -e LANGSMITH_API_KEY="lsv2_YOUR_API_KEY" \
+  --name ainaa-app \
+  ainaa:latest
+```
+
+### Orchestrate Using Docker Compose
+
+Alternatively, manage both runtime layers and persistent volumes automatically with a single command sequence:
+
+```bash
+docker compose up --build
+```
+
+### Service Gateway Routing
+
+Once the container instances bootstrap successfully, expose the core network routing links across your local machine:
+
+| Component | Target URL Pathway | Purpose |
+| :--- | :--- | :--- |
+| **Web Interface** | `http://localhost:8000` | Local Web Application Server |
+| **API Documentation** | `http://localhost:8000/docs` | Interactive Swagger OpenAPI Panel |
+| **Health Endpoint** | `http://localhost:8000/health` | Automated Keep-Alive Service Checks |
+
+---
+
 ## 🚀 Running the Project
 
 ### CLI Execution
