@@ -1,214 +1,40 @@
 {
-    "abc3414d83da99c029b7a86f833870cde1bbbc3883a80e5db73caaf2f33f7df7": {
+    "4cc581613f9493683bcc6238f9d9be2f62340a6e4196a054722bffec63db42ce": {
         "lookbook": {
-            "edition_title": "Neon Nocturne",
-            "total_moods": 3,
+            "edition_title": "Midnight Mirage",
+            "total_moods": 2,
             "collection": [
                 {
                     "card_number": "01",
-                    "mood_title": "Electric Archive",
+                    "mood_title": "Neon Dreamscape",
                     "sub_tags": [
-                        "Neon Minimalism",
-                        "Anime-Inspired",
-                        "Electric Nightlife"
+                        "Cyberpunk",
+                        "Kawaii",
+                        "Retrofuturism"
                     ],
-                    "brand_or_designer": "Vetements",
-                    "product_type": "slim-fit jersey with manga-inspired graphic print",
-                    "vibe_description": "Neon hues illuminate the Tokyo streets, as the city's electric nightlife pulses through the veins of its inhabitants, the royal blue and red accents on this jersey a testament to the era's vibrant, anime-inspired aesthetic."
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "oversized graphic tee",
+                    "vibe_description": "As neon lights cast their pale pink glow, anime-inspired graphics come alive on cotton tees, evoking a futuristic nostalgia that pulsates through the Tokyo night."
                 },
                 {
                     "card_number": "02",
                     "mood_title": "Retro Revival",
                     "sub_tags": [
-                        "Retro-Futurism",
-                        "Showa-Era Nostalgia",
-                        "Comic Strip Chic"
+                        "Showa-Era",
+                        "Vintage-Inspired",
+                        "Heritage Chic"
                     ],
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "relaxed-fit T-shirt with anime-inspired graphic print",
-                    "vibe_description": "In the city's quieter moments, the nostalgia of Showa-era Tokyo lingers, its retro-futuristic charm seeping into the relaxed silhouettes and comic strip prints that now populate the modern streets, a convergence of past and present."
-                },
-                {
-                    "card_number": "03",
-                    "mood_title": "Urban Dusk",
-                    "sub_tags": [
-                        "Urban Edge",
-                        "Graphic Print",
-                        "Cityscape Cool"
-                    ],
-                    "brand_or_designer": "Balenciaga",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "As the city's neon lights begin to fade, the urban landscape transforms, the bold graphics and monochromatic hues of this oversized tee echoing the metropolis's unrelenting energy, a siren call to those who inhabit its streets, where the night air is alive with the pulse of creativity and rebellion."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Director Agent",
-            "input_tokens": 703,
-            "output_tokens": 331,
-            "total_tokens": 1034
-        }
-    },
-    "50c9a9745109b38865a3ba3eb0430c92982c52f6f9e5a2219a2e92b8a278c256": {
-        "lookbook": {
-            "edition_title": "Neon Nocturne",
-            "total_moods": 3,
-            "collection": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Kawaii Afterglow",
-                    "sub_tags": [
-                        "Neon-drenched",
-                        "Minimalist",
-                        "Retro-futuristic"
-                    ],
-                    "brand_or_designer": "Vetements",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, casting a kawaii glow on the city's nocturnal creatures. In this fleeting moment, pastel hues and anime graphics converge."
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Quiet Luxury",
-                    "sub_tags": [
-                        "Striped sophistication",
-                        "Monochromatic cool"
-                    ],
-                    "brand_or_designer": "Jil Sander",
+                    "brand_or_designer": "The Row",
                     "product_type": "striped poplin shirt",
-                    "vibe_description": "In a Tokyo alleyway, the soft hum of a generator and the scent of rain-soaked asphalt create a sense of quiet luxury. Striped patterns and monochromatic tones evoke a soothing stillness that calms the mind."
-                },
-                {
-                    "card_number": "03",
-                    "mood_title": "Midnight Solace",
-                    "sub_tags": [
-                        "Taupe-toned",
-                        "Ivory accents"
-                    ],
-                    "brand_or_designer": "Lemaire",
-                    "product_type": "short-sleeved button-up shirt",
-                    "vibe_description": "As the city's neon lights fade into the night, taupe tones and ivory accents blend with the shadows, enveloping the wearer in a sense of tranquility and midnight solace."
+                    "vibe_description": "In the still of the morning, Tokyo's retro charm stirs, as light blue and white stripes weave a tale of heritage chic, set against the city's timeless landscape, where tradition and modernity entwine."
                 }
             ]
         },
         "usage": {
             "agent_name": "Director Agent",
-            "input_tokens": 679,
-            "output_tokens": 286,
-            "total_tokens": 965
-        }
-    },
-    "84a3dca7a558c25277557d8073c250382dd9b1667171a06dd7d2412b11915018": {
-        "lookbook": {
-            "edition_title": "Neon Nocturne",
-            "total_moods": 2,
-            "collection": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Midnight Tokyo Dreams",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Monochrome",
-                        "Oversized"
-                    ],
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city's streets. In this world, oversized silhouettes and monochrome hues reign supreme."
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Showa Revival",
-                    "sub_tags": [
-                        "Retro Futurism",
-                        "Casual Luxury",
-                        "Comic Book Style"
-                    ],
-                    "brand_or_designer": "Vetements",
-                    "product_type": "striped cotton tee",
-                    "vibe_description": "In the shadow of Tokyo's neon landscape, the nostalgia of Showa-era streets meets the modernity of retro futurism, where the sounds of vintage video games and sizzling street food blend with the comfort of casual luxury and the vibrancy of comic book style graphics."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Director Agent",
-            "input_tokens": 546,
-            "output_tokens": 204,
-            "total_tokens": 750
-        }
-    },
-    "e959daa2750705a26f6affdc2fc8693699082806dde3066446cf2ac947aa0304": {
-        "lookbook": {
-            "edition_title": "Neon Dreamscape",
-            "total_moods": 2,
-            "collection": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Neon Reverie",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Minimalist",
-                        "Monochrome"
-                    ],
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "In the city's neon-lit underbelly, wet pavement glistens like polished stone, as the hum of Tokyo's nightlife converges with the minimalist chic of a bygone era, where cyberpunk spirit meets high fashion."
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Showa Revival",
-                    "sub_tags": [
-                        "Retrofuturism",
-                        "Streetwear",
-                        "Nostalgic"
-                    ],
-                    "brand_or_designer": "Issey Miyake",
-                    "product_type": "relaxed fit graphic tee",
-                    "vibe_description": "Under the cloak of darkness, Tokyo's Showa-era nostalgia unfolds like a time capsule, blending traditional nuances with modernist flair, as the city's retrofuturistic pulse beats in harmony with the whispers of the past."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Director Agent",
-            "input_tokens": 541,
-            "output_tokens": 211,
-            "total_tokens": 752
-        }
-    },
-    "a4d1cae07b052b166352f1e189932d208affd7793049363f777db13294e49ade": {
-        "lookbook": {
-            "edition_title": "Neon Dreamscape",
-            "total_moods": 2,
-            "collection": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Electric Haze",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Comic strip print",
-                        "Neon"
-                    ],
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "graphic print t-shirt",
-                    "vibe_description": "Neon lights flicker on wet pavement, as the city's nocturnal pulse beats in sync with the hum of a distant arcade. In this electric haze, a classic crew neck t-shirt becomes a canvas for bold, comic strip prints."
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Midnight Archive",
-                    "sub_tags": [
-                        "Anime-inspired",
-                        "Graphic print",
-                        "Nostalgic"
-                    ],
-                    "brand_or_designer": "Vetements",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Under the soft glow of a vintage television, Tokyo's nocturnal streets unfold like a dreamlike canvas, where oversized silhouettes and nostalgic graphic prints conjure the essence of a bygone era, suspended between anime and reality."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Director Agent",
-            "input_tokens": 568,
-            "output_tokens": 207,
-            "total_tokens": 775
+            "input_tokens": 550,
+            "output_tokens": 192,
+            "total_tokens": 742
         }
     }
 }

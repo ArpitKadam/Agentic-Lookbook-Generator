@@ -1,220 +1,40 @@
 {
-    "442e29ea98df246f0a0a60002e323ba458268459b998cfaba8bb1af59062fc21": {
+    "ef71fbeb250448aa93a90d4921306fdb0a96599b13fb7ef9b61f9e1982216cfc": {
         "clusters": {
             "clusters": [
                 {
-                    "mood_title": "Electric Archive",
+                    "mood_title": "Neon Dreamscape",
                     "sub_tags": [
-                        "Neon Minimalism",
-                        "Anime-Inspired",
-                        "Electric Nightlife"
-                    ],
-                    "image_indices": [
-                        1,
-                        5,
-                        6
-                    ],
-                    "styling_rationale": "The neon-soaked aesthetic of these contemporary streetwear pieces evokes a nostalgic feel, reminiscent of Tokyo's Showa-era past."
-                },
-                {
-                    "mood_title": "Retro Revival",
-                    "sub_tags": [
-                        "Retro-Futurism",
-                        "Showa-Era Nostalgia",
-                        "Comic Strip Chic"
-                    ],
-                    "image_indices": [
-                        2,
-                        4
-                    ],
-                    "styling_rationale": "These relaxed-fit tees with comic strip prints and Showa-era charm bring a retro touch to Tokyo's modern streets."
-                },
-                {
-                    "mood_title": "Urban Dusk",
-                    "sub_tags": [
-                        "Urban Edge",
-                        "Graphic Print",
-                        "Cityscape Cool"
-                    ],
-                    "image_indices": [
-                        3
-                    ],
-                    "styling_rationale": "This oversized tee with a bold graphic print embodies the urban, edgy vibe of Tokyo's cityscape at dusk."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1259,
-            "output_tokens": 187,
-            "total_tokens": 1446
-        }
-    },
-    "fe27e24d11509889505f408d8d3539f80459944deb3d7baf506c043730d43db8": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Kawaii Afterglow",
-                    "sub_tags": [
-                        "Neon-drenched",
-                        "Minimalist",
-                        "Retro-futuristic"
+                        "Cyberpunk",
+                        "Kawaii",
+                        "Retrofuturism"
                     ],
                     "image_indices": [
                         1,
                         2
                     ],
-                    "styling_rationale": "A nostalgic nod to Tokyo's retro charm, blending modern anime graphics with soft color palettes."
+                    "styling_rationale": "A fusion of modern neon lights and vintage Showa-era charm, evoking a sense of futuristic nostalgia."
                 },
                 {
-                    "mood_title": "Quiet Luxury",
+                    "mood_title": "Retro Revival",
                     "sub_tags": [
-                        "Striped sophistication",
-                        "Monochromatic cool",
-                        "Effortless chic"
+                        "Showa-Era",
+                        "Vintage-Inspired",
+                        "Heritage Chic"
                     ],
                     "image_indices": [
-                        3
-                    ],
-                    "styling_rationale": "A calming oasis in the midst of Tokyo's neon chaos, showcasing understated elegance and refined taste."
-                },
-                {
-                    "mood_title": "Midnight Solace",
-                    "sub_tags": [
-                        "Taupe-toned",
-                        "Ivory accents",
-                        "Minimalist streetwear"
-                    ],
-                    "image_indices": [
+                        3,
                         4
                     ],
-                    "styling_rationale": "A tranquil escape from the city's vibrant nightlife, capturing the essence of summer's laid-back vibe."
+                    "styling_rationale": "A nostalgic blend of classic styles and modern twists, capturing the essence of Tokyo's rich history."
                 }
             ]
         },
         "usage": {
             "agent_name": "Stylist Agent",
-            "input_tokens": 968,
-            "output_tokens": 176,
-            "total_tokens": 1144
-        }
-    },
-    "ca4b7e102ae8fede9ade22c4cc6b25932413e418fdb134fb6c6c948a8e5618c0": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Midnight Tokyo Dreams",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Monochrome",
-                        "Oversized"
-                    ],
-                    "image_indices": [
-                        1,
-                        2,
-                        3
-                    ],
-                    "styling_rationale": "A blend of neon-soaked minimalism and Showa-era nostalgia, these looks capture the essence of Tokyo after midnight."
-                },
-                {
-                    "mood_title": "Showa Revival",
-                    "sub_tags": [
-                        "Retro Futurism",
-                        "Casual Luxury",
-                        "Comic Book Style"
-                    ],
-                    "image_indices": [
-                        4,
-                        5,
-                        6
-                    ],
-                    "styling_rationale": "A nostalgic nod to Tokyo's past, these looks evoke a sense of retro chic and modern comfort."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1245,
-            "output_tokens": 127,
-            "total_tokens": 1372
-        }
-    },
-    "7a718e2e6528feb86709d94612bc671348a8cfd02c411a6fb2e30731908b1e43": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Neon Reverie",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Minimalist",
-                        "Monochrome"
-                    ],
-                    "image_indices": [
-                        1,
-                        2,
-                        3
-                    ],
-                    "styling_rationale": "Visually and emotionally cohesive looks are brought together by their affinity for neon hues and anime-inspired prints, transporting us to a dreamlike Tokyo after midnight."
-                },
-                {
-                    "mood_title": "Showa Revival",
-                    "sub_tags": [
-                        "Retrofuturism",
-                        "Streetwear",
-                        "Nostalgic"
-                    ],
-                    "image_indices": [
-                        4,
-                        5,
-                        6
-                    ],
-                    "styling_rationale": "This cluster unites looks that draw on the nostalgia of Japan's Showa era, characterized by a blend of traditional and modern elements, creating a unique aesthetic."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1245,
-            "output_tokens": 145,
-            "total_tokens": 1390
-        }
-    },
-    "75c6ef973808a1430f039c2615bddd234591d4d4e4a17338f65d5a618a291b00": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Electric Haze",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Comic strip print",
-                        "Neon"
-                    ],
-                    "image_indices": [
-                        1,
-                        4
-                    ],
-                    "styling_rationale": "Neon-soaked minimalism meets Showa-era nostalgia"
-                },
-                {
-                    "mood_title": "Midnight Archive",
-                    "sub_tags": [
-                        "Anime-inspired",
-                        "Graphic print",
-                        "Nostalgic"
-                    ],
-                    "image_indices": [
-                        2,
-                        3
-                    ],
-                    "styling_rationale": "Graphic prints and relaxed fits evoke a nostalgic Tokyo vibe"
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1010,
-            "output_tokens": 97,
-            "total_tokens": 1107
+            "input_tokens": 1023,
+            "output_tokens": 119,
+            "total_tokens": 1142
         }
     }
 }

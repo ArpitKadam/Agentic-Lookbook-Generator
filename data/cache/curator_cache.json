@@ -3,7 +3,7 @@
         "parsed": {
             "garment_type": "T-shirt",
             "color_palette": [
-                "Pastel pink",
+                "Pale Pink",
                 "Black",
                 "White",
                 "Grey"
@@ -12,126 +12,9 @@
             "texture_or_fabric": "Cotton",
             "style_era": "Modern",
             "occasion": "Casual",
-            "standout_detail": "Anime graphic print",
-            "image_index": 1,
-            "filename": "Anime Tshirt.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 617,
-            "output_tokens": 64,
-            "total_tokens": 681
-        }
-    },
-    "f080010db769788ac794a56c03cb97325713361a5b34af61b7ea42f59f978584": {
-        "parsed": {
-            "garment_type": "T-shirt",
-            "color_palette": [
-                "Powder Blue",
-                "Lilac",
-                "Mint Green",
-                "Yellow",
-                "Lavender"
-            ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Contemporary",
-            "occasion": "Casual",
             "standout_detail": "Anime-inspired graphic print",
-            "image_index": 2,
-            "filename": "Girl's Anime Long Sleeve T-shirt.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 621,
-            "output_tokens": 72,
-            "total_tokens": 693
-        }
-    },
-    "a7d4fe9429d09bff022c47fe1ac508fe5fe7c1445c314ea364baa940ed73d47f": {
-        "parsed": {
-            "garment_type": "shirt",
-            "color_palette": [
-                "powder blue",
-                "white"
-            ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "cotton",
-            "style_era": "contemporary",
-            "occasion": "casual",
-            "standout_detail": "striped pattern",
-            "image_index": 3,
-            "filename": "Quiet Luxury Style Shirt.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 618,
-            "output_tokens": 61,
-            "total_tokens": 679
-        }
-    },
-    "cef405cc0231438e482d6d32d4e985bd0aa6e01220d3c7882da35a9d1cc05c1c": {
-        "parsed": {
-            "garment_type": "Short-sleeved button-up shirt",
-            "color_palette": [
-                "Taupe",
-                "Ivory"
-            ],
-            "silhouette": "Classic fit with a relaxed silhouette",
-            "texture_or_fabric": "Smooth, lightweight fabric",
-            "style_era": "Modern streetwear with a minimalist twist",
-            "occasion": "Casual summer outing or relaxed social gathering",
-            "standout_detail": "Contrasting white sunglasses tucked into the shirt",
-            "image_index": 4,
-            "filename": "Summer Luxury Streetwear.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 618,
-            "output_tokens": 88,
-            "total_tokens": 706
-        }
-    },
-    "b5e42fc98b6bb2888f27645463fd50fafb0ecd7a8627800d6d62580c755ba87e": {
-        "parsed": {
-            "garment_type": "T-shirt",
-            "color_palette": [
-                "white",
-                "black",
-                "red",
-                "beige"
-            ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "jersey",
-            "style_era": "contemporary streetwear",
-            "occasion": "casual wear",
-            "standout_detail": "anime-inspired print",
             "image_index": 1,
-            "filename": "uploaded_982da8ed5eb3a1a8141d90e192c35b60.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 636,
-            "output_tokens": 68,
-            "total_tokens": 704
-        }
-    },
-    "e59897f09f469a85b224728177806a749f73e54ba6e83297b36d791f6cdf5900": {
-        "parsed": {
-            "garment_type": "jersey",
-            "color_palette": [
-                "white",
-                "blue",
-                "red",
-                "yellow"
-            ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "polyester",
-            "style_era": "contemporary",
-            "occasion": "casual",
-            "standout_detail": "anime-inspired graphic print",
-            "image_index": 2,
-            "filename": "uploaded_f0df8a1748e09d5787b81780f70e7bd7.jpg"
+            "filename": "uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
@@ -140,96 +23,73 @@
             "total_tokens": 701
         }
     },
-    "5c1208d6e09ab74c2559b4862ae187340bceb22d852bd9f3ba79aa9a820ec17f": {
+    "f080010db769788ac794a56c03cb97325713361a5b34af61b7ea42f59f978584": {
         "parsed": {
-            "garment_type": "t-shirt",
+            "garment_type": "Graphic T-shirt",
             "color_palette": [
-                "black",
-                "orange",
+                "Pastel Blue",
+                "Lavender",
+                "Candy Pink",
+                "Mint Green",
+                "Lilac"
+            ],
+            "silhouette": "Relaxed Fit",
+            "texture_or_fabric": "Cotton",
+            "style_era": "Modern Anime-inspired",
+            "occasion": "Casual Streetwear",
+            "standout_detail": "Anime-style Cartoon Character Print",
+            "image_index": 2,
+            "filename": "uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 634,
+            "output_tokens": 78,
+            "total_tokens": 712
+        }
+    },
+    "a7d4fe9429d09bff022c47fe1ac508fe5fe7c1445c314ea364baa940ed73d47f": {
+        "parsed": {
+            "garment_type": "shirt",
+            "color_palette": [
+                "light blue",
                 "white"
             ],
-            "silhouette": "classic crew neck",
+            "silhouette": "relaxed fit",
             "texture_or_fabric": "cotton",
             "style_era": "contemporary",
             "occasion": "casual",
-            "standout_detail": "graphic print",
+            "standout_detail": "striped pattern",
             "image_index": 3,
-            "filename": "uploaded_6c38ae29891db2e9319306d19f39a592.jpg"
+            "filename": "uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 634,
-            "output_tokens": 61,
-            "total_tokens": 695
-        }
-    },
-    "b4a5da71530371141bab9895886841a1e578f23d47ae837e6548d68c51b80126": {
-        "parsed": {
-            "garment_type": "T-shirt",
-            "color_palette": [
-                "White",
-                "Grey"
-            ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Modern",
-            "occasion": "Casual",
-            "standout_detail": "Anime-inspired graphic print",
-            "image_index": 4,
-            "filename": "uploaded_22796eea566def392deb000124daa886.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 628,
+            "input_tokens": 633,
             "output_tokens": 60,
-            "total_tokens": 688
+            "total_tokens": 693
         }
     },
-    "db2c8cc0de1bb3fcb90208df7749efea56a38c4f0ba5621b4577718db1bb4c5a": {
+    "cef405cc0231438e482d6d32d4e985bd0aa6e01220d3c7882da35a9d1cc05c1c": {
         "parsed": {
             "garment_type": "Short-sleeved shirt",
             "color_palette": [
-                "Off-white",
-                "Light grey",
-                "Dark grey"
+                "Tan",
+                "Cream"
             ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Cotton or cotton-blend",
-            "style_era": "Modern casual",
-            "occasion": "Casual daily wear",
-            "standout_detail": "Comic strip print",
-            "image_index": 5,
-            "filename": "uploaded_a895b7d462020b5501fe423869113cbd.jpg"
+            "silhouette": "Classic fit",
+            "texture_or_fabric": "Smooth, possibly cotton or silk blend",
+            "style_era": "Modern with classic influences",
+            "occasion": "Casual, everyday wear",
+            "standout_detail": "Sunglasses tucked into the shirt's front",
+            "image_index": 4,
+            "filename": "uploaded_d47adfd59ef3653ff100933809417a25.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 631,
-            "output_tokens": 74,
-            "total_tokens": 705
-        }
-    },
-    "dc64166914d28649b3ccb528851b2f93df5579977307e0ca31975f8e7dab2137": {
-        "parsed": {
-            "garment_type": "T-shirt",
-            "color_palette": [
-                "White",
-                "Black",
-                "Red",
-                "Pink"
-            ],
-            "silhouette": "Oversized",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Modern",
-            "occasion": "Casual",
-            "standout_detail": "Graphic print",
-            "image_index": 6,
-            "filename": "uploaded_3b1bca33efd7967b8ade94a134384b67.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 634,
-            "output_tokens": 61,
-            "total_tokens": 695
+            "input_tokens": 630,
+            "output_tokens": 78,
+            "total_tokens": 708
         }
     }
 }

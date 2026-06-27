@@ -1,133 +1,25 @@
 {
-    "487a059f7cf912b6fddd1c28cea4909b80ca34ddd574b601905a2f27cafa8dbb": {
+    "4f8d20b5917f71b6afdcd5fc0b190dc2e79de91ca2a1cb171da47243c6c6df52": {
         "editorial_cards": {
             "cards": [
                 {
                     "card_index": 1,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "slim-fit jersey with manga-inspired graphic print",
-                    "vibe_description": "Neon hues illuminate the Tokyo streets, as the city's electric nightlife pulses through the veins of its inhabitants, the royal blue and red accents on this jersey a testament to the era's vibrant, anime-inspired aesthetic."
-                },
-                {
-                    "card_index": 2,
                     "brand_or_designer": "Rick Owens",
-                    "product_type": "relaxed-fit T-shirt with anime-inspired graphic print",
-                    "vibe_description": "In the city's quieter moments, the nostalgia of Showa-era Tokyo lingers, its retro-futuristic charm seeping into the relaxed silhouettes and comic strip prints that now populate the modern streets, a convergence of past and present."
-                },
-                {
-                    "card_index": 3,
-                    "brand_or_designer": "Balenciaga",
                     "product_type": "oversized graphic tee",
-                    "vibe_description": "As dusk falls over the city, the urban landscape transforms, the bold graphics and bright hues of this oversized tee a reflection of the metropolis's unrelenting energy, its cityscape cool aesthetic a siren call to those who inhabit its streets."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 893,
-            "output_tokens": 232,
-            "total_tokens": 1125
-        }
-    },
-    "7f08afd743568a87f347e6ecfbe8a388c3f914e39acb0360a7c8e252167b7bc2": {
-        "editorial_cards": {
-            "cards": [
-                {
-                    "card_index": 1,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, casting a kawaii glow on the city's nocturnal creatures. In this fleeting moment, pastel hues and anime graphics converge."
+                    "vibe_description": "Neon lights cast a pale pink glow on the city streets, as anime-inspired graphics dance across cotton tees, evoking a futuristic nostalgia that pulsates through the night air."
                 },
                 {
                     "card_index": 2,
-                    "brand_or_designer": "Jil Sander",
+                    "brand_or_designer": "The Row",
                     "product_type": "striped poplin shirt",
-                    "vibe_description": "In a Tokyo alleyway, the soft hum of a generator and the scent of rain-soaked asphalt create a sense of quiet luxury. Striped patterns and monochromatic tones evoke a soothing stillness."
-                },
-                {
-                    "card_index": 3,
-                    "brand_or_designer": "Lemaire",
-                    "product_type": "short-sleeved button-up shirt",
-                    "vibe_description": "As midnight approaches, the city's vibrant energy gives way to a tranquil atmosphere. Taupe tones and ivory accents blend with the shadows, inviting the wearer to step into the calm of a summer evening."
+                    "vibe_description": "In the quiet hours of the morning, the city's retro charm begins to stir, as light blue and white stripes weave a tale of heritage chic, set against the backdrop of Tokyo's timeless landscape."
                 }
             ]
         },
         "usage": {
             "agent_name": "Editor Agent",
-            "input_tokens": 891,
-            "output_tokens": 201,
-            "total_tokens": 1092
-        }
-    },
-    "4d3b5e175cac082cc4c7c6d08617278260ff61d294a09e4c0c6c16d4dddde8f1": {
-        "editorial_cards": {
-            "cards": [
-                {
-                    "card_index": 1,
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city's streets. In this world, oversized silhouettes and monochrome hues reign supreme."
-                },
-                {
-                    "card_index": 2,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "striped cotton tee",
-                    "vibe_description": "In a Tokyo alleyway, the sound of vintage video games and sizzling street food fills the air, as retro futurism meets casual luxury in the form of relaxed fit tees and comic book style graphics."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 704,
-            "output_tokens": 128,
-            "total_tokens": 832
-        }
-    },
-    "4c575ea604f1de813e4d1ab48a4a3a1616443001b58f00085d6b90a43748ba99": {
-        "editorial_cards": {
-            "cards": [
-                {
-                    "card_index": 1,
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, as the hum of Tokyo's nightlife resonates through the air, where the city's cyberpunk spirit meets minimalist chic."
-                },
-                {
-                    "card_index": 2,
-                    "brand_or_designer": "Issey Miyake",
-                    "product_type": "relaxed fit graphic tee",
-                    "vibe_description": "In the still of the night, Tokyo's Showa-era nostalgia resurfaces, blending traditional and modern elements, as the city's retrofuturistic spirit comes alive."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 715,
-            "output_tokens": 123,
-            "total_tokens": 838
-        }
-    },
-    "7b3d5bb6987a4fc6e6c48e39e5c830db6cfad6b1ba53ea25b5be5b0d9cb5bf7e": {
-        "editorial_cards": {
-            "cards": [
-                {
-                    "card_index": 1,
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "graphic print t-shirt",
-                    "vibe_description": "Neon lights flicker on wet pavement, as the city's nocturnal pulse beats in sync with the hum of a distant arcade. In this electric haze, a classic crew neck t-shirt becomes a canvas for bold, comic strip prints."
-                },
-                {
-                    "card_index": 2,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "In the stillness of a Tokyo night, the glow of a vintage television casts an ethereal light on the city's streets. Oversized silhouettes and nostalgic graphic prints evoke the dreamlike quality of a bygone era, where anime and reality blur."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 676,
-            "output_tokens": 153,
+            "input_tokens": 697,
+            "output_tokens": 132,
             "total_tokens": 829
         }
     }
