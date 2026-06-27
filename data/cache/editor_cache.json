@@ -22,5 +22,29 @@
             "output_tokens": 132,
             "total_tokens": 829
         }
+    },
+    "e3e474cea00c87bdd93fe79e42c322bc467149307d740ff46918367a1712fc15": {
+        "editorial_cards": {
+            "cards": [
+                {
+                    "card_index": 1,
+                    "brand_or_designer": "Jil Sander",
+                    "product_type": "short-sleeved shirt",
+                    "vibe_description": "In the still of the night, Tokyo's neon lights reflect off the wet pavement, as the soft glow of a classic fit shirt in tan and cream hues evokes a sense of minimalist chic. The subtle sheen of the fabric, possibly a cotton or silk blend, adds a touch of sophistication to this everyday look."
+                },
+                {
+                    "card_index": 2,
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "graphic T-shirt",
+                    "vibe_description": "As the city pulses with energy, the vibrant colors of a pastel blue, lavender, candy pink, mint green, and lilac graphic T-shirt come alive, like an anime-inspired dreamscape. The relaxed fit and cotton fabric of this modern anime-inspired tee make it a staple for casual streetwear, with an anime-style cartoon character print that adds a touch of playfulness to this cyberpunk vibe."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Editor Agent",
+            "input_tokens": 723,
+            "output_tokens": 201,
+            "total_tokens": 924
+        }
     }
 }

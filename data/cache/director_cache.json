@@ -36,5 +36,43 @@
             "output_tokens": 192,
             "total_tokens": 742
         }
+    },
+    "ce13d8cfb84aff09f0f01f8008b88b8a47fcb0f5983377569c9bf6e54fe2d167": {
+        "lookbook": {
+            "edition_title": "Neon Hush",
+            "total_moods": 2,
+            "collection": [
+                {
+                    "card_number": "01",
+                    "mood_title": "Midnight Mirage",
+                    "sub_tags": [
+                        "Minimalist Chic",
+                        "Soft Neon",
+                        "Showa Revival"
+                    ],
+                    "brand_or_designer": "Jil Sander",
+                    "product_type": "short-sleeved shirt",
+                    "vibe_description": "In the still of the night, Tokyo's neon lights reflect off the wet pavement, as the soft glow of a classic fit shirt in tan and cream hues evokes a sense of minimalist chic. The subtle sheen of the fabric, possibly a cotton or silk blend, adds a touch of sophistication to this everyday look."
+                },
+                {
+                    "card_number": "02",
+                    "mood_title": "Electric Dreamscape",
+                    "sub_tags": [
+                        "Anime-Inspired",
+                        "Glow-in-the-Dark",
+                        "Cyberpunk Vibe"
+                    ],
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "graphic T-shirt",
+                    "vibe_description": "Against the city's vibrant backdrop, a pastel-hued graphic T-shirt pulsates with an anime-inspired energy, its relaxed fit and cotton fabric embodying the carefree spirit of Tokyo's streets. The tee's playful cartoon character print adds a touch of whimsy to this cyberpunk-inspired look."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Director Agent",
+            "input_tokens": 621,
+            "output_tokens": 242,
+            "total_tokens": 863
+        }
     }
 }
