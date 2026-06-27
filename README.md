@@ -1,5 +1,5 @@
 <p align="center">
-  <video src="static/animation.mp4" width="90%" controls autoplay loop muted></video>
+  <video src="https://github.com/user-attachments/assets/498ef892-7cb2-4b1a-9d49-5ca4c8a7943f" width="90%" controls autoplay loop muted></video>
 </p>
 
 <h1 align="center">AINAA</h1>
