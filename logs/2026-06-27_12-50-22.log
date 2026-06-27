@@ -1,0 +1,83 @@
+[2026-06-27 12:50:22]   11 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-06-27 12:50:22]   20 | INFO     | Initializing CuratorAgent...
+[2026-06-27 12:50:23]   49 | DEBUG    | No existing curator cache file found. Starting fresh.
+[2026-06-27 12:50:23]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-06-27 12:50:23]   22 | INFO     | Initializing StylistAgent...
+[2026-06-27 12:50:24]   50 | DEBUG    | No existing stylist cache file found. Starting fresh.
+[2026-06-27 12:50:24]   33 | INFO     | StylistAgent initialized successfully.
+[2026-06-27 12:50:24]   20 | INFO     | Initializing EditorAgent...
+[2026-06-27 12:50:25]   48 | DEBUG    | No existing editor cache file found. Starting fresh.
+[2026-06-27 12:50:25]   31 | INFO     | EditorAgent initialized successfully.
+[2026-06-27 12:50:25]   22 | INFO     | Initializing DirectorAgent...
+[2026-06-27 12:50:26]   50 | DEBUG    | No existing director cache file found. Starting fresh.
+[2026-06-27 12:50:26]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-06-27 12:50:26]   17 | INFO     | All Agent nodes initialized successfully.
+[2026-06-27 12:50:26]   44 | INFO     | Loading LangGraph Pipeline...
+[2026-06-27 12:50:26]  112 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-06-27 12:50:26]  128 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-06-27 12:50:27]  134 | INFO     | Pipeline graph visualization saved as 'pipeline_graph.png'
+[2026-06-27 12:50:27]   46 | INFO     | Pipeline ready.
+[2026-06-27 13:01:57]  165 | INFO     | [HttpUrl('https://mizojerseyhome.in/cdn/shop/files/D2091278-E885-4598-95E6-5BC49AE64EEA.jpg?v=1774247194&width=800'), HttpUrl('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdp6sH0SN79pJktGbFLC-8CY6uq6tMS4AtHsMRXMICJg&s=10'), HttpUrl('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLe-3qkSnuxFwYnFYTqIm6PnBRd1S5PBnDFijSlYvbUZqWHSB2JeWoR2FX&s=10'), HttpUrl('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW-cG_-FWZb5GXf5iKX0w7407LmLNlBBOwS7R2yTxoXO6nkyvdrviZ5-v&s=10'), HttpUrl('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuDIiPLy3LG5GfiDGKtW5rPkbbB9PRA6HJ797_ySxhA9CWOJSzgs5_Zg&s=10'), HttpUrl('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jQ03RVMukeV7WM1Khv_XGv9klHymOVMtqsPGD7lL3g&s=10')]
+[2026-06-27 13:01:57]  166 | INFO     | Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia
+[2026-06-27 13:01:57]  168 | INFO     | Downloading 6 images...
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuDIiPLy3LG5GfiDGKtW5rPkbbB9PRA6HJ797_ySxhA9CWOJSzgs5_Zg&s=10
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLe-3qkSnuxFwYnFYTqIm6PnBRd1S5PBnDFijSlYvbUZqWHSB2JeWoR2FX&s=10
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://mizojerseyhome.in/cdn/shop/files/D2091278-E885-4598-95E6-5BC49AE64EEA.jpg?v=1774247194&width=800
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrW-cG_-FWZb5GXf5iKX0w7407LmLNlBBOwS7R2yTxoXO6nkyvdrviZ5-v&s=10
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jQ03RVMukeV7WM1Khv_XGv9klHymOVMtqsPGD7lL3g&s=10
+[2026-06-27 13:01:58]  151 | INFO     | Successfully downloaded: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdp6sH0SN79pJktGbFLC-8CY6uq6tMS4AtHsMRXMICJg&s=10
+[2026-06-27 13:01:58]  174 | INFO     | Successfully downloaded and saved 6 images.
+[2026-06-27 13:01:59]   23 | INFO     | >>> Entering [Curator Node] execution frame
+[2026-06-27 13:01:59]   29 | INFO     | Curator Node received 6 images to process.
+[2026-06-27 13:01:59]   32 | DEBUG    | Processing image 1/6: data\uploads\8fefc1ad073d970a6a86ba44ea99703a.jpg
+[2026-06-27 13:01:59]   81 | INFO     | Processing image analysis for: 8fefc1ad073d970a6a86ba44ea99703a.jpg (Index: 1)
+[2026-06-27 13:01:59]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: 8fefc1ad073d970a6a86ba44ea99703a.jpg
+[2026-06-27 13:02:09]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:09]  155 | INFO     | Successfully processed and cached live analysis for file: 8fefc1ad073d970a6a86ba44ea99703a.jpg
+[2026-06-27 13:02:09]   32 | DEBUG    | Processing image 2/6: data\uploads\ba08be0e840ab93286f6277777e6d89d.jpg
+[2026-06-27 13:02:09]   81 | INFO     | Processing image analysis for: ba08be0e840ab93286f6277777e6d89d.jpg (Index: 2)
+[2026-06-27 13:02:09]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: ba08be0e840ab93286f6277777e6d89d.jpg
+[2026-06-27 13:02:17]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:17]  155 | INFO     | Successfully processed and cached live analysis for file: ba08be0e840ab93286f6277777e6d89d.jpg
+[2026-06-27 13:02:17]   32 | DEBUG    | Processing image 3/6: data\uploads\d71a76d3d8b4220525e23c42ea6d020d.jpg
+[2026-06-27 13:02:17]   81 | INFO     | Processing image analysis for: d71a76d3d8b4220525e23c42ea6d020d.jpg (Index: 3)
+[2026-06-27 13:02:17]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: d71a76d3d8b4220525e23c42ea6d020d.jpg
+[2026-06-27 13:02:24]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:24]  155 | INFO     | Successfully processed and cached live analysis for file: d71a76d3d8b4220525e23c42ea6d020d.jpg
+[2026-06-27 13:02:24]   32 | DEBUG    | Processing image 4/6: data\uploads\bed84f5bedd6f14cc3e0c498c008a426.jpg
+[2026-06-27 13:02:24]   81 | INFO     | Processing image analysis for: bed84f5bedd6f14cc3e0c498c008a426.jpg (Index: 4)
+[2026-06-27 13:02:24]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: bed84f5bedd6f14cc3e0c498c008a426.jpg
+[2026-06-27 13:02:32]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:32]  155 | INFO     | Successfully processed and cached live analysis for file: bed84f5bedd6f14cc3e0c498c008a426.jpg
+[2026-06-27 13:02:32]   32 | DEBUG    | Processing image 5/6: data\uploads\471d74487659d1dff09c31ebe91236dd.jpg
+[2026-06-27 13:02:32]   81 | INFO     | Processing image analysis for: 471d74487659d1dff09c31ebe91236dd.jpg (Index: 5)
+[2026-06-27 13:02:32]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: 471d74487659d1dff09c31ebe91236dd.jpg
+[2026-06-27 13:02:39]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:39]  155 | INFO     | Successfully processed and cached live analysis for file: 471d74487659d1dff09c31ebe91236dd.jpg
+[2026-06-27 13:02:39]   32 | DEBUG    | Processing image 6/6: data\uploads\0d9655bc18a4b58becb0c04180d9568f.jpg
+[2026-06-27 13:02:39]   81 | INFO     | Processing image analysis for: 0d9655bc18a4b58becb0c04180d9568f.jpg (Index: 6)
+[2026-06-27 13:02:39]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: 0d9655bc18a4b58becb0c04180d9568f.jpg
+[2026-06-27 13:02:47]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-06-27 13:02:47]  155 | INFO     | Successfully processed and cached live analysis for file: 0d9655bc18a4b58becb0c04180d9568f.jpg
+[2026-06-27 13:02:47]   40 | INFO     | <<< Completed [Curator Node] execution loops safely.
+[2026-06-27 13:02:47]   50 | INFO     | >>> Entering [Stylist Node] execution frame
+[2026-06-27 13:02:47]   53 | INFO     | Synthesizing creative layout options for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:47]   76 | INFO     | Processing mood clusters generation for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:47]  103 | INFO     | [CACHE MISS] Synthesizing mood clusters live via Groq API...
+[2026-06-27 13:02:48]   58 | DEBUG    | Stylist cache state synchronized out to disk: data\cache\stylist_cache.json
+[2026-06-27 13:02:48]  135 | INFO     | Successfully processed and cached mood clusters generation.
+[2026-06-27 13:02:48]   60 | INFO     | <<< Completed [Stylist Node] synthesis safely.
+[2026-06-27 13:02:48]   70 | INFO     | >>> Entering [Editor Node] execution frame
+[2026-06-27 13:02:48]   73 | INFO     | Drafting structural descriptions layout for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:48]   75 | INFO     | Processing editorial cards generation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:48]  120 | INFO     | [CACHE MISS] Synthesizing editorial cards live via Llama-3.3-70b...
+[2026-06-27 13:02:49]   56 | DEBUG    | Editor cache state synchronized out to disk: data\cache\editor_cache.json
+[2026-06-27 13:02:49]  151 | INFO     | Successfully processed and cached editorial cards generation.
+[2026-06-27 13:02:49]   81 | INFO     | <<< Completed [Editor Node] copywriting safely.
+[2026-06-27 13:02:49]   91 | INFO     | >>> Entering [Director Node] execution frame
+[2026-06-27 13:02:49]   94 | INFO     | Finalizing lookbook asset generation metrics for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:49]   69 | INFO     | Finalizing lookbook compilation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-06-27 13:02:49]  108 | INFO     | [CACHE MISS] Compiling final weekly lookbook live via Llama-3.3-70b...
+[2026-06-27 13:02:50]   58 | DEBUG    | Director cache state synchronized out to disk: data\cache\director_cache.json
+[2026-06-27 13:02:50]  138 | INFO     | Successfully compiled and cached weekly fashion lookbook.
+[2026-06-27 13:02:50]  102 | INFO     | <<< Completed [Director Node] aggregation safely.

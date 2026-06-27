@@ -1,0 +1,52 @@
+{
+    "abc3414d83da99c029b7a86f833870cde1bbbc3883a80e5db73caaf2f33f7df7": {
+        "lookbook": {
+            "edition_title": "Neon Nocturne",
+            "total_moods": 3,
+            "collection": [
+                {
+                    "card_number": "01",
+                    "mood_title": "Electric Archive",
+                    "sub_tags": [
+                        "Neon Minimalism",
+                        "Anime-Inspired",
+                        "Electric Nightlife"
+                    ],
+                    "brand_or_designer": "Vetements",
+                    "product_type": "slim-fit jersey with manga-inspired graphic print",
+                    "vibe_description": "Neon hues illuminate the Tokyo streets, as the city's electric nightlife pulses through the veins of its inhabitants, the royal blue and red accents on this jersey a testament to the era's vibrant, anime-inspired aesthetic."
+                },
+                {
+                    "card_number": "02",
+                    "mood_title": "Retro Revival",
+                    "sub_tags": [
+                        "Retro-Futurism",
+                        "Showa-Era Nostalgia",
+                        "Comic Strip Chic"
+                    ],
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "relaxed-fit T-shirt with anime-inspired graphic print",
+                    "vibe_description": "In the city's quieter moments, the nostalgia of Showa-era Tokyo lingers, its retro-futuristic charm seeping into the relaxed silhouettes and comic strip prints that now populate the modern streets, a convergence of past and present."
+                },
+                {
+                    "card_number": "03",
+                    "mood_title": "Urban Dusk",
+                    "sub_tags": [
+                        "Urban Edge",
+                        "Graphic Print",
+                        "Cityscape Cool"
+                    ],
+                    "brand_or_designer": "Balenciaga",
+                    "product_type": "oversized graphic tee",
+                    "vibe_description": "As the city's neon lights begin to fade, the urban landscape transforms, the bold graphics and monochromatic hues of this oversized tee echoing the metropolis's unrelenting energy, a siren call to those who inhabit its streets, where the night air is alive with the pulse of creativity and rebellion."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Director Agent",
+            "input_tokens": 703,
+            "output_tokens": 331,
+            "total_tokens": 1034
+        }
+    }
+}

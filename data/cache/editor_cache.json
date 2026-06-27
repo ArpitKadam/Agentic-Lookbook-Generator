@@ -1,0 +1,32 @@
+{
+    "487a059f7cf912b6fddd1c28cea4909b80ca34ddd574b601905a2f27cafa8dbb": {
+        "editorial_cards": {
+            "cards": [
+                {
+                    "card_index": 1,
+                    "brand_or_designer": "Vetements",
+                    "product_type": "slim-fit jersey with manga-inspired graphic print",
+                    "vibe_description": "Neon hues illuminate the Tokyo streets, as the city's electric nightlife pulses through the veins of its inhabitants, the royal blue and red accents on this jersey a testament to the era's vibrant, anime-inspired aesthetic."
+                },
+                {
+                    "card_index": 2,
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "relaxed-fit T-shirt with anime-inspired graphic print",
+                    "vibe_description": "In the city's quieter moments, the nostalgia of Showa-era Tokyo lingers, its retro-futuristic charm seeping into the relaxed silhouettes and comic strip prints that now populate the modern streets, a convergence of past and present."
+                },
+                {
+                    "card_index": 3,
+                    "brand_or_designer": "Balenciaga",
+                    "product_type": "oversized graphic tee",
+                    "vibe_description": "As dusk falls over the city, the urban landscape transforms, the bold graphics and bright hues of this oversized tee a reflection of the metropolis's unrelenting energy, its cityscape cool aesthetic a siren call to those who inhabit its streets."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Editor Agent",
+            "input_tokens": 893,
+            "output_tokens": 232,
+            "total_tokens": 1125
+        }
+    }
+}

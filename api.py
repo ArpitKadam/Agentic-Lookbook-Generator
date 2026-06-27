@@ -2,12 +2,14 @@ import os
 import sys
 import hashlib
 from pathlib import Path
-from typing import List
 import asyncio
 import httpx
 from pydantic import BaseModel, HttpUrl
-from fastapi import FastAPI, UploadFile, File, Form
+from fastapi import FastAPI, UploadFile, File, Form, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
 from dotenv import load_dotenv
 from src.pipeline.pipeline import build_pipeline
 from src.state.state import LookbookState
@@ -19,16 +21,17 @@ load_dotenv()
 os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY", "")
 os.environ["LANGSMITH_TRACING"] = "true"
 
-
-# ==========================================================
-# APP INITIALIZATION
-# ==========================================================
-
 app = FastAPI(
     title="Agentic Lookbook Generator API",
     description="AI-native editorial lookbook generation platform",
     version="1.0.0"
 )
+
+Path("static").mkdir(parents=True, exist_ok=True)
+Path("templates").mkdir(parents=True, exist_ok=True)
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 app.add_middleware(
     CORSMiddleware,
@@ -46,34 +49,32 @@ logger.info("Pipeline ready.")
 UPLOAD_DIR = Path("data/uploads")
 UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
 
+    
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
 
-# ==========================================================
-# HEALTH CHECK
-# ==========================================================
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html"
+    )
+
 
 @app.get("/health")
 async def health_check():
-
     return {
         "status": "healthy",
         "service": "Agentic Lookbook Generator API"
     }
 
 
-# ==========================================================
-# RUN USING IMAGES ALREADY PRESENT INSIDE data/
-# ==========================================================
-
 @app.post("/generate-from-data")
 async def generate_from_data(
     theme_prompt: str
 ):
-
     try:
         image_paths = []
 
         for ext in ["*.jpg", "*.jpeg", "*.png", "*.webp"]:
-
             image_paths.extend(
                 [str(p) for p in Path("data").glob(ext)]
             )
@@ -116,11 +117,7 @@ async def generate_from_data(
         raise CustomException("Failed to generate lookbook.", sys)
 
 
-# ==========================================================
-# UPLOAD IMAGES LINKS + RUN PIPELINE
-# ==========================================================
-
-class Request(BaseModel):
+class LookbookRequest(BaseModel):
     theme_prompt: str
     image_urls: list[HttpUrl]
 
@@ -158,8 +155,9 @@ async def download_image(client: httpx.AsyncClient, url: str) -> str:
         logger.error(f"Failed to download image from {url}: {e}")
         raise e
 
+
 @app.post("/generate")
-async def generate_lookbook(request: Request):
+async def generate_lookbook(request: LookbookRequest):
     try:
         if not request.image_urls:
             raise CustomException("No image URLs provided.", sys)

@@ -1,0 +1,53 @@
+{
+    "442e29ea98df246f0a0a60002e323ba458268459b998cfaba8bb1af59062fc21": {
+        "clusters": {
+            "clusters": [
+                {
+                    "mood_title": "Electric Archive",
+                    "sub_tags": [
+                        "Neon Minimalism",
+                        "Anime-Inspired",
+                        "Electric Nightlife"
+                    ],
+                    "image_indices": [
+                        1,
+                        5,
+                        6
+                    ],
+                    "styling_rationale": "The neon-soaked aesthetic of these contemporary streetwear pieces evokes a nostalgic feel, reminiscent of Tokyo's Showa-era past."
+                },
+                {
+                    "mood_title": "Retro Revival",
+                    "sub_tags": [
+                        "Retro-Futurism",
+                        "Showa-Era Nostalgia",
+                        "Comic Strip Chic"
+                    ],
+                    "image_indices": [
+                        2,
+                        4
+                    ],
+                    "styling_rationale": "These relaxed-fit tees with comic strip prints and Showa-era charm bring a retro touch to Tokyo's modern streets."
+                },
+                {
+                    "mood_title": "Urban Dusk",
+                    "sub_tags": [
+                        "Urban Edge",
+                        "Graphic Print",
+                        "Cityscape Cool"
+                    ],
+                    "image_indices": [
+                        3
+                    ],
+                    "styling_rationale": "This oversized tee with a bold graphic print embodies the urban, edgy vibe of Tokyo's cityscape at dusk."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Stylist Agent",
+            "input_tokens": 1259,
+            "output_tokens": 187,
+            "total_tokens": 1446
+        }
+    }
+}

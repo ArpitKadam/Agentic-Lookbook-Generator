@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AINAA Lookbook Generator</title>
+
+    <link rel="stylesheet"
+          href="/static/styles.css">
+
+    <script defer
+            src="/static/app.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AINAA</h1>
+
+    <p class="subtitle">
+        AI-Native Editorial Lookbook Generator
+    </p>
+
+    <div class="card">
+
+        <label>Editorial Theme</label>
+
+        <textarea
+            id="theme"
+            placeholder="Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia">
+        </textarea>
+
+        <h3>Image URLs</h3>
+
+        <div id="url-container">
+
+            <input
+                class="url-input"
+                type="text"
+                placeholder="https://example.com/image.jpg">
+
+            <input
+                class="url-input"
+                type="text"
+                placeholder="https://example.com/image2.jpg">
+
+        </div>
+
+        <button onclick="addUrlField()">
+            + Add URL
+        </button>
+
+        <button
+            class="generate-btn"
+            onclick="generateLookbook()">
+
+            Generate Lookbook
+
+        </button>
+
+    </div>
+
+    <div id="loading"></div>
+
+    <div id="results"></div>
+
+</div>
+
+</body>
+</html>

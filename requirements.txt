@@ -16,3 +16,4 @@ uvicorn
 python-multipart
 colorlog
 httpx
+jinja2
