@@ -1,50 +1,32 @@
 {
-    "4f8d20b5917f71b6afdcd5fc0b190dc2e79de91ca2a1cb171da47243c6c6df52": {
+    "613990bf42f13b26ba8326cf0c3e21f8388fd96e34d6428ec6cc2190f756490e": {
         "editorial_cards": {
             "cards": [
                 {
                     "card_index": 1,
                     "brand_or_designer": "Rick Owens",
                     "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights cast a pale pink glow on the city streets, as anime-inspired graphics dance across cotton tees, evoking a futuristic nostalgia that pulsates through the night air."
+                    "vibe_description": "Neon lights reflect off the wet pavement as the city pulses with energy, the oversized graphic tee a beacon of modernity amidst the nostalgic haze of Tokyo after midnight."
                 },
                 {
                     "card_index": 2,
-                    "brand_or_designer": "The Row",
-                    "product_type": "striped poplin shirt",
-                    "vibe_description": "In the quiet hours of the morning, the city's retro charm begins to stir, as light blue and white stripes weave a tale of heritage chic, set against the backdrop of Tokyo's timeless landscape."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 697,
-            "output_tokens": 132,
-            "total_tokens": 829
-        }
-    },
-    "e3e474cea00c87bdd93fe79e42c322bc467149307d740ff46918367a1712fc15": {
-        "editorial_cards": {
-            "cards": [
+                    "brand_or_designer": "Vetements",
+                    "product_type": "relaxed fit graphic tee",
+                    "vibe_description": "In the quiet hours of the night, the retro charm of Tokyo's Showa era whispers through the streets, its presence felt in the relaxed fit graphic tee adorned with eclectic prints."
+                },
                 {
-                    "card_index": 1,
+                    "card_index": 3,
                     "brand_or_designer": "Jil Sander",
-                    "product_type": "short-sleeved shirt",
-                    "vibe_description": "In the still of the night, Tokyo's neon lights reflect off the wet pavement, as the soft glow of a classic fit shirt in tan and cream hues evokes a sense of minimalist chic. The subtle sheen of the fabric, possibly a cotton or silk blend, adds a touch of sophistication to this everyday look."
-                },
-                {
-                    "card_index": 2,
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "graphic T-shirt",
-                    "vibe_description": "As the city pulses with energy, the vibrant colors of a pastel blue, lavender, candy pink, mint green, and lilac graphic T-shirt come alive, like an anime-inspired dreamscape. The relaxed fit and cotton fabric of this modern anime-inspired tee make it a staple for casual streetwear, with an anime-style cartoon character print that adds a touch of playfulness to this cyberpunk vibe."
+                    "product_type": "oversized white tee",
+                    "vibe_description": "The city's modern minimalism reveals itself in the still of the night, where the oversized white tee stands as a testament to the beauty of restraint, its bold graphic print a subtle nod to the urban landscape."
                 }
             ]
         },
         "usage": {
             "agent_name": "Editor Agent",
-            "input_tokens": 723,
-            "output_tokens": 201,
-            "total_tokens": 924
+            "input_tokens": 863,
+            "output_tokens": 196,
+            "total_tokens": 1059
         }
     }
 }

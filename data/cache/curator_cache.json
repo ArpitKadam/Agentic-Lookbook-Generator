@@ -91,5 +91,140 @@
             "output_tokens": 78,
             "total_tokens": 708
         }
+    },
+    "694b1463b693d0c98948086e680cf04b4ff41090e46afd654ddb1fb5e61d8d6f": {
+        "parsed": {
+            "garment_type": "T-shirt",
+            "color_palette": [
+                "black",
+                "neon pink",
+                "neon purple",
+                "neon green",
+                "neon yellow"
+            ],
+            "silhouette": "oversized",
+            "texture_or_fabric": "cotton",
+            "style_era": "streetwear",
+            "occasion": "casual",
+            "standout_detail": "psychedelic mushroom and alien graphic",
+            "image_index": 2,
+            "filename": "Area 51 Oversized Unisex Streetwear.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 623,
+            "output_tokens": 77,
+            "total_tokens": 700
+        }
+    },
+    "edb828ac2d6405bff9386b733459e2b49a4904f18c3012264afa371a52701880": {
+        "parsed": {
+            "garment_type": "T-shirt",
+            "color_palette": [
+                "Charcoal Grey",
+                "Crimson Red",
+                "Ivory White"
+            ],
+            "silhouette": "Relaxed fit",
+            "texture_or_fabric": "Cotton",
+            "style_era": "Contemporary Streetwear",
+            "occasion": "Casual wear",
+            "standout_detail": "Graphic print featuring Hindi text and illustrations of two men",
+            "image_index": 4,
+            "filename": "Hip Hop Streetwear T Shirts.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 620,
+            "output_tokens": 78,
+            "total_tokens": 698
+        }
+    },
+    "65de4996ce9eff97f96e60b7015f1d8f17739939ec1f245dd4432dc3422faf81": {
+        "parsed": {
+            "garment_type": "T-shirt",
+            "color_palette": [
+                "White"
+            ],
+            "silhouette": "Oversized",
+            "texture_or_fabric": "French Terry",
+            "style_era": "Modern",
+            "occasion": "Casual",
+            "standout_detail": "Bold black graphic print",
+            "image_index": 5,
+            "filename": "Manmaker French Terry Oversized T-shirt.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 622,
+            "output_tokens": 57,
+            "total_tokens": 679
+        }
+    },
+    "991ba14a74489307eb9e22d0650cf898bb3c9cca5d98b417afa7d1f1c131c23e": {
+        "parsed": {
+            "garment_type": "shirt",
+            "color_palette": [
+                "light brown",
+                "white"
+            ],
+            "silhouette": "relaxed fit",
+            "texture_or_fabric": "ribbed cotton",
+            "style_era": "contemporary",
+            "occasion": "casual",
+            "standout_detail": "ribbed texture",
+            "image_index": 6,
+            "filename": "Men Ribbed Regular Fit Shirt.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 620,
+            "output_tokens": 61,
+            "total_tokens": 681
+        }
+    },
+    "a38545306c43515d763167fdcf2c1c4804c0d295d04aa5d45b325181eb0d8408": {
+        "parsed": {
+            "garment_type": "T-shirt",
+            "color_palette": [
+                "Black",
+                "Pink"
+            ],
+            "silhouette": "Oversized",
+            "texture_or_fabric": "Cotton",
+            "style_era": "Modern Streetwear",
+            "occasion": "Casual",
+            "standout_detail": "Graphic Print",
+            "image_index": 7,
+            "filename": "Men's Streetwear T Shirts.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 619,
+            "output_tokens": 59,
+            "total_tokens": 678
+        }
+    },
+    "feeb34d2d27e5f3fd76d2c6fd97b64fe170fe1e48ef5d49c97aa1d89402dcf96": {
+        "parsed": {
+            "garment_type": "Casual Shirt",
+            "color_palette": [
+                "Light Grey",
+                "Off-White"
+            ],
+            "silhouette": "Oversized",
+            "texture_or_fabric": "Cotton Blend",
+            "style_era": "Modern Casual",
+            "occasion": "Smart Casual",
+            "standout_detail": "Contrasting Shirt and T-Shirt Combination",
+            "image_index": 8,
+            "filename": "Men\u2019s Stylish Cotton Blend Casual Shirt.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 621,
+            "output_tokens": 68,
+            "total_tokens": 689
+        }
     }
 }

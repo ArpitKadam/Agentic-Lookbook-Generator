@@ -7,7 +7,8 @@ from src.schemas.schema import (
     MoodClusters,
     EditorialCards,
     WeeklyLookbook,
-    TokenUsage
+    TokenUsage,
+    VisualLookbook
 )
 
 class LookbookState(TypedDict):
@@ -19,4 +20,5 @@ class LookbookState(TypedDict):
     mood_clusters: Optional[MoodClusters]
     draft_cards: Optional[EditorialCards]
     lookbook: Optional[WeeklyLookbook]
+    visual_lookbook: Optional[VisualLookbook]
     token_usages: Annotated[List[TokenUsage], operator.add]

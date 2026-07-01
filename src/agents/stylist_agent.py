@@ -9,8 +9,6 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from src.schemas.schema import MoodClusters, TokenUsage
 from src.prompts.prompts import STYLIST_SYSTEM_PROMPT, STYLIST_USER_TEMPLATE
 from src.utils.utils import count_tokens
-
-# Import your custom logger and exception blocks
 from src.logger import logger
 from src.exception import CustomException
 

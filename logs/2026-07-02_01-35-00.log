@@ -1,0 +1,187 @@
+[2026-07-02 01:35:00]   13 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-07-02 01:35:00]   20 | INFO     | Initializing CuratorAgent...
+[2026-07-02 01:35:01]   42 | DEBUG    | Curator cache loaded successfully from data\cache\curator_cache.json (10 entries found).
+[2026-07-02 01:35:01]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-07-02 01:35:01]   20 | INFO     | Initializing StylistAgent...
+[2026-07-02 01:35:02]   41 | DEBUG    | Stylist cache loaded successfully from data\cache\stylist_cache.json (1 entries found).
+[2026-07-02 01:35:02]   31 | INFO     | StylistAgent initialized successfully.
+[2026-07-02 01:35:02]   20 | INFO     | Initializing EditorAgent...
+[2026-07-02 01:35:03]   41 | DEBUG    | Editor cache loaded successfully from data\cache\editor_cache.json (1 entries found).
+[2026-07-02 01:35:03]   31 | INFO     | EditorAgent initialized successfully.
+[2026-07-02 01:35:03]   22 | INFO     | Initializing DirectorAgent...
+[2026-07-02 01:35:04]   43 | DEBUG    | Director cache loaded successfully from data\cache\director_cache.json (1 entries found).
+[2026-07-02 01:35:04]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-07-02 01:35:04]   22 | INFO     | Initializing VisualDirectorAgent...
+[2026-07-02 01:35:05]   35 | INFO     | VisualDirectorAgent initialized successfully.
+[2026-07-02 01:35:05]   20 | INFO     | All Agent nodes initialized successfully.
+[2026-07-02 01:35:05]   17 | INFO     | ============================================================
+[2026-07-02 01:35:05]   18 | INFO     | STARTING AGENTIC LOOKBOOK GENERATION RUNNER ENGINE
+[2026-07-02 01:35:05]   19 | INFO     | ============================================================
+[2026-07-02 01:35:05]   33 | INFO     | Found 10 image(s) in the 'data' directory.
+[2026-07-02 01:35:05]   37 | INFO     | Building lookbook orchestration pipeline graph...
+[2026-07-02 01:35:05]  138 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-07-02 01:35:05]  156 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-07-02 01:35:06]  162 | INFO     | Pipeline graph visualization saved as 'pipeline_graph.png'
+[2026-07-02 01:35:06]   52 | INFO     | Loaded theme prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   53 | INFO     | Queued 10 images.
+[2026-07-02 01:35:06]   55 | INFO     | Invoking LangGraph pipeline...
+[2026-07-02 01:35:06]   26 | INFO     | >>> Entering [Curator Node] execution frame
+[2026-07-02 01:35:06]   32 | INFO     | Curator Node received 10 images to process.
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 1/10: data\Anime Tshirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Anime Tshirt.jpg (Index: 1)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Anime Tshirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 2/10: data\Area 51 Oversized Unisex Streetwear.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Area 51 Oversized Unisex Streetwear.jpg (Index: 2)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Area 51 Oversized Unisex Streetwear.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 3/10: data\Girl's Anime Long Sleeve T-shirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Girl's Anime Long Sleeve T-shirt.jpg (Index: 3)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Girl's Anime Long Sleeve T-shirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 4/10: data\Hip Hop Streetwear T Shirts.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Hip Hop Streetwear T Shirts.jpg (Index: 4)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Hip Hop Streetwear T Shirts.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 5/10: data\Manmaker French Terry Oversized T-shirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Manmaker French Terry Oversized T-shirt.jpg (Index: 5)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Manmaker French Terry Oversized T-shirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 6/10: data\Men Ribbed Regular Fit Shirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Men Ribbed Regular Fit Shirt.jpg (Index: 6)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Men Ribbed Regular Fit Shirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 7/10: data\Men's Streetwear T Shirts.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Men's Streetwear T Shirts.jpg (Index: 7)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Men's Streetwear T Shirts.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 8/10: data\Men’s Stylish Cotton Blend Casual Shirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Men’s Stylish Cotton Blend Casual Shirt.jpg (Index: 8)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Men’s Stylish Cotton Blend Casual Shirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 9/10: data\Quiet Luxury Style Shirt.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Quiet Luxury Style Shirt.jpg (Index: 9)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Quiet Luxury Style Shirt.jpg
+[2026-07-02 01:35:06]   35 | DEBUG    | Processing image 10/10: data\Summer Luxury Streetwear.jpg
+[2026-07-02 01:35:06]   81 | INFO     | Processing image analysis for: Summer Luxury Streetwear.jpg (Index: 10)
+[2026-07-02 01:35:06]   87 | INFO     | [CACHE HIT] Reusing cached analysis for file: Summer Luxury Streetwear.jpg
+[2026-07-02 01:35:06]   43 | INFO     | <<< Completed [Curator Node] execution loops safely.
+[2026-07-02 01:35:06]   53 | INFO     | >>> Entering [Stylist Node] execution frame
+[2026-07-02 01:35:06]   56 | INFO     | Synthesizing creative layout options for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   74 | INFO     | Processing mood clusters generation for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   88 | INFO     | [CACHE HIT] Reusing cached mood clusters for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   63 | INFO     | <<< Completed [Stylist Node] synthesis safely.
+[2026-07-02 01:35:06]   73 | INFO     | >>> Entering [Editor Node] execution frame
+[2026-07-02 01:35:06]   76 | INFO     | Drafting structural descriptions layout for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   75 | INFO     | Processing editorial cards generation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]  107 | INFO     | [CACHE HIT] Reusing cached editorial cards for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   84 | INFO     | <<< Completed [Editor Node] copywriting safely.
+[2026-07-02 01:35:06]   94 | INFO     | >>> Entering [Director Node] execution frame
+[2026-07-02 01:35:06]   97 | INFO     | Finalizing lookbook asset generation metrics for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   69 | INFO     | Finalizing lookbook compilation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]   95 | INFO     | [CACHE HIT] Reusing cached lookbook finalization for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 01:35:06]  105 | INFO     | <<< Completed [Director Node] aggregation safely.
+[2026-07-02 01:35:06]  115 | INFO     | >>> Entering [Visual Director Node] execution frame
+[2026-07-02 01:35:06]  117 | INFO     | Generating visual prompts and artwork...
+[2026-07-02 01:35:06]  123 | INFO     | Generating visual prompts...
+[2026-07-02 01:35:09]  149 | INFO     | Generating 4 visual assets...
+[2026-07-02 01:35:09]  170 | INFO     | Generating cover artwork...
+[2026-07-02 01:35:09]  129 | INFO     | [ImageGenerator] Generating image: neon_hush_57d836d340b05631
+[2026-07-02 01:35:41]  187 | INFO     | [ImageGenerator] Saved -> neon_hush_57d836d340b05631.png
+[2026-07-02 01:35:41]  198 | INFO     | Generating artwork for Card 01 (Midnight Mirage)...
+[2026-07-02 01:35:41]  129 | INFO     | [ImageGenerator] Generating image: 01_midnight_mirage_b57dcf1e30f025ee
+[2026-07-02 01:36:13]  187 | INFO     | [ImageGenerator] Saved -> 01_midnight_mirage_b57dcf1e30f025ee.png
+[2026-07-02 01:36:13]  198 | INFO     | Generating artwork for Card 02 (Retro Revival)...
+[2026-07-02 01:36:13]  129 | INFO     | [ImageGenerator] Generating image: 02_retro_revival_7b1652cdda9526e5
+[2026-07-02 01:36:46]  187 | INFO     | [ImageGenerator] Saved -> 02_retro_revival_7b1652cdda9526e5.png
+[2026-07-02 01:36:46]  198 | INFO     | Generating artwork for Card 03 (Modern Minimalism)...
+[2026-07-02 01:36:46]  129 | INFO     | [ImageGenerator] Generating image: 03_modern_minimalism_95b42c8e487dbb2c
+[2026-07-02 01:37:19]  187 | INFO     | [ImageGenerator] Saved -> 03_modern_minimalism_95b42c8e487dbb2c.png
+[2026-07-02 01:37:19]  252 | INFO     | Visual lookbook 'Neon Hush' generated successfully.
+[2026-07-02 01:37:19]  126 | INFO     | <<< Completed [Visual Director Node] successfully.
+[2026-07-02 01:37:19]   59 | INFO     | Pipeline execution completed successfully.
+[2026-07-02 01:37:19]   61 | INFO     | 
+============================================================
+[2026-07-02 01:37:19]   63 | INFO     | FINAL WEEKLY LOOKBOOK
+[2026-07-02 01:37:19]   65 | INFO     | ============================================================
+[2026-07-02 01:37:19]   67 | INFO     | {
+  "edition_title": "Neon Hush",
+  "total_moods": 3,
+  "collection": [
+    {
+      "card_number": "01",
+      "mood_title": "Midnight Mirage",
+      "sub_tags": [
+        "Cyberpunk",
+        "Neon",
+        "Nostalgia"
+      ],
+      "brand_or_designer": "Rick Owens",
+      "product_type": "oversized graphic tee",
+      "vibe_description": "Neon lights reflect off the wet pavement as the city pulses with energy, the oversized graphic tee a beacon of modernity amidst the nostalgic haze of Tokyo after midnight."
+    },
+    {
+      "card_number": "02",
+      "mood_title": "Retro Revival",
+      "sub_tags": [
+        "Showa",
+        "Retro",
+        "Vintage"
+      ],
+      "brand_or_designer": "Vetements",
+      "product_type": "relaxed fit graphic tee",
+      "vibe_description": "In the quiet hours, Tokyo's Showa era whispers through the streets, its retro charm lingering in the relaxed fit graphic tee, where eclectic prints converge with modern allure."
+    },
+    {
+      "card_number": "03",
+      "mood_title": "Modern Minimalism",
+      "sub_tags": [
+        "Minimalist",
+        "Modern",
+        "Neutral"
+      ],
+      "brand_or_designer": "Jil Sander",
+      "product_type": "oversized white tee",
+      "vibe_description": "As the city's neon hum subsides, the oversized white tee emerges, its bold graphic print a poignant ode to the urban landscape, where modern minimalism reigns supreme in the still of the night."
+    }
+  ]
+}
+[2026-07-02 01:37:19]   75 | INFO     | 
+============================================================
+[2026-07-02 01:37:19]   77 | INFO     | VISUAL LOOKBOOK
+[2026-07-02 01:37:19]   79 | INFO     | ============================================================
+[2026-07-02 01:37:19]   83 | INFO     | Edition Cover : data\generated\neon_hush_57d836d340b05631.png
+[2026-07-02 01:37:19]   85 | INFO     | Image Hash    : 4c6a9f4b9f15ad23c6d5c5569775a12b39d57de649dc095c86ea12ccdc5f4b2a
+[2026-07-02 01:37:19]   87 | INFO     | 
+[2026-07-02 01:37:19]   91 | INFO     | [Card 01] Midnight Mirage
+[2026-07-02 01:37:19]   92 | INFO     | Image : data\generated\01_midnight_mirage_b57dcf1e30f025ee.png
+[2026-07-02 01:37:19]   93 | INFO     | Hash  : 32a68f380b4e95cceb00c168e19f58450d860527b81bf3bb3a5f79e4633dab4f
+[2026-07-02 01:37:19]   94 | INFO     | 
+[2026-07-02 01:37:19]   91 | INFO     | [Card 02] Retro Revival
+[2026-07-02 01:37:19]   92 | INFO     | Image : data\generated\02_retro_revival_7b1652cdda9526e5.png
+[2026-07-02 01:37:19]   93 | INFO     | Hash  : 53f3c0123ce137af461df0e242aa368967693060690d60c4492ffa64f487f28b
+[2026-07-02 01:37:19]   94 | INFO     | 
+[2026-07-02 01:37:19]   91 | INFO     | [Card 03] Modern Minimalism
+[2026-07-02 01:37:19]   92 | INFO     | Image : data\generated\03_modern_minimalism_95b42c8e487dbb2c.png
+[2026-07-02 01:37:19]   93 | INFO     | Hash  : 0c0a957d4258e8f566f435a94ca39885b1c8530ca7f862f4a9b992fe312ef774
+[2026-07-02 01:37:19]   94 | INFO     | 
+[2026-07-02 01:37:19]   96 | INFO     | ============================================================
+[2026-07-02 01:37:19]   98 | INFO     | AGENT TOKEN USAGE BREAKDOWN
+[2026-07-02 01:37:19]  100 | INFO     | ============================================================
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Curator Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Stylist Agent (Cached)          Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Editor Agent (Cached)           Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Director Agent (Cached)         Input=0     Output=0     Total=0     
+[2026-07-02 01:37:19]  104 | INFO     | Visual Director Agent           Input=992   Output=707   Total=1699  
+[2026-07-02 01:37:19]  126 | INFO     | ============================================================
+[2026-07-02 01:37:19]  128 | INFO     | PIPELINE SUMMARY
+[2026-07-02 01:37:19]  132 | INFO     | ============================================================
+[2026-07-02 01:37:19]  134 | INFO     | Total Input Tokens  : 992
+[2026-07-02 01:37:19]  135 | INFO     | Total Output Tokens : 707
+[2026-07-02 01:37:19]  136 | INFO     | Total Tokens Used   : 1,699
+[2026-07-02 01:37:19]  138 | INFO     | Images Processed    : 10
+[2026-07-02 01:37:19]  140 | INFO     | Mood Cards Created  : 3
+[2026-07-02 01:37:19]  141 | INFO     | Edition Title       : Neon Hush
+[2026-07-02 01:37:19]  143 | INFO     | ============================================================
+[2026-07-02 01:37:19]  144 | INFO     | Agentic Lookbook Generator completed successfully.

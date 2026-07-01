@@ -1,0 +1,50 @@
+{
+    "46cc875ab1082a55f8b656975cb0016bd2418b984ab51ae66fba79fe830d2c8a": {
+        "model": "stable-diffusion-xl-base-1.0",
+        "positive_prompt": "A lone figure stands at the edge of a rain-soaked Tokyo street, neon lights reflecting off the wet pavement, the edition title 'Neon Hush' naturally integrated into a sleek, modern billboard in the background, the atmosphere is moody and cinematic, with a shallow depth of field, and a color palette that blends cool blues and vibrant pinks, the overall mood is one of quiet contemplation, with the figure lost in thought, surrounded by the hustle and bustle of the city",
+        "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+        "width": 832,
+        "height": 1024,
+        "steps": 30,
+        "guidance_scale": 7.5,
+        "image_path": "data\\generated\\neon_hush_57d836d340b05631.png",
+        "image_hash": "4c6a9f4b9f15ad23c6d5c5569775a12b39d57de649dc095c86ea12ccdc5f4b2a",
+        "seed": 924134957
+    },
+    "47b65e27d243cf67b8bceef860361e626255db8b8ade2113b7f46872de60b9f9": {
+        "model": "stable-diffusion-xl-base-1.0",
+        "positive_prompt": "Visual Language:\n            Premium Editorial\n\n            Camera Style:\n            Cinematic 35mm\n\n            Color Palette:\n            #3498db, #2ecc71, #e74c3c, #9b59b6\n\nA figure stands in the midst of a crowded Tokyo street, wearing a Rick Owens oversized graphic tee, the neon lights of the city reflecting off the wet pavement, the atmosphere is frenetic and futuristic, with a shallow depth of field, and a color palette that blends vibrant neon hues with deep blues, the overall mood is one of cyberpunk nostalgia, with the figure lost in the hustle and bustle of the city, surrounded by towering skyscrapers and neon billboards",
+        "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+        "width": 832,
+        "height": 1024,
+        "steps": 30,
+        "guidance_scale": 7.5,
+        "image_path": "data\\generated\\01_midnight_mirage_b57dcf1e30f025ee.png",
+        "image_hash": "32a68f380b4e95cceb00c168e19f58450d860527b81bf3bb3a5f79e4633dab4f",
+        "seed": 3569531053
+    },
+    "854a992ae80679f988b02cb4337cebd0b4e09e6c88e04fb0b8bf28a571bbf0b5": {
+        "model": "stable-diffusion-xl-base-1.0",
+        "positive_prompt": "Visual Language:\n            Premium Editorial\n\n            Camera Style:\n            Cinematic 35mm\n\n            Color Palette:\n            #3498db, #2ecc71, #e74c3c, #9b59b6\n\nA figure sits on a stool in a quiet, retro-themed Tokyo cafe, wearing a Vetements relaxed fit graphic tee, the atmosphere is nostalgic and melancholic, with a warm, film-like quality to the lighting, and a color palette that blends muted pastels with rich woods, the overall mood is one of retro charm, with the figure lost in thought, surrounded by vintage decor and faded photographs",
+        "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+        "width": 832,
+        "height": 1024,
+        "steps": 30,
+        "guidance_scale": 7.5,
+        "image_path": "data\\generated\\02_retro_revival_7b1652cdda9526e5.png",
+        "image_hash": "53f3c0123ce137af461df0e242aa368967693060690d60c4492ffa64f487f28b",
+        "seed": 2835635076
+    },
+    "09dadcaf949fe9346161d221364ec2d7f539c3608e0725239bfecf7a0825515e": {
+        "model": "stable-diffusion-xl-base-1.0",
+        "positive_prompt": "Visual Language:\n            Premium Editorial\n\n            Camera Style:\n            Cinematic 35mm\n\n            Color Palette:\n            #3498db, #2ecc71, #e74c3c, #9b59b6\n\nA figure stands in a sleek, modern Tokyo apartment, wearing a Jil Sander oversized white tee, the atmosphere is calm and serene, with a minimalist aesthetic, and a color palette that blends neutral tones with bold, graphic accents, the overall mood is one of modern simplicity, with the figure lost in contemplation, surrounded by clean lines, and a stunning city view",
+        "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+        "width": 832,
+        "height": 1024,
+        "steps": 30,
+        "guidance_scale": 7.5,
+        "image_path": "data\\generated\\03_modern_minimalism_95b42c8e487dbb2c.png",
+        "image_hash": "0c0a957d4258e8f566f435a94ca39885b1c8530ca7f862f4a9b992fe312ef774",
+        "seed": 247370920
+    }
+}

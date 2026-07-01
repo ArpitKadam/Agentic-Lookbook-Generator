@@ -1,78 +1,56 @@
 {
-    "ef71fbeb250448aa93a90d4921306fdb0a96599b13fb7ef9b61f9e1982216cfc": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Neon Dreamscape",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Kawaii",
-                        "Retrofuturism"
-                    ],
-                    "image_indices": [
-                        1,
-                        2
-                    ],
-                    "styling_rationale": "A fusion of modern neon lights and vintage Showa-era charm, evoking a sense of futuristic nostalgia."
-                },
-                {
-                    "mood_title": "Retro Revival",
-                    "sub_tags": [
-                        "Showa-Era",
-                        "Vintage-Inspired",
-                        "Heritage Chic"
-                    ],
-                    "image_indices": [
-                        3,
-                        4
-                    ],
-                    "styling_rationale": "A nostalgic blend of classic styles and modern twists, capturing the essence of Tokyo's rich history."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1023,
-            "output_tokens": 119,
-            "total_tokens": 1142
-        }
-    },
-    "2f6770ecf5b09df66119205eb27824bd9ee08794a07d512a23aa1367799a90a0": {
+    "2f155ff7e7b3b3efb29ee7db28cb3efb52a6ba9bf618ecf57465048c3a6329c9": {
         "clusters": {
             "clusters": [
                 {
                     "mood_title": "Midnight Mirage",
                     "sub_tags": [
-                        "Minimalist Chic",
-                        "Soft Neon",
-                        "Showa Revival"
+                        "Cyberpunk",
+                        "Neon",
+                        "Nostalgia"
                     ],
                     "image_indices": [
                         1,
-                        2
+                        2,
+                        3
                     ],
-                    "styling_rationale": "A reflection of Tokyo's neon-soaked streets after midnight, where modernity meets nostalgia."
+                    "styling_rationale": "This cluster captures the essence of Tokyo after midnight, blending neon-soaked minimalism with Showa-era nostalgia."
                 },
                 {
-                    "mood_title": "Electric Dreamscape",
+                    "mood_title": "Retro Revival",
                     "sub_tags": [
-                        "Anime-Inspired",
-                        "Glow-in-the-Dark",
-                        "Cyberpunk Vibe"
+                        "Showa",
+                        "Retro",
+                        "Vintage"
                     ],
                     "image_indices": [
-                        3,
-                        4
+                        4,
+                        6,
+                        8
                     ],
-                    "styling_rationale": "A clash of modern anime-inspired graphics and the city's vibrant nightlife."
+                    "styling_rationale": "This cluster embodies the nostalgic aspect of Tokyo after midnight, drawing inspiration from the Showa era."
+                },
+                {
+                    "mood_title": "Modern Minimalism",
+                    "sub_tags": [
+                        "Minimalist",
+                        "Modern",
+                        "Neutral"
+                    ],
+                    "image_indices": [
+                        5,
+                        7,
+                        10
+                    ],
+                    "styling_rationale": "This cluster showcases the modern and minimalist side of Tokyo after midnight, characterized by clean lines and neutral colors."
                 }
             ]
         },
         "usage": {
             "agent_name": "Stylist Agent",
-            "input_tokens": 1023,
-            "output_tokens": 112,
-            "total_tokens": 1135
+            "input_tokens": 1625,
+            "output_tokens": 171,
+            "total_tokens": 1796
         }
     }
 }

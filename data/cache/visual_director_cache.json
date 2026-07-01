@@ -1,0 +1,54 @@
+{
+    "baaa4e7134c2bcbe115be050fdb9f584287f04025452ee01c86d89ae6e3b817e": {
+        "visual_lookbook": {
+            "cover": {
+                "edition_title": "Neon Hush",
+                "positive_prompt": "A lone figure stands at the edge of a rain-soaked Tokyo street, neon lights reflecting off the wet pavement, the edition title 'Neon Hush' naturally integrated into a sleek, modern billboard in the background, the atmosphere is moody and cinematic, with a shallow depth of field, and a color palette that blends cool blues and vibrant pinks, the overall mood is one of quiet contemplation, with the figure lost in thought, surrounded by the hustle and bustle of the city",
+                "visual_language": "Premium Editorial",
+                "color_palette": [
+                    "#3498db",
+                    "#2ecc71",
+                    "#e74c3c",
+                    "#9b59b6"
+                ],
+                "camera_style": "Cinematic 35mm",
+                "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+                "art_direction": "Moody Neon Noir",
+                "image_path": "data\\generated\\neon_hush_57d836d340b05631.png",
+                "image_hash": "4c6a9f4b9f15ad23c6d5c5569775a12b39d57de649dc095c86ea12ccdc5f4b2a"
+            },
+            "moods": [
+                {
+                    "card_number": "01",
+                    "mood_title": "Midnight Mirage",
+                    "positive_prompt": "A figure stands in the midst of a crowded Tokyo street, wearing a Rick Owens oversized graphic tee, the neon lights of the city reflecting off the wet pavement, the atmosphere is frenetic and futuristic, with a shallow depth of field, and a color palette that blends vibrant neon hues with deep blues, the overall mood is one of cyberpunk nostalgia, with the figure lost in the hustle and bustle of the city, surrounded by towering skyscrapers and neon billboards",
+                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+                    "image_path": "data\\generated\\01_midnight_mirage_b57dcf1e30f025ee.png",
+                    "image_hash": "32a68f380b4e95cceb00c168e19f58450d860527b81bf3bb3a5f79e4633dab4f"
+                },
+                {
+                    "card_number": "02",
+                    "mood_title": "Retro Revival",
+                    "positive_prompt": "A figure sits on a stool in a quiet, retro-themed Tokyo cafe, wearing a Vetements relaxed fit graphic tee, the atmosphere is nostalgic and melancholic, with a warm, film-like quality to the lighting, and a color palette that blends muted pastels with rich woods, the overall mood is one of retro charm, with the figure lost in thought, surrounded by vintage decor and faded photographs",
+                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+                    "image_path": "data\\generated\\02_retro_revival_7b1652cdda9526e5.png",
+                    "image_hash": "53f3c0123ce137af461df0e242aa368967693060690d60c4492ffa64f487f28b"
+                },
+                {
+                    "card_number": "03",
+                    "mood_title": "Modern Minimalism",
+                    "positive_prompt": "A figure stands in a sleek, modern Tokyo apartment, wearing a Jil Sander oversized white tee, the atmosphere is calm and serene, with a minimalist aesthetic, and a color palette that blends neutral tones with bold, graphic accents, the overall mood is one of modern simplicity, with the figure lost in contemplation, surrounded by clean lines, and a stunning city view",
+                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+                    "image_path": "data\\generated\\03_modern_minimalism_95b42c8e487dbb2c.png",
+                    "image_hash": "0c0a957d4258e8f566f435a94ca39885b1c8530ca7f862f4a9b992fe312ef774"
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Visual Director Agent",
+            "input_tokens": 992,
+            "output_tokens": 707,
+            "total_tokens": 1699
+        }
+    }
+}

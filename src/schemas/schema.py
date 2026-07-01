@@ -72,3 +72,43 @@ class WeeklyLookbook(BaseModel):
     edition_title: str
     total_moods: int
     collection: List[FinalLookbookCard]
+
+
+class CoverArtwork(BaseModel):
+    """Cinematic prompt used to generate the magazine cover."""
+
+    edition_title: str
+    positive_prompt: str  
+    visual_language: str
+    color_palette: List[str]
+    camera_style: str  
+    negative_prompt: str
+    art_direction: str
+    image_path: str | None = None
+    image_hash: str | None = None
+
+
+class MoodArtwork(BaseModel):
+    """Image generation prompt for one editorial mood card."""
+
+    card_number: str
+    mood_title: str
+    positive_prompt: str
+    negative_prompt: str
+    image_path: str | None = None
+    image_hash: str | None = None
+
+
+class VisualLookbook(BaseModel):
+    """Output produced by the Visual Director Agent."""
+
+    cover: CoverArtwork
+    moods: List[MoodArtwork]
+
+class GeneratedImage(BaseModel):
+    """Represents a generated image, including its path, hash, seed, and whether it was cached."""
+
+    image_path: str
+    image_hash: str
+    seed: int
+    cached: bool

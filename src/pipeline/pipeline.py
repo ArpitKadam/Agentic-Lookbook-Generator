@@ -5,6 +5,8 @@ from src.agents.curator_agent import CuratorAgent
 from src.agents.stylist_agent import StylistAgent
 from src.agents.editor_agent import EditorAgent
 from src.agents.director_agent import DirectorAgent
+from src.agents.visual_director import VisualDirectorAgent
+from src.schemas.schema import VisualLookbook
 from src.logger import logger
 from src.exception import CustomException
 
@@ -14,6 +16,7 @@ try:
     stylist = StylistAgent()
     editor = EditorAgent()
     director = DirectorAgent()
+    visual_director = VisualDirectorAgent()
     logger.info("All Agent nodes initialized successfully.")
 except Exception as e:
     raise CustomException(f"Failed to instantiate pipeline agents: {str(e)}", sys)
@@ -108,6 +111,29 @@ def director_node(state: LookbookState) -> dict:
         raise CustomException(f"Pipeline failure inside [Director Node]: {str(e)}", sys)
 
 
+def visual_director_node(state: LookbookState) -> dict:
+    logger.info(">>> Entering [Visual Director Node] execution frame")
+    try:
+        logger.info("Generating visual prompts and artwork...")
+
+        visual_lookbook, usage = (
+            visual_director.create_visuals(
+                lookbook=state["lookbook"],
+                theme_prompt=state["theme_prompt"]
+            )
+        )
+
+        logger.info("<<< Completed [Visual Director Node] successfully.")
+
+        return {
+            "visual_lookbook": visual_lookbook,
+            "token_usages": [usage],
+        }
+    except Exception as e:
+        raise CustomException(f"Pipeline failure inside [Visual Director Node]: {str(e)}", sys)
+
+
+
 def build_pipeline():
     logger.info("Compiling Lookbook StateGraph execution structure...")
     try:
@@ -117,12 +143,14 @@ def build_pipeline():
         graph.add_node("stylist", stylist_node)
         graph.add_node("editor", editor_node)
         graph.add_node("director", director_node)
+        graph.add_node("visual_director", visual_director_node)
 
         graph.add_edge(START, "curator")
         graph.add_edge("curator", "stylist")
         graph.add_edge("stylist", "editor")
         graph.add_edge("editor", "director")
-        graph.add_edge("director", END)
+        graph.add_edge("director", "visual_director")
+        graph.add_edge("visual_director", END)
 
         compiled_graph = graph.compile()
         logger.info("StateGraph compiled successfully. Lookbook pipeline is active.")
