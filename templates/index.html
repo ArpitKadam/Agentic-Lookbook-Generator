@@ -4,166 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AI-Native Editorial Lookbook Generator - Create stunning editorial lookbooks powered by AI">
-    <title>AINAA | AI Lookbook Generator</title>
+    <meta name="description" content="AINAA — AI-Native Editorial Lookbook Generator. Turn garment imagery into publication-ready fashion editorials.">
+    <title>AINAA — Editorial Lookbook Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/static/styles.css">
     <script defer src="/static/app.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="header-content">
-                <h1 class="logo">AINAA</h1>
-                <p class="subtitle">
-                    AI-Native Editorial Lookbook Generator
-                </p>
-            </div>
-            <div class="header-actions">
-                <button class="icon-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme" title="Toggle theme">
-                    <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
+
+    <div class="frame">
+
+        <!-- Masthead -->
+        <header class="masthead">
+            <div class="masthead-row">
+                <span class="masthead-mark" aria-hidden="true">A/</span>
+                <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark and light mode">
+                    <span class="theme-toggle-dot"></span>
                 </button>
-                <a href="https://github.com/ArpitKadam/Agentic-Lookbook-Generator" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="View on GitHub" title="GitHub Repository">
-                    <svg class="github-icon" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
             </div>
+            <h1 class="masthead-title">AINAA</h1>
+            <p class="masthead-kicker">AI&#8209;Native Editorial Lookbook Generator</p>
         </header>
 
-        <!-- Main Form Section -->
-        <main class="main-content">
-            <div class="card form-card">
-                <h2>Create Your Lookbook</h2>
+        <main class="main">
 
-                <!-- Theme Input -->
-                <div class="form-group">
-                    <label for="theme">Editorial Theme</label>
+            <!-- Composer -->
+            <section class="composer" id="composer" aria-label="Create a lookbook">
+
+                <div class="composer-field">
+                    <label class="field-label" for="theme">01 — Editorial theme</label>
                     <textarea
                         id="theme"
-                        class="form-control"
+                        class="theme-input"
                         placeholder="Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia"
-                        rows="4"
-                        aria-label="Editorial theme description">
-                    </textarea>
-                    <span class="form-hint">Describe the mood, aesthetic, or concept for your lookbook</span>
+                        rows="3"
+                        aria-label="Editorial theme description"></textarea>
+                    <p class="field-hint">Set the mood, aesthetic, or cultural reference for this edition.</p>
                 </div>
 
-                <!-- Image Upload Tabs -->
-                <div class="form-group">
-                    <label>Image Sources</label>
-                    <div class="tabs-container">
-                        <button class="tab-btn active" data-tab="drag-drop" onclick="switchTab('drag-drop', event)">
-                            Drag & Drop
-                        </button>
-                        <button class="tab-btn" data-tab="url-input" onclick="switchTab('url-input', event)">
-                            Paste URLs
-                        </button>
+                <div class="composer-field">
+                    <div class="field-label-row">
+                        <label class="field-label">02 — Garment imagery</label>
+                        <div class="source-switch" role="tablist" aria-label="Image source">
+                            <button class="source-tab active" data-tab="drag-drop" onclick="switchTab('drag-drop', event)" role="tab" aria-selected="true">Upload</button>
+                            <button class="source-tab" data-tab="url-input" onclick="switchTab('url-input', event)" role="tab" aria-selected="false">Link</button>
+                        </div>
                     </div>
 
-                    <!-- Drag & Drop Zone -->
                     <div id="drag-drop" class="tab-content active">
                         <div id="drop-zone" class="drop-zone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)">
-                            <div class="drop-zone-content">
-                                <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                    <polyline points="17 8 12 3 7 8"></polyline>
-                                    <line x1="12" y1="3" x2="12" y2="15"></line>
-                                </svg>
-                                <h3>Drop images here</h3>
-                                <p>or click to browse</p>
-                            </div>
-                            <input type="file" id="file-input" multiple accept="image/*" style="display: none;" onchange="handleFileInput(event)">
+                            <input type="file" id="file-input" multiple accept="image/*" class="drop-zone-input" onchange="handleFileInput(event)">
+                            <p class="drop-zone-title">Drop images, or click to browse</p>
+                            <p class="drop-zone-sub">JPG, PNG, GIF, WebP — up to 5MB each</p>
                         </div>
-                        
-                        <!-- Image Previews -->
                         <div id="image-previews" class="image-previews"></div>
-                        
-                        <span class="form-hint">Supported formats: JPG, PNG, GIF, WebP (Max 5MB per file)</span>
                     </div>
 
-                    <!-- URL Input Tab -->
                     <div id="url-input" class="tab-content">
                         <div id="url-container" class="url-container">
                             <div class="url-input-wrapper">
-                                <input
-                                    class="url-input"
-                                    type="url"
-                                    placeholder="https://example.com/image.jpg"
-                                    aria-label="Image URL 1">
-                                <button class="btn-remove" onclick="removeUrlField(this)" aria-label="Remove URL">×</button>
+                                <input class="url-input" type="url" placeholder="https://example.com/garment-01.jpg" aria-label="Image URL 1">
+                                <button class="btn-remove" onclick="removeUrlField(this)" aria-label="Remove URL">&times;</button>
                             </div>
                             <div class="url-input-wrapper">
-                                <input
-                                    class="url-input"
-                                    type="url"
-                                    placeholder="https://example.com/image2.jpg"
-                                    aria-label="Image URL 2">
-                                <button class="btn-remove" onclick="removeUrlField(this)" aria-label="Remove URL">×</button>
+                                <input class="url-input" type="url" placeholder="https://example.com/garment-02.jpg" aria-label="Image URL 2">
+                                <button class="btn-remove" onclick="removeUrlField(this)" aria-label="Remove URL">&times;</button>
                             </div>
                         </div>
-                        <button class="btn btn-secondary" onclick="addUrlField()" aria-label="Add another image URL" style="margin-top: 12px;">
-                            + Add URL
-                        </button>
-                        <span class="form-hint">Add at least 2-3 images for best results</span>
+                        <button class="btn-text" onclick="addUrlField()">+ Add another link</button>
                     </div>
+                    <p class="field-hint">At least two images are required for the Stylist to find a mood.</p>
                 </div>
 
-                <!-- Action Buttons -->
-                <div class="button-group">
-                    <button
-                        class="btn btn-primary"
-                        id="generate-btn"
-                        onclick="generateLookbook()"
-                        aria-label="Generate lookbook">
-                        Generate Lookbook
-                    </button>
-                </div>
-            </div>
+                <button class="btn-generate" id="generate-btn" onclick="generateLookbook()">
+                    <span class="btn-spinner" aria-hidden="true"></span>
+                    <span class="btn-label">Generate Lookbook</span>
+                </button>
+            </section>
 
-            <!-- Loading State -->
-            <div id="loading" class="loading-container" style="display: none;">
-                <div class="spinner"></div>
-                <p class="loading-text">Generating your lookbook...</p>
-                <div class="progress-bar">
-                    <div class="progress-fill"></div>
-                </div>
-            </div>
-
-            <!-- Error Alert -->
-            <div id="error-alert" class="alert alert-error" style="display: none;" role="alert">
-                <span class="alert-icon">⚠️</span>
+            <!-- Alerts -->
+            <div id="error-alert" class="alert alert-error" role="alert">
                 <span id="error-message"></span>
-                <button class="alert-close" onclick="closeAlert(this)" aria-label="Close alert">×</button>
+                <button class="alert-close" onclick="closeAlert(this)" aria-label="Dismiss">&times;</button>
             </div>
 
-            <!-- Success Alert -->
-            <div id="success-alert" class="alert alert-success" style="display: none;" role="alert">
-                <span class="alert-icon">✓</span>
-                <span id="success-message">Lookbook generated successfully!</span>
-                <button class="alert-close" onclick="closeAlert(this)" aria-label="Close alert">×</button>
-            </div>
+            <!-- Progress / loading -->
+            <section id="progress" class="progress" aria-live="polite">
+                <p class="progress-eyebrow">
+                    <span>Now producing</span>
+                    <span class="progress-counter" id="progress-counter"></span>
+                </p>
+                <ol class="progress-rail" id="progress-rail">
+                    <li data-step="upload"><span class="progress-name">Uploading images</span></li>
+                    <li data-step="curator"><span class="progress-name">Curator Agent</span><span class="progress-role">vision analysis</span></li>
+                    <li data-step="stylist"><span class="progress-name">Stylist Agent</span><span class="progress-role">mood clustering</span></li>
+                    <li data-step="editor"><span class="progress-name">Editor Agent</span><span class="progress-role">editorial copy</span></li>
+                    <li data-step="director"><span class="progress-name">Director Agent</span><span class="progress-role">creative direction</span></li>
+                    <li data-step="visual"><span class="progress-name">Visual Director Agent</span><span class="progress-role">artwork &amp; palette</span></li>
+                    <li data-step="render"><span class="progress-name">Generating imagery</span></li>
+                    <li data-step="done"><span class="progress-name">Done</span></li>
+                </ol>
+            </section>
 
-            <!-- Results Section -->
-            <div id="results" class="results-container"></div>
+            <!-- Results: rendered entirely by app.js from /generate response -->
+            <div id="results" class="results"></div>
+
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p>&copy; 2024 AINAA. Powered by AI.</p>
+        <footer class="colophon">
+            <p>AINAA — Curator → Stylist → Editor → Director → Visual Director</p>
+            <p><a href="https://github.com/ArpitKadam/Agentic-Lookbook-Generator" target="_blank" rel="noopener noreferrer">Source</a></p>
         </footer>
+
     </div>
+
 </body>
 </html>

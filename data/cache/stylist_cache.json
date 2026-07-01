@@ -52,5 +52,82 @@
             "output_tokens": 171,
             "total_tokens": 1796
         }
+    },
+    "022bb5ec71fd6823e9e44ea3cf8ea0c2f72fe848cd941af995d2e82b2a4e186b": {
+        "clusters": {
+            "clusters": [
+                {
+                    "mood_title": "Neon Oasis",
+                    "sub_tags": [
+                        "Cyberpunk",
+                        "Monochrome",
+                        "Glowing Neon"
+                    ],
+                    "image_indices": [
+                        1,
+                        2
+                    ],
+                    "styling_rationale": "A fusion of modern streetwear and neon-soaked minimalism."
+                },
+                {
+                    "mood_title": "Showa Revival",
+                    "sub_tags": [
+                        "Anime-inspired",
+                        "Vintage Details",
+                        "Retro Flair"
+                    ],
+                    "image_indices": [
+                        3,
+                        4
+                    ],
+                    "styling_rationale": "A nostalgic blend of Showa-era charm and contemporary streetwear."
+                },
+                {
+                    "mood_title": "Minimalist Chic",
+                    "sub_tags": [
+                        "Oversized Silhouette",
+                        "Monochromatic Palette",
+                        "Clean Lines"
+                    ],
+                    "image_indices": [
+                        5,
+                        7
+                    ],
+                    "styling_rationale": "A sleek and sophisticated take on modern casual wear."
+                },
+                {
+                    "mood_title": "Casual Ease",
+                    "sub_tags": [
+                        "Relaxed Fit",
+                        "Striped Patterns",
+                        "Casual Comfort"
+                    ],
+                    "image_indices": [
+                        6,
+                        9
+                    ],
+                    "styling_rationale": "A relaxed and effortless approach to everyday wear."
+                },
+                {
+                    "mood_title": "Summer Vibes",
+                    "sub_tags": [
+                        "Pastel Colors",
+                        "Sunglasses",
+                        "Summer Breeze"
+                    ],
+                    "image_indices": [
+                        8,
+                        10
+                    ],
+                    "styling_rationale": "A carefree and sunny take on casual wear."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Stylist Agent",
+            "input_tokens": 1758,
+            "output_tokens": 240,
+            "total_tokens": 1998
+        }
     }
 }

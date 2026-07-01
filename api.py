@@ -31,9 +31,33 @@ app = FastAPI(
 
 Path("static").mkdir(parents=True, exist_ok=True)
 Path("templates").mkdir(parents=True, exist_ok=True)
+Path("data/generated").mkdir(parents=True, exist_ok=True)
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/generated", StaticFiles(directory="data/generated"), name="generated")
 templates = Jinja2Templates(directory="templates")
+
+
+def _to_web_path(image_path: str | None) -> str | None:
+    """Converts a locally-stored generated image path into a browser-servable URL.
+    Does not touch how images are generated — only exposes the existing files."""
+    if not image_path:
+        return None
+    normalized = image_path.replace(chr(92), "/")
+    return f"/generated/{normalized.rsplit('/', 1)[-1]}"
+
+
+def _serialize_visual_lookbook(visual_lookbook) -> dict | None:
+    """Serializes the Visual Director's existing output for frontend consumption,
+    adding browser-ready image URLs alongside the original data."""
+    if visual_lookbook is None:
+        return None
+    data = visual_lookbook.model_dump()
+    if data.get("cover"):
+        data["cover"]["image_url"] = _to_web_path(data["cover"].get("image_path"))
+    for mood in data.get("moods", []):
+        mood["image_url"] = _to_web_path(mood.get("image_path"))
+    return data
 
 app.add_middleware(
     CORSMiddleware,
@@ -95,7 +119,8 @@ async def generate_from_data(
             "mood_clusters": None,
             "draft_cards": None,
             "lookbook": None,
-            "token_usages": []
+            "token_usages": [],
+            "visual_lookbook": None
         }
 
         result = graph.invoke(initial_state)
@@ -107,6 +132,7 @@ async def generate_from_data(
 
         return {
             "lookbook": result["lookbook"].model_dump(),
+            "visual_lookbook": _serialize_visual_lookbook(result.get("visual_lookbook")),
             "token_usage": [
                 usage.model_dump()
                 for usage in result["token_usages"]
@@ -290,6 +316,7 @@ async def generate_lookbook(request: LookbookRequest):
             "mood_clusters": None,
             "draft_cards": None,
             "lookbook": None,
+            "visual_lookbook": None,
             "token_usages": []
         }
 
@@ -302,6 +329,7 @@ async def generate_lookbook(request: LookbookRequest):
 
         return {
             "lookbook": result["lookbook"].model_dump(),
+            "visual_lookbook": _serialize_visual_lookbook(result.get("visual_lookbook")),
             "token_usage": [
                 usage.model_dump()
                 for usage in result["token_usages"]

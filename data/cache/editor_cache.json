@@ -28,5 +28,47 @@
             "output_tokens": 196,
             "total_tokens": 1059
         }
+    },
+    "4be0eab44ddf0d80ee357e098fcd2d0d9ef477ae94dc0a3a2f7b1316ef021600": {
+        "editorial_cards": {
+            "cards": [
+                {
+                    "card_index": 1,
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "oversized graphic tee",
+                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city streets. In this oasis, modern streetwear meets neon-soaked minimalism."
+                },
+                {
+                    "card_index": 2,
+                    "brand_or_designer": "Vetements",
+                    "product_type": "relaxed fit graphic t-shirt",
+                    "vibe_description": "Vintage anime posters plastered on Tokyo walls, blending nostalgia with modern streetwear. The Showa era's charm is revived in every stitch."
+                },
+                {
+                    "card_index": 3,
+                    "brand_or_designer": "Jil Sander",
+                    "product_type": "oversized t-shirt",
+                    "vibe_description": "Minimalist chic reigns in the city's underpass, where sleek silhouettes and monochromatic palettes converge. Clean lines define the modern casual wear."
+                },
+                {
+                    "card_index": 4,
+                    "brand_or_designer": "Lemaire",
+                    "product_type": "striped poplin shirt",
+                    "vibe_description": "Summer breeze stirs the relaxed fit shirt, carrying the ease of casual comfort. Ribbed texture adds depth to the contemporary design."
+                },
+                {
+                    "card_index": 5,
+                    "brand_or_designer": "Balenciaga",
+                    "product_type": "oversized graphic t-shirt",
+                    "vibe_description": "Pastel hues of sunset fade into the summer night, where carefree vibes meet modern streetwear. The oversized silhouette embodies the ease of summer breezes."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Editor Agent",
+            "input_tokens": 1152,
+            "output_tokens": 287,
+            "total_tokens": 1439
+        }
     }
 }

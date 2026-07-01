@@ -48,5 +48,79 @@
             "output_tokens": 266,
             "total_tokens": 919
         }
+    },
+    "57690222452d3d449772049f069584ac9c85588abd2c9897e8b6fc098366fb09": {
+        "lookbook": {
+            "edition_title": "Neon Hush",
+            "total_moods": 5,
+            "collection": [
+                {
+                    "card_number": "01",
+                    "mood_title": "Neon Oasis",
+                    "sub_tags": [
+                        "Cyberpunk",
+                        "Monochrome",
+                        "Glowing Neon"
+                    ],
+                    "brand_or_designer": "Rick Owens",
+                    "product_type": "oversized graphic tee",
+                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city streets. In this oasis, modern streetwear meets neon-soaked minimalism."
+                },
+                {
+                    "card_number": "02",
+                    "mood_title": "Showa Revival",
+                    "sub_tags": [
+                        "Anime-inspired",
+                        "Vintage Details",
+                        "Retro Flair"
+                    ],
+                    "brand_or_designer": "Vetements",
+                    "product_type": "relaxed fit graphic t-shirt",
+                    "vibe_description": "Vintage anime posters plastered on Tokyo walls, blending nostalgia with modern streetwear. The Showa era's charm is revived in every stitch."
+                },
+                {
+                    "card_number": "03",
+                    "mood_title": "Minimalist Chic",
+                    "sub_tags": [
+                        "Oversized Silhouette",
+                        "Monochromatic Palette",
+                        "Clean Lines"
+                    ],
+                    "brand_or_designer": "Jil Sander",
+                    "product_type": "oversized t-shirt",
+                    "vibe_description": "Minimalist chic reigns in the city's underpass, where sleek silhouettes and monochromatic palettes converge. Clean lines define the modern casual wear."
+                },
+                {
+                    "card_number": "04",
+                    "mood_title": "Casual Ease",
+                    "sub_tags": [
+                        "Relaxed Fit",
+                        "Striped Patterns",
+                        "Casual Comfort"
+                    ],
+                    "brand_or_designer": "Lemaire",
+                    "product_type": "striped poplin shirt",
+                    "vibe_description": "Summer breeze stirs the relaxed fit shirt, carrying the ease of casual comfort. Ribbed texture adds depth to the contemporary design."
+                },
+                {
+                    "card_number": "05",
+                    "mood_title": "Whispers of Summer",
+                    "sub_tags": [
+                        "Pastel Colors",
+                        "Sunglasses",
+                        "Summer Breeze"
+                    ],
+                    "brand_or_designer": "Balenciaga",
+                    "product_type": "oversized graphic t-shirt",
+                    "vibe_description": "As pastel hues of sunset fade into the summer night, the carefree spirit of the season converges with modern streetwear, embodied in the oversized silhouette of ease and comfort."
+                }
+            ]
+        },
+        "usage": {
+            "agent_name": "Director Agent",
+            "input_tokens": 857,
+            "output_tokens": 422,
+            "total_tokens": 1279
+        }
     }
 }
