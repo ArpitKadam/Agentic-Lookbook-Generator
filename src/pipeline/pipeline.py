@@ -154,12 +154,6 @@ def build_pipeline():
 
         compiled_graph = graph.compile()
         logger.info("StateGraph compiled successfully. Lookbook pipeline is active.")
-
-        image_data = compiled_graph.get_graph().draw_mermaid_png()
-
-        with open("pipeline_graph.png", "wb") as f:
-            f.write(image_data)
-            logger.info("Pipeline graph visualization saved as 'pipeline_graph.png'")
         
         return compiled_graph
     except Exception as e:

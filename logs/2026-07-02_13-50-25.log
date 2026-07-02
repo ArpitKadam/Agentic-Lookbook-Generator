@@ -1,0 +1,116 @@
+[2026-07-02 13:50:25]   13 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-07-02 13:50:25]   20 | INFO     | Initializing CuratorAgent...
+[2026-07-02 13:50:26]   49 | DEBUG    | No existing curator cache file found. Starting fresh.
+[2026-07-02 13:50:26]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-07-02 13:50:26]   20 | INFO     | Initializing StylistAgent...
+[2026-07-02 13:50:27]   48 | DEBUG    | No existing stylist cache file found. Starting fresh.
+[2026-07-02 13:50:27]   31 | INFO     | StylistAgent initialized successfully.
+[2026-07-02 13:50:27]   20 | INFO     | Initializing EditorAgent...
+[2026-07-02 13:50:28]   48 | DEBUG    | No existing editor cache file found. Starting fresh.
+[2026-07-02 13:50:28]   31 | INFO     | EditorAgent initialized successfully.
+[2026-07-02 13:50:28]   22 | INFO     | Initializing DirectorAgent...
+[2026-07-02 13:50:29]   50 | DEBUG    | No existing director cache file found. Starting fresh.
+[2026-07-02 13:50:29]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-07-02 13:50:29]   22 | INFO     | Initializing VisualDirectorAgent...
+[2026-07-02 13:50:30]   35 | INFO     | VisualDirectorAgent initialized successfully.
+[2026-07-02 13:50:30]   20 | INFO     | All Agent nodes initialized successfully.
+[2026-07-02 13:50:30]   70 | INFO     | Loading LangGraph Pipeline...
+[2026-07-02 13:50:30]  138 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-07-02 13:50:30]  156 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-07-02 13:51:07]   28 | ERROR    | 
+[EXCEPTION CAUGHT]
+File    : C:\Projects\Agentic Lookbook Generator\src\pipeline\pipeline.py
+Line    : 158
+Error   : Failed compiling Lookbook StateGraph configuration: Failed to reach https://mermaid.ink API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+----------------------------------------
+[2026-07-02 13:51:07]   29 | ERROR    | Full Stack Trace:
+Traceback (most recent call last):
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 905, in _error_catcher
+    yield
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 1022, in _raw_read
+    data = self._fp_read(amt, read1=read1) if not fp_closed else b""
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 1005, in _fp_read
+    return self._fp.read(amt) if amt is not None else self._fp.read()
+           ~~~~~~~~~~~~~^^^^^
+  File "C:\Users\arpit\anaconda3\Lib\http\client.py", line 479, in read
+    s = self.fp.read(amt)
+  File "C:\Users\arpit\anaconda3\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\arpit\anaconda3\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\arpit\anaconda3\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\models.py", line 937, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 1267, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 1110, in read
+    data = self._raw_read(amt)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 1021, in _raw_read
+    with self._error_catcher():
+         ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\arpit\anaconda3\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\urllib3\response.py", line 910, in _error_catcher
+    raise ReadTimeoutError(self._pool, None, "Read timed out.") from e  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='mermaid.ink', port=443): Read timed out.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\langchain_core\runnables\graph_mermaid.py", line 461, in _render_mermaid_using_api
+    response = requests.get(image_url, timeout=10, proxies=proxies)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\api.py", line 87, in get
+    return request("get", url, params=params, **kwargs)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\sessions.py", line 827, in send
+    r.content
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\models.py", line 1042, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\requests\models.py", line 943, in generate
+    raise ConnectionError(e)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='mermaid.ink', port=443): Read timed out.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Projects\Agentic Lookbook Generator\src\pipeline\pipeline.py", line 158, in build_pipeline
+    image_data = compiled_graph.get_graph().draw_mermaid_png()
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\langchain_core\runnables\graph.py", line 695, in draw_mermaid_png
+    return draw_mermaid_png(
+        mermaid_syntax=mermaid_syntax,
+    ...<7 lines>...
+        base_url=base_url,
+    )
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\langchain_core\runnables\graph_mermaid.py", line 314, in draw_mermaid_png
+    img_bytes = _render_mermaid_using_api(
+        mermaid_syntax,
+    ...<5 lines>...
+        proxies=proxies,
+    )
+  File "C:\Projects\Agentic Lookbook Generator\.venv\Lib\site-packages\langchain_core\runnables\graph_mermaid.py", line 496, in _render_mermaid_using_api
+    raise ValueError(msg) from e
+ValueError: Failed to reach https://mermaid.ink API while trying to render your graph after 1 retries. To resolve this issue:
+1. Check your internet connection and try again
+2. Try with higher retry settings: `draw_mermaid_png(..., max_retries=5, retry_delay=2.0)`
+3. Use the Pyppeteer rendering method which will render your graph locally in a browser: `draw_mermaid_png(..., draw_method=MermaidDrawMethod.PYPPETEER)`
+

@@ -1,74 +1,32 @@
 {
-    "613990bf42f13b26ba8326cf0c3e21f8388fd96e34d6428ec6cc2190f756490e": {
+    "ffb84b7ed9dace9c5c82546effade7f3df6342bdac0feb98fcbcf86bc917f38c": {
         "editorial_cards": {
             "cards": [
                 {
                     "card_index": 1,
-                    "brand_or_designer": "Rick Owens",
+                    "brand_or_designer": "Vetements",
                     "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off the wet pavement as the city pulses with energy, the oversized graphic tee a beacon of modernity amidst the nostalgic haze of Tokyo after midnight."
+                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city's nocturnal inhabitants. In this moment, pastel pink and grey hues converge in a delicate balance of minimalism and nostalgia."
                 },
                 {
                     "card_index": 2,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "relaxed fit graphic tee",
-                    "vibe_description": "In the quiet hours of the night, the retro charm of Tokyo's Showa era whispers through the streets, its presence felt in the relaxed fit graphic tee adorned with eclectic prints."
-                },
-                {
-                    "card_index": 3,
-                    "brand_or_designer": "Jil Sander",
-                    "product_type": "oversized white tee",
-                    "vibe_description": "The city's modern minimalism reveals itself in the still of the night, where the oversized white tee stands as a testament to the beauty of restraint, its bold graphic print a subtle nod to the urban landscape."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Editor Agent",
-            "input_tokens": 863,
-            "output_tokens": 196,
-            "total_tokens": 1059
-        }
-    },
-    "4be0eab44ddf0d80ee357e098fcd2d0d9ef477ae94dc0a3a2f7b1316ef021600": {
-        "editorial_cards": {
-            "cards": [
-                {
-                    "card_index": 1,
-                    "brand_or_designer": "Rick Owens",
-                    "product_type": "oversized graphic tee",
-                    "vibe_description": "Neon lights reflect off wet pavement, casting a cyberpunk glow on the city streets. In this oasis, modern streetwear meets neon-soaked minimalism."
-                },
-                {
-                    "card_index": 2,
-                    "brand_or_designer": "Vetements",
-                    "product_type": "relaxed fit graphic t-shirt",
-                    "vibe_description": "Vintage anime posters plastered on Tokyo walls, blending nostalgia with modern streetwear. The Showa era's charm is revived in every stitch."
-                },
-                {
-                    "card_index": 3,
-                    "brand_or_designer": "Jil Sander",
-                    "product_type": "oversized t-shirt",
-                    "vibe_description": "Minimalist chic reigns in the city's underpass, where sleek silhouettes and monochromatic palettes converge. Clean lines define the modern casual wear."
-                },
-                {
-                    "card_index": 4,
-                    "brand_or_designer": "Lemaire",
+                    "brand_or_designer": "Issey Miyake",
                     "product_type": "striped poplin shirt",
-                    "vibe_description": "Summer breeze stirs the relaxed fit shirt, carrying the ease of casual comfort. Ribbed texture adds depth to the contemporary design."
+                    "vibe_description": "Retro vibes permeate the air as vintage anime posters plastered on alleyway walls whisper tales of a bygone era. Pale blue and purple stripes swirl together in a mesmerizing dance of retro revival."
                 },
                 {
-                    "card_index": 5,
-                    "brand_or_designer": "Balenciaga",
-                    "product_type": "oversized graphic t-shirt",
-                    "vibe_description": "Pastel hues of sunset fade into the summer night, where carefree vibes meet modern streetwear. The oversized silhouette embodies the ease of summer breezes."
+                    "card_index": 3,
+                    "brand_or_designer": "Lemaire",
+                    "product_type": "silk camp-collar shirt",
+                    "vibe_description": "In the stillness of the urban night, the soft glow of streetlights illuminates the relaxed silhouettes of passersby. Grey and white hues blend in a soothing melody, as the modern oasis of the city comes alive."
                 }
             ]
         },
         "usage": {
             "agent_name": "Editor Agent",
-            "input_tokens": 1152,
-            "output_tokens": 287,
-            "total_tokens": 1439
+            "input_tokens": 866,
+            "output_tokens": 213,
+            "total_tokens": 1079
         }
     }
 }

@@ -1,0 +1,105 @@
+[2026-07-02 13:44:55]   13 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-07-02 13:44:55]   20 | INFO     | Initializing CuratorAgent...
+[2026-07-02 13:44:56]   49 | DEBUG    | No existing curator cache file found. Starting fresh.
+[2026-07-02 13:44:56]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-07-02 13:44:56]   20 | INFO     | Initializing StylistAgent...
+[2026-07-02 13:44:57]   48 | DEBUG    | No existing stylist cache file found. Starting fresh.
+[2026-07-02 13:44:57]   31 | INFO     | StylistAgent initialized successfully.
+[2026-07-02 13:44:57]   20 | INFO     | Initializing EditorAgent...
+[2026-07-02 13:44:58]   48 | DEBUG    | No existing editor cache file found. Starting fresh.
+[2026-07-02 13:44:58]   31 | INFO     | EditorAgent initialized successfully.
+[2026-07-02 13:44:58]   22 | INFO     | Initializing DirectorAgent...
+[2026-07-02 13:44:59]   50 | DEBUG    | No existing director cache file found. Starting fresh.
+[2026-07-02 13:44:59]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-07-02 13:44:59]   22 | INFO     | Initializing VisualDirectorAgent...
+[2026-07-02 13:45:00]   35 | INFO     | VisualDirectorAgent initialized successfully.
+[2026-07-02 13:45:00]   20 | INFO     | All Agent nodes initialized successfully.
+[2026-07-02 13:45:00]   70 | INFO     | Loading LangGraph Pipeline...
+[2026-07-02 13:45:00]  138 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-07-02 13:45:00]  156 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-07-02 13:45:01]  162 | INFO     | Pipeline graph visualization saved as 'pipeline_graph.png'
+[2026-07-02 13:45:01]   72 | INFO     | Pipeline ready.
+[2026-07-02 13:45:30]  277 | INFO     | Theme: Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia
+[2026-07-02 13:45:30]  278 | INFO     | Processing 10 images...
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 35756
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 26817 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 53684
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 40262 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 79392
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 59543 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 238572
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 178927 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 63216
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 47412 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 88136
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 66101 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 27200
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 20400 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 503948
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 377960 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 52648
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 39486 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:45:30]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 9680
+[2026-07-02 13:45:30]  196 | INFO     | Decoded base64 to 7260 bytes
+[2026-07-02 13:45:30]  208 | INFO     | Cache hit! Image already saved: uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:45:30]  285 | INFO     | Processing complete. Results: ['data\\uploads\\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg', 'data\\uploads\\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg', 'data\\uploads\\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg', 'data\\uploads\\uploaded_456d858276755547619047746a3bb073.jpg', 'data\\uploads\\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg', 'data\\uploads\\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg', 'data\\uploads\\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg', 'data\\uploads\\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg', 'data\\uploads\\uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg', 'data\\uploads\\uploaded_d47adfd59ef3653ff100933809417a25.jpg']
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 1: data\uploads\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 2: data\uploads\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 3: data\uploads\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 4: data\uploads\uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 5: data\uploads\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 6: data\uploads\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 7: data\uploads\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 8: data\uploads\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 9: data\uploads\uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:45:30]  297 | INFO     | Successfully processed image 10: data\uploads\uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:45:30]  310 | INFO     | Successfully processed 10 images.
+[2026-07-02 13:45:31]   26 | INFO     | >>> Entering [Curator Node] execution frame
+[2026-07-02 13:45:31]   32 | INFO     | Curator Node received 10 images to process.
+[2026-07-02 13:45:31]   35 | DEBUG    | Processing image 1/10: data\uploads\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:45:31]   81 | INFO     | Processing image analysis for: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg (Index: 1)
+[2026-07-02 13:45:31]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:45:52]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:45:52]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:45:52]   35 | DEBUG    | Processing image 2/10: data\uploads\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:45:52]   81 | INFO     | Processing image analysis for: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg (Index: 2)
+[2026-07-02 13:45:52]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:46:24]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:46:24]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:46:24]   35 | DEBUG    | Processing image 3/10: data\uploads\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:46:24]   81 | INFO     | Processing image analysis for: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg (Index: 3)
+[2026-07-02 13:46:24]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:46:36]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:46:36]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:46:36]   35 | DEBUG    | Processing image 4/10: data\uploads\uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:46:36]   81 | INFO     | Processing image analysis for: uploaded_456d858276755547619047746a3bb073.jpg (Index: 4)
+[2026-07-02 13:46:36]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:46:53]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:46:53]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:46:53]   35 | DEBUG    | Processing image 5/10: data\uploads\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:46:53]   81 | INFO     | Processing image analysis for: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg (Index: 5)
+[2026-07-02 13:46:53]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:47:05]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:47:05]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:47:05]   35 | DEBUG    | Processing image 6/10: data\uploads\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:47:05]   81 | INFO     | Processing image analysis for: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg (Index: 6)
+[2026-07-02 13:47:05]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:47:13]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:47:13]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:47:13]   35 | DEBUG    | Processing image 7/10: data\uploads\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:47:13]   81 | INFO     | Processing image analysis for: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg (Index: 7)
+[2026-07-02 13:47:13]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:47:23]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:47:23]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:47:23]   35 | DEBUG    | Processing image 8/10: data\uploads\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:47:23]   81 | INFO     | Processing image analysis for: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg (Index: 8)
+[2026-07-02 13:47:23]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg

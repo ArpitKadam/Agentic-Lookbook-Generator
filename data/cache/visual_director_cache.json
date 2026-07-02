@@ -1,121 +1,53 @@
 {
-    "baaa4e7134c2bcbe115be050fdb9f584287f04025452ee01c86d89ae6e3b817e": {
-        "visual_lookbook": {
-            "cover": {
-                "edition_title": "Neon Hush",
-                "positive_prompt": "A lone figure stands at the edge of a rain-soaked Tokyo street, neon lights reflecting off the wet pavement, the edition title 'Neon Hush' naturally integrated into a sleek, modern billboard in the background, the atmosphere is moody and cinematic, with a shallow depth of field, and a color palette that blends cool blues and vibrant pinks, the overall mood is one of quiet contemplation, with the figure lost in thought, surrounded by the hustle and bustle of the city",
-                "visual_language": "Premium Editorial",
-                "color_palette": [
-                    "#3498db",
-                    "#2ecc71",
-                    "#e74c3c",
-                    "#9b59b6"
-                ],
-                "camera_style": "Cinematic 35mm",
-                "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                "art_direction": "Moody Neon Noir",
-                "image_path": "data\\generated\\neon_hush_57d836d340b05631.png",
-                "image_hash": "4c6a9f4b9f15ad23c6d5c5569775a12b39d57de649dc095c86ea12ccdc5f4b2a"
-            },
-            "moods": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Midnight Mirage",
-                    "positive_prompt": "A figure stands in the midst of a crowded Tokyo street, wearing a Rick Owens oversized graphic tee, the neon lights of the city reflecting off the wet pavement, the atmosphere is frenetic and futuristic, with a shallow depth of field, and a color palette that blends vibrant neon hues with deep blues, the overall mood is one of cyberpunk nostalgia, with the figure lost in the hustle and bustle of the city, surrounded by towering skyscrapers and neon billboards",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\01_midnight_mirage_b57dcf1e30f025ee.png",
-                    "image_hash": "32a68f380b4e95cceb00c168e19f58450d860527b81bf3bb3a5f79e4633dab4f"
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Retro Revival",
-                    "positive_prompt": "A figure sits on a stool in a quiet, retro-themed Tokyo cafe, wearing a Vetements relaxed fit graphic tee, the atmosphere is nostalgic and melancholic, with a warm, film-like quality to the lighting, and a color palette that blends muted pastels with rich woods, the overall mood is one of retro charm, with the figure lost in thought, surrounded by vintage decor and faded photographs",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\02_retro_revival_7b1652cdda9526e5.png",
-                    "image_hash": "53f3c0123ce137af461df0e242aa368967693060690d60c4492ffa64f487f28b"
-                },
-                {
-                    "card_number": "03",
-                    "mood_title": "Modern Minimalism",
-                    "positive_prompt": "A figure stands in a sleek, modern Tokyo apartment, wearing a Jil Sander oversized white tee, the atmosphere is calm and serene, with a minimalist aesthetic, and a color palette that blends neutral tones with bold, graphic accents, the overall mood is one of modern simplicity, with the figure lost in contemplation, surrounded by clean lines, and a stunning city view",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\03_modern_minimalism_95b42c8e487dbb2c.png",
-                    "image_hash": "0c0a957d4258e8f566f435a94ca39885b1c8530ca7f862f4a9b992fe312ef774"
-                }
-            ]
+  "95e950c75146b117235bd1a19dd3f5c962fd2331243a0c289cde89930b708b00": {
+    "visual_lookbook": {
+      "cover": {
+        "edition_title": "Neon Hush",
+        "positive_prompt": "A lone figure stands at the edge of a neon-soaked street, with 'Neon Hush' naturally integrated into the magazine cover design, in a moody, cinematic atmosphere, with deep blues and purple hues, and neon pink accents, shot with a wide-angle lens, and a shallow depth of field, with a mix of cool and warm lighting, and a sense of nostalgia and minimalism",
+        "visual_language": "Luxury editorial, high-fashion photography",
+        "color_palette": [
+          "Neon pink",
+          "Deep blues",
+          "Purple hues"
+        ],
+        "camera_style": "Cinematic, wide-angle shot",
+        "negative_prompt": "Low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+        "art_direction": "Moody, neon-lit streets of Tokyo at midnight",
+        "image_path": "data\\generated\\neon_hush_2afc052ae6bc0a14.png",
+        "image_hash": "fb83b065d274aa21e5223c35b55303d1c71b466fad71901a77c2784a079c09fa"
+      },
+      "moods": [
+        {
+          "card_number": "01",
+          "mood_title": "Neon Nocturne",
+          "positive_prompt": "A figure wears a Vetements oversized graphic tee, standing alone in a dark alleyway, with neon lights reflecting off the wet pavement, in a cyberpunk-inspired atmosphere, with a mix of cool and warm lighting, and a sense of minimalism and nostalgia, shot with a medium-angle lens, and a medium depth of field, with a focus on the subject's pose and wardrobe, and a color palette of pastel pink and grey hues",
+          "negative_prompt": "Low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+          "image_path": "data\\generated\\01_neon_nocturne_6e3ea6afec81ed59.png",
+          "image_hash": "157c0659d91af3edf39f3fec0b2799a4dd4e202e370965d3dfb93b24ac20c6fc"
         },
-        "usage": {
-            "agent_name": "Visual Director Agent",
-            "input_tokens": 992,
-            "output_tokens": 707,
-            "total_tokens": 1699
+        {
+          "card_number": "02",
+          "mood_title": "Retro Revival",
+          "positive_prompt": "A figure wears an Issey Miyake striped poplin shirt, standing in front of a vintage anime poster, in a narrow Tokyo street, with pale blue and purple stripes swirling together, in a mesmerizing dance of retro revival, shot with a medium-angle lens, and a shallow depth of field, with a focus on the subject's wardrobe and the surrounding environment, and a color palette of soft, pastel hues, and a sense of nostalgia and playfulness",
+          "negative_prompt": "Low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+          "image_path": "data\\generated\\02_retro_revival_0533863e4712267e.png",
+          "image_hash": "6b67d28deaa68d33ed1b358ef36ff15d9cca34c50b9e7a45765fdad08d633f6b"
+        },
+        {
+          "card_number": "03",
+          "mood_title": "Urban Oasis",
+          "positive_prompt": "A figure wears a Lemaire silk camp-collar shirt, standing in a quiet, modern Tokyo park, at night, with the soft glow of streetlights illuminating the relaxed silhouettes of passersby, in a soothing melody of the city's modern oasis, shot with a wide-angle lens, and a deep depth of field, with a focus on the subject's pose and the surrounding environment, and a color palette of grey and white hues, and a sense of calmness and serenity",
+          "negative_prompt": "Low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
+          "image_path": "data\\generated\\03_urban_oasis_5996365cc978367d.png",
+          "image_hash": "e6281193b37b9c2406e8894a604cb89700e688a687d35c6f70b7d4665649a61f"
         }
+      ]
     },
-    "fa77c7ef2fb15e8ffc7d905e484fe487597a505c8ea2797137520e859f2cd8db": {
-        "visual_lookbook": {
-            "cover": {
-                "edition_title": "Neon Hush",
-                "positive_prompt": "A lone figure stands at the edge of a neon-lit Tokyo street, with 'Neon Hush' naturally integrated into a sleek, modern billboard above. The atmosphere is moody and cinematic, with a mix of cool and warm tones. The subject is dressed in a modern, minimalist outfit, with clean lines and a relaxed silhouette. The camera is positioned at a 45-degree angle, with a wide-angle lens and a shallow depth of field, blurring the background and emphasizing the subject. The color grading is dark and muted, with a focus on blues and purples, and the overall mood is one of quiet contemplation.",
-                "visual_language": "Premium, collectible, and cinematic",
-                "color_palette": [
-                    "#FF69B4",
-                    "#33CC33",
-                    "#6666FF"
-                ],
-                "camera_style": "Cinematic",
-                "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                "art_direction": "Moody Neon",
-                "image_path": "data\\generated\\neon_hush_cac50cab2f7b6330.png",
-                "image_hash": "39427688dedf1379a135340d20cb26c2cf9f4707a1e05a12adf2af54ca572169"
-            },
-            "moods": [
-                {
-                    "card_number": "01",
-                    "mood_title": "Neon Oasis",
-                    "positive_prompt": "A figure stands in the center of a dimly lit alleyway, surrounded by neon lights that reflect off the wet pavement. The subject is dressed in a Rick Owens oversized graphic tee, with a relaxed fit and a modern, minimalist aesthetic. The camera is positioned directly in front of the subject, with a medium-angle lens and a medium depth of field, capturing the intricate details of the neon lights and the subject's outfit. The color grading is cool and muted, with a focus on blues and purples, and the overall mood is one of calmness and serenity.",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\01_neon_oasis_2762b5d727eda427.png",
-                    "image_hash": "d2c51a7c48a4399f567afcbfb0756a4eca1d5881d9ec5207f22411bdfd5f1877"
-                },
-                {
-                    "card_number": "02",
-                    "mood_title": "Showa Revival",
-                    "positive_prompt": "A subject sits on a stool in a vintage-inspired anime store, surrounded by vintage anime posters and retro flair. The subject is dressed in a Vetements relaxed fit graphic t-shirt, with a nostalgic and retro aesthetic. The camera is positioned at a 30-degree angle, with a medium-angle lens and a medium depth of field, capturing the intricate details of the store's decorations and the subject's outfit. The color grading is warm and vibrant, with a focus on reds and oranges, and the overall mood is one of nostalgia and playfulness.",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\02_showa_revival_d8babba15c935e54.png",
-                    "image_hash": "3d2f158c7722c975707b81cd8cfa71af4555a47613646e64580aa1318107bf8b"
-                },
-                {
-                    "card_number": "03",
-                    "mood_title": "Minimalist Chic",
-                    "positive_prompt": "A figure stands in the center of a modern, minimalist underpass, with clean lines and a monochromatic palette. The subject is dressed in a Jil Sander oversized t-shirt, with a sleek and modern aesthetic. The camera is positioned directly in front of the subject, with a wide-angle lens and a shallow depth of field, blurring the background and emphasizing the subject. The color grading is cool and muted, with a focus on blacks and whites, and the overall mood is one of simplicity and elegance.",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\03_minimalist_chic_8a3bc298d42fb001.png",
-                    "image_hash": "6a384d86e2fee14259d8db7a4cd5d291978372c0a65dc008146ec45e18c43e36"
-                },
-                {
-                    "card_number": "04",
-                    "mood_title": "Casual Ease",
-                    "positive_prompt": "A subject sits on a bench in a quiet, outdoor setting, surrounded by natural scenery and a relaxed atmosphere. The subject is dressed in a Lemaire striped poplin shirt, with a casual and comfortable aesthetic. The camera is positioned at a 45-degree angle, with a medium-angle lens and a medium depth of field, capturing the intricate details of the subject's outfit and the surrounding environment. The color grading is warm and natural, with a focus on greens and blues, and the overall mood is one of calmness and serenity.",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\04_casual_ease_b6f2ddec1bb9ed85.png",
-                    "image_hash": "d5100c17f4242d86d2185f956e50889b73fe8e4cbfa7ee9b69a694fdba87019d"
-                },
-                {
-                    "card_number": "05",
-                    "mood_title": "Whispers of Summer",
-                    "positive_prompt": "A figure stands at the edge of a rooftop, overlooking a cityscape at sunset, with pastel colors and a warm atmosphere. The subject is dressed in a Balenciaga oversized graphic t-shirt, with a modern and minimalist aesthetic. The camera is positioned directly in front of the subject, with a wide-angle lens and a shallow depth of field, blurring the background and emphasizing the subject. The color grading is warm and vibrant, with a focus on pinks and oranges, and the overall mood is one of freedom and joy.",
-                    "negative_prompt": "low quality, blurry, watermark, text artifacts, duplicate people, extra limbs, distorted anatomy, cropped body, poor composition, oversaturation, low resolution, unrealistic proportions, cartoon, illustration, CGI, bad hands, malformed face, noisy image",
-                    "image_path": "data\\generated\\05_whispers_of_summer_f87dbefad487dca7.png",
-                    "image_hash": "68863fbc330c8a5c24fd4d8c0947aeff4cae6013f34f5f6f06d10c6ae332df39"
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Visual Director Agent",
-            "input_tokens": 1204,
-            "output_tokens": 1179,
-            "total_tokens": 2383
-        }
+    "usage": {
+      "agent_name": "Visual Director Agent",
+      "input_tokens": 998,
+      "output_tokens": 720,
+      "total_tokens": 1718
     }
+  }
 }

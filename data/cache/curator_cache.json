@@ -3,14 +3,14 @@
         "parsed": {
             "garment_type": "T-shirt",
             "color_palette": [
-                "Pale Pink",
+                "Pastel pink",
+                "Grey",
                 "Black",
-                "White",
-                "Grey"
+                "White"
             ],
-            "silhouette": "Oversized",
+            "silhouette": "Relaxed fit",
             "texture_or_fabric": "Cotton",
-            "style_era": "Modern",
+            "style_era": "Contemporary",
             "occasion": "Casual",
             "standout_detail": "Anime-inspired graphic print",
             "image_index": 1,
@@ -19,124 +19,80 @@
         "usage": {
             "agent_name": "Curator Agent",
             "input_tokens": 636,
-            "output_tokens": 65,
-            "total_tokens": 701
-        }
-    },
-    "f080010db769788ac794a56c03cb97325713361a5b34af61b7ea42f59f978584": {
-        "parsed": {
-            "garment_type": "Graphic T-shirt",
-            "color_palette": [
-                "Pastel Blue",
-                "Lavender",
-                "Candy Pink",
-                "Mint Green",
-                "Lilac"
-            ],
-            "silhouette": "Relaxed Fit",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Modern Anime-inspired",
-            "occasion": "Casual Streetwear",
-            "standout_detail": "Anime-style Cartoon Character Print",
-            "image_index": 2,
-            "filename": "uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 634,
-            "output_tokens": 78,
-            "total_tokens": 712
-        }
-    },
-    "a7d4fe9429d09bff022c47fe1ac508fe5fe7c1445c314ea364baa940ed73d47f": {
-        "parsed": {
-            "garment_type": "shirt",
-            "color_palette": [
-                "light blue",
-                "white"
-            ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "cotton",
-            "style_era": "contemporary",
-            "occasion": "casual",
-            "standout_detail": "striped pattern",
-            "image_index": 3,
-            "filename": "uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 633,
-            "output_tokens": 60,
-            "total_tokens": 693
-        }
-    },
-    "cef405cc0231438e482d6d32d4e985bd0aa6e01220d3c7882da35a9d1cc05c1c": {
-        "parsed": {
-            "garment_type": "Short-sleeved shirt",
-            "color_palette": [
-                "Tan",
-                "Cream"
-            ],
-            "silhouette": "Classic fit",
-            "texture_or_fabric": "Smooth, possibly cotton or silk blend",
-            "style_era": "Modern with classic influences",
-            "occasion": "Casual, everyday wear",
-            "standout_detail": "Sunglasses tucked into the shirt's front",
-            "image_index": 4,
-            "filename": "uploaded_d47adfd59ef3653ff100933809417a25.jpg"
-        },
-        "usage": {
-            "agent_name": "Curator Agent",
-            "input_tokens": 630,
-            "output_tokens": 78,
-            "total_tokens": 708
+            "output_tokens": 67,
+            "total_tokens": 703
         }
     },
     "694b1463b693d0c98948086e680cf04b4ff41090e46afd654ddb1fb5e61d8d6f": {
         "parsed": {
             "garment_type": "T-shirt",
             "color_palette": [
-                "black",
-                "neon pink",
-                "neon purple",
-                "neon green",
-                "neon yellow"
+                "Black",
+                "Neon Pink",
+                "Lavender",
+                "Neon Green",
+                "Yellow"
             ],
-            "silhouette": "oversized",
-            "texture_or_fabric": "cotton",
-            "style_era": "streetwear",
-            "occasion": "casual",
-            "standout_detail": "psychedelic mushroom and alien graphic",
+            "silhouette": "Oversized",
+            "texture_or_fabric": "Cotton",
+            "style_era": "90s Streetwear",
+            "occasion": "Casual",
+            "standout_detail": "Psychedelic Mushroom Graphic",
             "image_index": 2,
-            "filename": "Area 51 Oversized Unisex Streetwear.jpg"
+            "filename": "uploaded_955621864ab711936a68c0d5e0d0f18f.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 623,
-            "output_tokens": 77,
-            "total_tokens": 700
+            "input_tokens": 635,
+            "output_tokens": 75,
+            "total_tokens": 710
+        }
+    },
+    "f080010db769788ac794a56c03cb97325713361a5b34af61b7ea42f59f978584": {
+        "parsed": {
+            "garment_type": "t-shirt",
+            "color_palette": [
+                "pale blue",
+                "purple",
+                "red",
+                "green",
+                "yellow"
+            ],
+            "silhouette": "relaxed fit",
+            "texture_or_fabric": "cotton",
+            "style_era": "contemporary streetwear",
+            "occasion": "casual outing",
+            "standout_detail": "anime-inspired graphic print",
+            "image_index": 3,
+            "filename": "uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 634,
+            "output_tokens": 72,
+            "total_tokens": 706
         }
     },
     "edb828ac2d6405bff9386b733459e2b49a4904f18c3012264afa371a52701880": {
         "parsed": {
-            "garment_type": "T-shirt",
+            "garment_type": "t-shirt",
             "color_palette": [
-                "Charcoal Grey",
-                "Crimson Red",
-                "Ivory White"
+                "charcoal grey",
+                "crimson red",
+                "off-white"
             ],
-            "silhouette": "Relaxed fit",
-            "texture_or_fabric": "Cotton",
-            "style_era": "Contemporary Streetwear",
-            "occasion": "Casual wear",
-            "standout_detail": "Graphic print featuring Hindi text and illustrations of two men",
+            "silhouette": "oversized fit",
+            "texture_or_fabric": "cotton",
+            "style_era": "contemporary streetwear",
+            "occasion": "casual wear",
+            "standout_detail": "graphic print",
             "image_index": 4,
-            "filename": "Hip Hop Streetwear T Shirts.jpg"
+            "filename": "uploaded_456d858276755547619047746a3bb073.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 620,
-            "output_tokens": 78,
+            "input_tokens": 629,
+            "output_tokens": 69,
             "total_tokens": 698
         }
     },
@@ -144,43 +100,67 @@
         "parsed": {
             "garment_type": "T-shirt",
             "color_palette": [
-                "White"
+                "white",
+                "black"
             ],
-            "silhouette": "Oversized",
-            "texture_or_fabric": "French Terry",
-            "style_era": "Modern",
-            "occasion": "Casual",
-            "standout_detail": "Bold black graphic print",
+            "silhouette": "boxy",
+            "texture_or_fabric": "cotton",
+            "style_era": "contemporary streetwear",
+            "occasion": "casual",
+            "standout_detail": "bold, distressed graphic print",
             "image_index": 5,
-            "filename": "Manmaker French Terry Oversized T-shirt.jpg"
+            "filename": "uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 622,
-            "output_tokens": 57,
-            "total_tokens": 679
+            "input_tokens": 633,
+            "output_tokens": 63,
+            "total_tokens": 696
         }
     },
     "991ba14a74489307eb9e22d0650cf898bb3c9cca5d98b417afa7d1f1c131c23e": {
         "parsed": {
             "garment_type": "shirt",
             "color_palette": [
-                "light brown",
-                "white"
+                "caramel",
+                "charcoal",
+                "ivory"
             ],
-            "silhouette": "relaxed fit",
-            "texture_or_fabric": "ribbed cotton",
+            "silhouette": "fitted",
+            "texture_or_fabric": "ribbed",
             "style_era": "contemporary",
-            "occasion": "casual",
-            "standout_detail": "ribbed texture",
+            "occasion": "smart casual",
+            "standout_detail": "buttoned cuffs",
             "image_index": 6,
-            "filename": "Men Ribbed Regular Fit Shirt.jpg"
+            "filename": "uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 620,
-            "output_tokens": 61,
-            "total_tokens": 681
+            "input_tokens": 635,
+            "output_tokens": 63,
+            "total_tokens": 698
+        }
+    },
+    "feeb34d2d27e5f3fd76d2c6fd97b64fe170fe1e48ef5d49c97aa1d89402dcf96": {
+        "parsed": {
+            "garment_type": "shirt",
+            "color_palette": [
+                "grey",
+                "white"
+            ],
+            "silhouette": "relaxed fit",
+            "texture_or_fabric": "cotton",
+            "style_era": "modern",
+            "occasion": "casual",
+            "standout_detail": "button-down collar",
+            "image_index": 7,
+            "filename": "uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 636,
+            "output_tokens": 58,
+            "total_tokens": 694
         }
     },
     "a38545306c43515d763167fdcf2c1c4804c0d295d04aa5d45b325181eb0d8408": {
@@ -190,41 +170,64 @@
                 "Black",
                 "Pink"
             ],
-            "silhouette": "Oversized",
+            "silhouette": "Relaxed",
             "texture_or_fabric": "Cotton",
-            "style_era": "Modern Streetwear",
+            "style_era": "Contemporary",
             "occasion": "Casual",
-            "standout_detail": "Graphic Print",
-            "image_index": 7,
-            "filename": "Men's Streetwear T Shirts.jpg"
+            "standout_detail": "Graphic print",
+            "image_index": 8,
+            "filename": "uploaded_53f98be410d1e298b6e5bda18cebb005.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 619,
-            "output_tokens": 59,
-            "total_tokens": 678
+            "input_tokens": 635,
+            "output_tokens": 58,
+            "total_tokens": 693
         }
     },
-    "feeb34d2d27e5f3fd76d2c6fd97b64fe170fe1e48ef5d49c97aa1d89402dcf96": {
+    "a7d4fe9429d09bff022c47fe1ac508fe5fe7c1445c314ea364baa940ed73d47f": {
         "parsed": {
-            "garment_type": "Casual Shirt",
+            "garment_type": "Casual shirt",
             "color_palette": [
-                "Light Grey",
-                "Off-White"
+                "Sky blue",
+                "White"
             ],
-            "silhouette": "Oversized",
-            "texture_or_fabric": "Cotton Blend",
-            "style_era": "Modern Casual",
-            "occasion": "Smart Casual",
-            "standout_detail": "Contrasting Shirt and T-Shirt Combination",
-            "image_index": 8,
-            "filename": "Men\u2019s Stylish Cotton Blend Casual Shirt.jpg"
+            "silhouette": "Relaxed fit",
+            "texture_or_fabric": "Cotton",
+            "style_era": "Modern",
+            "occasion": "Casual outing",
+            "standout_detail": "Striped pattern",
+            "image_index": 9,
+            "filename": "uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg"
         },
         "usage": {
             "agent_name": "Curator Agent",
-            "input_tokens": 621,
-            "output_tokens": 68,
-            "total_tokens": 689
+            "input_tokens": 633,
+            "output_tokens": 62,
+            "total_tokens": 695
+        }
+    },
+    "cef405cc0231438e482d6d32d4e985bd0aa6e01220d3c7882da35a9d1cc05c1c": {
+        "parsed": {
+            "garment_type": "short-sleeved shirt",
+            "color_palette": [
+                "camel",
+                "ivory",
+                "tattoo ink"
+            ],
+            "silhouette": "relaxed fit",
+            "texture_or_fabric": "silk or satin",
+            "style_era": "contemporary",
+            "occasion": "casual",
+            "standout_detail": "sunglasses tucked into shirt",
+            "image_index": 10,
+            "filename": "uploaded_d47adfd59ef3653ff100933809417a25.jpg"
+        },
+        "usage": {
+            "agent_name": "Curator Agent",
+            "input_tokens": 630,
+            "output_tokens": 73,
+            "total_tokens": 703
         }
     }
 }

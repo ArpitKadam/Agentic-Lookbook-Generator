@@ -1,0 +1,156 @@
+[2026-07-02 13:52:13]   13 | INFO     | Initializing Agent nodes for LangGraph Lookbook Pipeline...
+[2026-07-02 13:52:13]   20 | INFO     | Initializing CuratorAgent...
+[2026-07-02 13:52:13]   49 | DEBUG    | No existing curator cache file found. Starting fresh.
+[2026-07-02 13:52:13]   32 | INFO     | CuratorAgent initialized successfully.
+[2026-07-02 13:52:13]   20 | INFO     | Initializing StylistAgent...
+[2026-07-02 13:52:14]   48 | DEBUG    | No existing stylist cache file found. Starting fresh.
+[2026-07-02 13:52:14]   31 | INFO     | StylistAgent initialized successfully.
+[2026-07-02 13:52:14]   20 | INFO     | Initializing EditorAgent...
+[2026-07-02 13:52:15]   48 | DEBUG    | No existing editor cache file found. Starting fresh.
+[2026-07-02 13:52:15]   31 | INFO     | EditorAgent initialized successfully.
+[2026-07-02 13:52:15]   22 | INFO     | Initializing DirectorAgent...
+[2026-07-02 13:52:16]   50 | DEBUG    | No existing director cache file found. Starting fresh.
+[2026-07-02 13:52:16]   33 | INFO     | DirectorAgent initialized successfully.
+[2026-07-02 13:52:16]   22 | INFO     | Initializing VisualDirectorAgent...
+[2026-07-02 13:52:17]   35 | INFO     | VisualDirectorAgent initialized successfully.
+[2026-07-02 13:52:17]   20 | INFO     | All Agent nodes initialized successfully.
+[2026-07-02 13:52:17]   70 | INFO     | Loading LangGraph Pipeline...
+[2026-07-02 13:52:17]  138 | INFO     | Compiling Lookbook StateGraph execution structure...
+[2026-07-02 13:52:17]  156 | INFO     | StateGraph compiled successfully. Lookbook pipeline is active.
+[2026-07-02 13:52:17]   72 | INFO     | Pipeline ready.
+[2026-07-02 13:52:58]  277 | INFO     | Theme: Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia
+[2026-07-02 13:52:58]  278 | INFO     | Processing 10 images...
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 35756
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 26817 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 53684
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 40262 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 79392
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 59543 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 238572
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 178927 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 63216
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 47412 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 88136
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 66101 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 27200
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 20400 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 503948
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 377960 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 52648
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 39486 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:52:59]  180 | INFO     | Parsing base64 image - Format: jpeg, Data length: 9680
+[2026-07-02 13:52:59]  196 | INFO     | Decoded base64 to 7260 bytes
+[2026-07-02 13:52:59]  208 | INFO     | Cache hit! Image already saved: uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:52:59]  285 | INFO     | Processing complete. Results: ['data\\uploads\\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg', 'data\\uploads\\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg', 'data\\uploads\\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg', 'data\\uploads\\uploaded_456d858276755547619047746a3bb073.jpg', 'data\\uploads\\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg', 'data\\uploads\\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg', 'data\\uploads\\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg', 'data\\uploads\\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg', 'data\\uploads\\uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg', 'data\\uploads\\uploaded_d47adfd59ef3653ff100933809417a25.jpg']
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 1: data\uploads\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 2: data\uploads\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 3: data\uploads\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 4: data\uploads\uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 5: data\uploads\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 6: data\uploads\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 7: data\uploads\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 8: data\uploads\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 9: data\uploads\uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:52:59]  297 | INFO     | Successfully processed image 10: data\uploads\uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:52:59]  310 | INFO     | Successfully processed 10 images.
+[2026-07-02 13:53:00]   26 | INFO     | >>> Entering [Curator Node] execution frame
+[2026-07-02 13:53:00]   32 | INFO     | Curator Node received 10 images to process.
+[2026-07-02 13:53:00]   35 | DEBUG    | Processing image 1/10: data\uploads\uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:53:00]   81 | INFO     | Processing image analysis for: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg (Index: 1)
+[2026-07-02 13:53:00]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:53:11]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:53:11]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_29f1b71a3b7a5fc66ec63866b9ecc664.jpg
+[2026-07-02 13:53:11]   35 | DEBUG    | Processing image 2/10: data\uploads\uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:53:11]   81 | INFO     | Processing image analysis for: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg (Index: 2)
+[2026-07-02 13:53:11]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:53:24]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:53:24]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_955621864ab711936a68c0d5e0d0f18f.jpg
+[2026-07-02 13:53:24]   35 | DEBUG    | Processing image 3/10: data\uploads\uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:53:24]   81 | INFO     | Processing image analysis for: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg (Index: 3)
+[2026-07-02 13:53:24]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:53:40]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:53:40]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_b5d52d13351212c0b5bfdd5628ed68ee.jpg
+[2026-07-02 13:53:40]   35 | DEBUG    | Processing image 4/10: data\uploads\uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:53:40]   81 | INFO     | Processing image analysis for: uploaded_456d858276755547619047746a3bb073.jpg (Index: 4)
+[2026-07-02 13:53:40]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:53:58]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:53:58]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_456d858276755547619047746a3bb073.jpg
+[2026-07-02 13:53:58]   35 | DEBUG    | Processing image 5/10: data\uploads\uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:53:58]   81 | INFO     | Processing image analysis for: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg (Index: 5)
+[2026-07-02 13:53:58]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:54:21]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:54:21]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_f294bab6e3faa9d180d0ba41d95729df.jpg
+[2026-07-02 13:54:21]   35 | DEBUG    | Processing image 6/10: data\uploads\uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:54:21]   81 | INFO     | Processing image analysis for: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg (Index: 6)
+[2026-07-02 13:54:21]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:55:32]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:55:32]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_7d9d682329bdb115c4393e402e0e3acd.jpg
+[2026-07-02 13:55:32]   35 | DEBUG    | Processing image 7/10: data\uploads\uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:55:32]   81 | INFO     | Processing image analysis for: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg (Index: 7)
+[2026-07-02 13:55:32]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:55:57]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:55:57]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_b19f4179b448c9d3ec5486e79e2001d7.jpg
+[2026-07-02 13:55:57]   35 | DEBUG    | Processing image 8/10: data\uploads\uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:55:57]   81 | INFO     | Processing image analysis for: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg (Index: 8)
+[2026-07-02 13:55:57]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:56:15]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:56:15]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_53f98be410d1e298b6e5bda18cebb005.jpg
+[2026-07-02 13:56:15]   35 | DEBUG    | Processing image 9/10: data\uploads\uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:56:15]   81 | INFO     | Processing image analysis for: uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg (Index: 9)
+[2026-07-02 13:56:15]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:56:29]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:56:29]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_6922bf74edaa66a2396ca0401cb40f74.jpg
+[2026-07-02 13:56:29]   35 | DEBUG    | Processing image 10/10: data\uploads\uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:56:29]   81 | INFO     | Processing image analysis for: uploaded_d47adfd59ef3653ff100933809417a25.jpg (Index: 10)
+[2026-07-02 13:56:29]  103 | INFO     | [CACHE MISS] Analyzing image live via Nvidia API for file: uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:56:43]   57 | DEBUG    | Curator cache state synchronized out to disk: data\cache\curator_cache.json
+[2026-07-02 13:56:43]  155 | INFO     | Successfully processed and cached live analysis for file: uploaded_d47adfd59ef3653ff100933809417a25.jpg
+[2026-07-02 13:56:43]   43 | INFO     | <<< Completed [Curator Node] execution loops safely.
+[2026-07-02 13:56:43]   53 | INFO     | >>> Entering [Stylist Node] execution frame
+[2026-07-02 13:56:43]   56 | INFO     | Synthesizing creative layout options for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:43]   74 | INFO     | Processing mood clusters generation for prompt: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:43]  101 | INFO     | [CACHE MISS] Synthesizing mood clusters live via Groq API...
+[2026-07-02 13:56:44]   56 | DEBUG    | Stylist cache state synchronized out to disk: data\cache\stylist_cache.json
+[2026-07-02 13:56:44]  133 | INFO     | Successfully processed and cached mood clusters generation.
+[2026-07-02 13:56:44]   63 | INFO     | <<< Completed [Stylist Node] synthesis safely.
+[2026-07-02 13:56:44]   73 | INFO     | >>> Entering [Editor Node] execution frame
+[2026-07-02 13:56:44]   76 | INFO     | Drafting structural descriptions layout for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:44]   75 | INFO     | Processing editorial cards generation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:44]  120 | INFO     | [CACHE MISS] Synthesizing editorial cards live via Llama-3.3-70b...
+[2026-07-02 13:56:45]   56 | DEBUG    | Editor cache state synchronized out to disk: data\cache\editor_cache.json
+[2026-07-02 13:56:45]  151 | INFO     | Successfully processed and cached editorial cards generation.
+[2026-07-02 13:56:45]   84 | INFO     | <<< Completed [Editor Node] copywriting safely.
+[2026-07-02 13:56:45]   94 | INFO     | >>> Entering [Director Node] execution frame
+[2026-07-02 13:56:45]   97 | INFO     | Finalizing lookbook asset generation metrics for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:45]   69 | INFO     | Finalizing lookbook compilation for theme: 'Tokyo after midnight — neon-soaked minimalism meets Showa-era nostalgia'
+[2026-07-02 13:56:45]  108 | INFO     | [CACHE MISS] Compiling final weekly lookbook live via Llama-3.3-70b...
+[2026-07-02 13:56:47]   58 | DEBUG    | Director cache state synchronized out to disk: data\cache\director_cache.json
+[2026-07-02 13:56:47]  138 | INFO     | Successfully compiled and cached weekly fashion lookbook.
+[2026-07-02 13:56:47]  105 | INFO     | <<< Completed [Director Node] aggregation safely.
+[2026-07-02 13:56:47]  115 | INFO     | >>> Entering [Visual Director Node] execution frame
+[2026-07-02 13:56:47]  117 | INFO     | Generating visual prompts and artwork...
+[2026-07-02 13:56:47]  126 | INFO     | Generating visual prompts...
+[2026-07-02 13:56:49]  152 | INFO     | Generating 4 visual assets...
+[2026-07-02 13:56:49]  173 | INFO     | Generating cover artwork...
+[2026-07-02 13:56:49]  129 | INFO     | [ImageGenerator] Generating image: neon_hush_2afc052ae6bc0a14
+[2026-07-02 13:57:38]  187 | INFO     | [ImageGenerator] Saved -> neon_hush_2afc052ae6bc0a14.png
+[2026-07-02 13:57:38]  201 | INFO     | Generating artwork for Card 01 (Neon Nocturne)...
+[2026-07-02 13:57:38]  129 | INFO     | [ImageGenerator] Generating image: 01_neon_nocturne_6e3ea6afec81ed59
+[2026-07-02 13:58:20]  187 | INFO     | [ImageGenerator] Saved -> 01_neon_nocturne_6e3ea6afec81ed59.png
+[2026-07-02 13:58:20]  201 | INFO     | Generating artwork for Card 02 (Retro Revival)...
+[2026-07-02 13:58:20]  129 | INFO     | [ImageGenerator] Generating image: 02_retro_revival_0533863e4712267e
+[2026-07-02 13:59:16]  187 | INFO     | [ImageGenerator] Saved -> 02_retro_revival_0533863e4712267e.png
+[2026-07-02 13:59:16]  201 | INFO     | Generating artwork for Card 03 (Urban Oasis)...
+[2026-07-02 13:59:16]  129 | INFO     | [ImageGenerator] Generating image: 03_urban_oasis_5996365cc978367d
+[2026-07-02 14:00:12]  187 | INFO     | [ImageGenerator] Saved -> 03_urban_oasis_5996365cc978367d.png
+[2026-07-02 14:00:12]  255 | INFO     | Visual lookbook 'Neon Hush' generated successfully.
+[2026-07-02 14:00:12]  126 | INFO     | <<< Completed [Visual Director Node] successfully.

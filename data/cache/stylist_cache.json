@@ -1,133 +1,57 @@
 {
-    "2f155ff7e7b3b3efb29ee7db28cb3efb52a6ba9bf618ecf57465048c3a6329c9": {
+    "bfb3b39147fa8f942768d1657d51e90b5f3521087d1433454f499f19b2021f9d": {
         "clusters": {
             "clusters": [
                 {
-                    "mood_title": "Midnight Mirage",
+                    "mood_title": "Neon Nocturne",
                     "sub_tags": [
                         "Cyberpunk",
-                        "Neon",
-                        "Nostalgia"
+                        "Monochrome",
+                        "Oversized"
                     ],
                     "image_indices": [
                         1,
                         2,
-                        3
+                        5,
+                        8
                     ],
-                    "styling_rationale": "This cluster captures the essence of Tokyo after midnight, blending neon-soaked minimalism with Showa-era nostalgia."
+                    "styling_rationale": "Neon-soaked minimalism meets Showa-era nostalgia in this cluster of Tokyo-inspired outfits."
                 },
                 {
                     "mood_title": "Retro Revival",
                     "sub_tags": [
-                        "Showa",
+                        "Showa-Era",
                         "Retro",
-                        "Vintage"
-                    ],
-                    "image_indices": [
-                        4,
-                        6,
-                        8
-                    ],
-                    "styling_rationale": "This cluster embodies the nostalgic aspect of Tokyo after midnight, drawing inspiration from the Showa era."
-                },
-                {
-                    "mood_title": "Modern Minimalism",
-                    "sub_tags": [
-                        "Minimalist",
-                        "Modern",
-                        "Neutral"
-                    ],
-                    "image_indices": [
-                        5,
-                        7,
-                        10
-                    ],
-                    "styling_rationale": "This cluster showcases the modern and minimalist side of Tokyo after midnight, characterized by clean lines and neutral colors."
-                }
-            ]
-        },
-        "usage": {
-            "agent_name": "Stylist Agent",
-            "input_tokens": 1625,
-            "output_tokens": 171,
-            "total_tokens": 1796
-        }
-    },
-    "022bb5ec71fd6823e9e44ea3cf8ea0c2f72fe848cd941af995d2e82b2a4e186b": {
-        "clusters": {
-            "clusters": [
-                {
-                    "mood_title": "Neon Oasis",
-                    "sub_tags": [
-                        "Cyberpunk",
-                        "Monochrome",
-                        "Glowing Neon"
-                    ],
-                    "image_indices": [
-                        1,
-                        2
-                    ],
-                    "styling_rationale": "A fusion of modern streetwear and neon-soaked minimalism."
-                },
-                {
-                    "mood_title": "Showa Revival",
-                    "sub_tags": [
-                        "Anime-inspired",
-                        "Vintage Details",
-                        "Retro Flair"
+                        "Striped"
                     ],
                     "image_indices": [
                         3,
-                        4
-                    ],
-                    "styling_rationale": "A nostalgic blend of Showa-era charm and contemporary streetwear."
-                },
-                {
-                    "mood_title": "Minimalist Chic",
-                    "sub_tags": [
-                        "Oversized Silhouette",
-                        "Monochromatic Palette",
-                        "Clean Lines"
-                    ],
-                    "image_indices": [
-                        5,
-                        7
-                    ],
-                    "styling_rationale": "A sleek and sophisticated take on modern casual wear."
-                },
-                {
-                    "mood_title": "Casual Ease",
-                    "sub_tags": [
-                        "Relaxed Fit",
-                        "Striped Patterns",
-                        "Casual Comfort"
-                    ],
-                    "image_indices": [
+                        4,
                         6,
                         9
                     ],
-                    "styling_rationale": "A relaxed and effortless approach to everyday wear."
+                    "styling_rationale": "This cluster brings together vintage-inspired pieces with modern twists, perfect for a casual outing."
                 },
                 {
-                    "mood_title": "Summer Vibes",
+                    "mood_title": "Urban Oasis",
                     "sub_tags": [
-                        "Pastel Colors",
-                        "Sunglasses",
-                        "Summer Breeze"
+                        "Modern",
+                        "Casual",
+                        "Sunglasses"
                     ],
                     "image_indices": [
-                        8,
+                        7,
                         10
                     ],
-                    "styling_rationale": "A carefree and sunny take on casual wear."
+                    "styling_rationale": "Find your urban oasis in this cluster of modern, laid-back outfits featuring comfortable silhouettes and stylish details."
                 }
             ]
         },
         "usage": {
             "agent_name": "Stylist Agent",
-            "input_tokens": 1758,
-            "output_tokens": 240,
-            "total_tokens": 1998
+            "input_tokens": 1743,
+            "output_tokens": 173,
+            "total_tokens": 1916
         }
     }
 }

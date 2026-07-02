@@ -47,9 +47,9 @@ class VisualDirectorAgent:
         return {}
 
     def _save_cache(self):
-        """Persist cache to disk."""
+        os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
         with open(self.cache_file, "w", encoding="utf-8") as f:
-            json.dump(self.cache, f, indent=4)
+            json.dump(self.cache, f, indent=2)
 
     def _generate_cache_key(self, lookbook: WeeklyLookbook) -> str:
         """Generates a unique cache key from the complete WeeklyLookbook."""
