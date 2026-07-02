@@ -5,7 +5,7 @@
 <h1 align="center">AINAA</h1>
 <h3 align="center">AI-Native Editorial Lookbook Generator</h3>
 <p align="center">
-  <em>Four agents. One editorial vision. Publication-ready fashion intelligence.</em>
+  <em>Five agents. One editorial vision. From garment photography to a fully art-directed, illustrated fashion lookbook.</em>
 </p>
 
 <p align="center">
@@ -15,6 +15,7 @@
   <a href="https://python.langchain.com/"><img src="https://img.shields.io/badge/LangChain-0.3+-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangChain"></a>
   <a href="https://build.nvidia.com/"><img src="https://img.shields.io/badge/NVIDIA_NIM-Llama_3.2_90B-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA NIM"></a>
   <a href="https://groq.com/"><img src="https://img.shields.io/badge/Groq-Llama_3.x-F55036?style=flat-square&logo=groq&logoColor=white" alt="Groq"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Stable_Diffusion-XL-orange?style=flat-square" alt="Stable Diffusion XL"></a>
   <a href="https://docs.pydantic.dev/"><img src="https://img.shields.io/badge/Pydantic-v2-E92063?style=flat-square&logo=pydantic&logoColor=white" alt="Pydantic"></a>
   <a href="https://jinja.palletsprojects.com/"><img src="https://img.shields.io/badge/Jinja2-Templates-B41717?style=flat-square&logo=jinja&logoColor=white" alt="Jinja2"></a>
   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"></a>
@@ -26,7 +27,7 @@
 
 ---
 
-> **AINAA** is a production-grade multi-agent AI system that transforms raw fashion images into publication-ready editorial lookbooks. Powered by a four-stage LangGraph pipeline — Curator → Stylist → Editor → Director — it processes garment imagery using NVIDIA's vision LLM and synthesizes culturally-aware editorial copy using Groq-accelerated language models. The result: a structured `WeeklyLookbook` with editorial mood clusters, designer attributions, and vibe prose that reads like *System Magazine* or *032c*.
+> **AINAA** is a production-grade multi-agent AI system that transforms raw fashion images into publication-ready editorial lookbooks — complete with generated cover art and mood photography. Powered by a five-stage LangGraph pipeline — Curator → Stylist → Editor → Director → **Visual Director** — it processes garment imagery using NVIDIA's vision LLM, synthesizes culturally-aware editorial copy using Groq-accelerated language models, and finally art-directs and renders a Stable Diffusion XL cover image plus one illustration per mood card. The result: a structured `WeeklyLookbook` paired with a `VisualLookbook` — editorial mood clusters, designer attributions, vibe prose, a color palette, and generated artwork — presented through an editorial-magazine web interface that reads like *System Magazine* or *032c*.
 
 ---
 
@@ -79,18 +80,19 @@ Multi-agent architectures are the natural fit for this decomposition. Rather tha
 
 | Feature | Description |
 |---|---|
-| **Multi-Agent Editorial Pipeline** | Four specialized agents (Curator, Stylist, Editor, Director) with deliberate epistemic isolation |
+| **Multi-Agent Editorial Pipeline** | Five specialized agents (Curator, Stylist, Editor, Director, **Visual Director**) with deliberate epistemic isolation |
 | **Vision-Based Garment Understanding** | NVIDIA NIM `meta/llama-3.2-90b-vision-instruct` analyzes garment type, color palette, silhouette, fabric, era, occasion, and standout detail |
 | **Mood Clustering** | Stylist agent groups images into evocative editorial territories (*"Tokyo Fog"*, *"Velvet Static"*, *"Chrome Reverie"*) |
 | **Editorial Story Generation** | Editor agent writes cinematic vibe descriptions with culturally-relevant designer attributions |
 | **Creative Direction** | Director agent assigns publication-worthy edition titles and quality-gates all copy |
-| **LangGraph Orchestration** | Compiled `StateGraph` with typed edges: START → curator → stylist → editor → director → END |
-| **Persistent SHA-256 Caching** | Four independent JSON caches (curator, stylist, editor, director) eliminate redundant API calls |
-| **FastAPI API Layer** | Async REST API supporting URL-based and local-file image ingestion with base64 handling |
-| **Web Interface** | Minimal Jinja2 + CSS + JavaScript frontend for interactive lookbook generation |
+| **AI Art Direction & Image Generation** | Visual Director agent writes cinematic Stable Diffusion prompts and renders a magazine cover plus one illustration per mood card, complete with a derived color palette, visual language, and camera style |
+| **LangGraph Orchestration** | Compiled `StateGraph` with typed edges: START → curator → stylist → editor → director → visual_director → END |
+| **Persistent SHA-256 Caching** | Six independent content-addressed caches (curator, stylist, editor, director, visual director, generated images) eliminate redundant API and image-generation calls |
+| **FastAPI API Layer** | Async REST API supporting URL-based and local-file image ingestion with base64 handling, and serving generated artwork as static assets |
+| **Editorial Magazine Web Interface** | A minimal, luxury-editorial Jinja2 + CSS + vanilla JavaScript frontend — cover with overlaid title, color-palette swatches, alternating mood-card spreads, a live agent-by-agent progress rail, dark mode, and scroll-triggered reveal animations |
 | **Token Usage Tracking** | Per-agent input/output/total token telemetry accumulated via LangGraph state reducer |
 | **LangSmith Observability** | Full trace logging enabled via `LANGSMITH_TRACING=true` |
-| **Multi-Provider LLM Strategy** | NVIDIA NIM for vision; Groq for fast language reasoning — provider diversity for cost and latency optimization |
+| **Multi-Provider LLM Strategy** | NVIDIA NIM for vision; Groq for fast language reasoning and art direction; Stable Diffusion XL for image synthesis — provider diversity for cost and latency optimization |
 
 ---
 
@@ -105,13 +107,15 @@ graph LR
     stylist["stylist"]
     editor["editor"]
     director["director"]
+    visual_director["visual_director"]
     __end__(("__end__"))
 
     __start__ --> curator
     curator --> stylist
     stylist --> editor
     editor --> director
-    director --> __end__
+    director --> visual_director
+    visual_director --> __end__
 
     %% Styling Definitions
     classDef default fill:#1f1f2e,stroke:#8a5cf5,stroke-width:2px,color:#ffffff;
@@ -153,7 +157,15 @@ Input Images + Theme Prompt
 └───────────────────┘
         │
         ▼
-  WeeklyLookbook JSON
+┌────────────────────┐
+│ VISUAL DIRECTOR     │  ← Groq (Llama 3.3 70B Versatile) for art direction
+│ AGENT               │  ← Stable Diffusion XL for image synthesis
+│ Cover + Mood Art    │  → VisualLookbook (cover artwork, mood artwork,
+└────────────────────┘     color palette, visual language, camera style)
+        │
+        ▼
+  WeeklyLookbook + VisualLookbook JSON
+  (edition copy, generated cover, generated mood imagery)
 ```
 
 ### Agent Responsibilities
@@ -164,6 +176,7 @@ Input Images + Theme Prompt
 | **Stylist** | Mood territory clustering | `llama-3.1-8b-instant` (Groq) | `MoodClusters` |
 | **Editor** | Editorial copywriting | `llama-3.1-8b-instant` (Groq) | `EditorialCards` |
 | **Director** | Creative direction & finalization | `llama-3.3-70b-versatile` (Groq) | `WeeklyLookbook` |
+| **Visual Director** | Art direction & image generation | `llama-3.3-70b-versatile` (Groq) for prompts + `stable-diffusion-xl-base-1.0` for rendering | `VisualLookbook` |
 
 ---
 
@@ -327,6 +340,64 @@ class WeeklyLookbook(BaseModel):
 
 ---
 
+### Visual Director Agent
+
+**File:** `src/agents/visual_director.py`
+
+The Visual Director is the pipeline's final stage — and the only agent that touches image generation. It receives the completed `WeeklyLookbook` and translates its editorial language into cinematic Stable Diffusion prompts, then renders the artwork.
+
+**Purpose:** Art-direct the edition. Design a cohesive visual language, camera style, and color palette; write a generation prompt for the magazine cover and one for every mood card; then generate and persist the actual images so the frontend has real artwork to display.
+
+**Prompt Model:** `llama-3.3-70b-versatile` via Groq  
+**Temperature:** 0.7 | **Max Tokens:** 2048  
+**Structured Output:** `.with_structured_output(VisualLookbook)`
+
+**Image Model:** `stable-diffusion-xl-base-1.0`, served behind a configurable `IMAGE_GENERATION_API` endpoint  
+**Defaults:** 832×1024 (portrait, 3:4), 30 diffusion steps
+
+**Process:**
+
+1. Serializes the full `WeeklyLookbook` and hashes it (plus the image model name) into a SHA-256 cache key
+2. On a cache hit, verifies the cached image files still exist on disk before reusing them — if they were deleted, it regenerates rather than returning broken paths
+3. Invokes the LLM to produce a `VisualLookbook`: one `CoverArtwork` (edition title, positive/negative prompts, visual language, camera style, color palette, art direction) and one `MoodArtwork` per mood card (card number, mood title, positive/negative prompts)
+4. Generates the cover image first via `ImageGenerator.generate()`, using a content-addressed filename (`{edition_title}_{sha256(prompts)[:16]}`)
+5. Builds a shared visual context block (visual language + camera style + color palette) and prepends it to every mood card's prompt, so all generated imagery shares a coherent look
+6. Generates one image per mood card, writing files to `data/generated/`
+7. Attaches `image_path` and `image_hash` back onto the `VisualLookbook` and persists the full result to `data/cache/visual_director_cache.json`
+
+**Prompt Philosophy:** The Visual Director is instructed to think like an art director briefing a photographer, not a prompt engineer — describing lighting, mood, environment, and composition in the same editorial register as the Director's copy, so imagery and prose feel like they came from the same publication.
+
+**Output Schema:**
+
+```python
+class CoverArtwork(BaseModel):
+    edition_title: str
+    positive_prompt: str
+    visual_language: str
+    color_palette: List[str]
+    camera_style: str
+    negative_prompt: str
+    art_direction: str
+    image_path: str | None = None
+    image_hash: str | None = None
+
+class MoodArtwork(BaseModel):
+    card_number: str
+    mood_title: str
+    positive_prompt: str
+    negative_prompt: str
+    image_path: str | None = None
+    image_hash: str | None = None
+
+class VisualLookbook(BaseModel):
+    cover: CoverArtwork
+    moods: List[MoodArtwork]
+```
+
+**Image generation service** (`src/services/image_generator.py`, `ImageGenerator` class): a thin, independently-cached wrapper around the Stable Diffusion XL endpoint. It hashes `(positive_prompt, negative_prompt, width, height, steps)` into its own SHA-256 key, stores results in `data/cache/image_cache.json`, and writes PNGs to `data/generated/`. This means identical prompts — even across different lookbook runs — never trigger a redundant image generation call, and every generated image is returned as a `GeneratedImage` (`image_path`, `image_hash`, `seed`, `cached`).
+
+---
+
 ## 🧠 LangGraph State Management
 
 AINAA uses LangGraph's `TypedDict`-based state for type-safe, structured inter-agent communication.
@@ -334,20 +405,21 @@ AINAA uses LangGraph's `TypedDict`-based state for type-safe, structured inter-a
 ```python
 class LookbookState(TypedDict):
     """Typed state object shared across all agent nodes."""
-    image_paths:    List[str]
-    theme_prompt:   str
-    image_analyses: Optional[List[ImageAnalysis]]
-    mood_clusters:  Optional[MoodClusters]
-    draft_cards:    Optional[EditorialCards]
-    lookbook:       Optional[WeeklyLookbook]
-    token_usages:   Annotated[List[TokenUsage], operator.add]
+    image_paths:     List[str]
+    theme_prompt:    str
+    image_analyses:  Optional[List[ImageAnalysis]]
+    mood_clusters:   Optional[MoodClusters]
+    draft_cards:     Optional[EditorialCards]
+    lookbook:        Optional[WeeklyLookbook]
+    visual_lookbook: Optional[VisualLookbook]
+    token_usages:    Annotated[List[TokenUsage], operator.add]
 ```
 
 ### Design Decisions
 
 **Unidirectional state flow:** Each node reads upstream fields and writes only its own output fields. No agent mutates another's outputs. This enforces clean separation of concerns and makes the pipeline deterministic and debuggable.
 
-**Epistemic isolation:** The Stylist receives only `image_analyses` (not raw images). The Editor receives both clusters and analyses but not images. The Director receives only assembled draft cards. This is a deliberate design choice: each agent reasons only from what it needs, preventing contamination of creative judgment.
+**Epistemic isolation:** The Stylist receives only `image_analyses` (not raw images). The Editor receives both clusters and analyses but not images. The Director receives only assembled draft cards. The Visual Director receives only the finalized `WeeklyLookbook` and the theme prompt — it never sees the raw source images or the Curator's analysis, so its art direction is grounded purely in the edition's published editorial language. This is a deliberate design choice: each agent reasons only from what it needs, preventing contamination of creative judgment.
 
 **Token usage accumulation:** `token_usages` uses LangGraph's `Annotated[List[TokenUsage], operator.add]` reducer pattern. Each node returns a list of `TokenUsage` objects which are appended (not replaced) to the accumulated state. This produces a complete per-agent telemetry trace.
 
@@ -367,7 +439,8 @@ class TokenUsage(BaseModel):
 | `curator` → `stylist` | `mood_clusters`, `token_usages` | Thematic mood groupings |
 | `stylist` → `editor` | `draft_cards`, `token_usages` | Editorial copy per card |
 | `editor` → `director` | `lookbook`, `token_usages` | Final compiled lookbook |
-| `director` → `END` | — | Terminal state |
+| `director` → `visual_director` | `visual_lookbook`, `token_usages` | Cover + mood artwork prompts, generated images, color palette |
+| `visual_director` → `END` | — | Terminal state |
 
 ### Token Usage Accumulation
 
@@ -380,7 +453,7 @@ Each node returns a `List[TokenUsage]`. LangGraph's `Annotated` `operator.add` a
 ```text
 Agentic-Lookbook-Generator/
 │
-├── api.py                          # FastAPI application (routes, middleware, image handling)
+├── api.py                          # FastAPI application (routes, static mounts, image URL serialization)
 ├── main.py                         # CLI entrypoint for direct pipeline execution
 ├── pipeline_graph.png              # Auto-generated LangGraph visualization
 ├── requirements.txt                # Python dependencies
@@ -393,17 +466,22 @@ Agentic-Lookbook-Generator/
 │   │   ├── curator_agent.py        # Vision analysis (NVIDIA NIM)
 │   │   ├── stylist_agent.py        # Mood clustering (Groq Llama 3.1 8B)
 │   │   ├── editor_agent.py         # Editorial copywriting (Groq Llama 3.1 8B)
-│   │   └── director_agent.py       # Creative direction (Groq Llama 3.3 70B)
+│   │   ├── director_agent.py       # Creative direction (Groq Llama 3.3 70B)
+│   │   └── visual_director.py      # Art direction & image generation (Groq 3.3 70B + SDXL)
+│   │
+│   ├── services/
+│   │   └── image_generator.py      # Stable Diffusion XL client, content-addressed image cache
 │   │
 │   ├── pipeline/
 │   │   └── pipeline.py             # LangGraph StateGraph assembly & compilation
 │   │
 │   ├── prompts/
-│   │   └── prompts.py              # All system prompts and user templates (357 lines)
+│   │   └── prompts.py              # All system prompts and user templates
 │   │
 │   ├── schemas/
 │   │   └── schema.py               # Pydantic models: ImageAnalysis, MoodClusters,
-│   │                               # EditorialCards, WeeklyLookbook, TokenUsage
+│   │                               # EditorialCards, WeeklyLookbook, CoverArtwork,
+│   │                               # MoodArtwork, VisualLookbook, GeneratedImage, TokenUsage
 │   │
 │   ├── state/
 │   │   └── state.py                # LookbookState TypedDict with operator.add reducer
@@ -419,16 +497,19 @@ Agentic-Lookbook-Generator/
 │   │   ├── curator_cache.json      # SHA-256 keyed image analysis cache
 │   │   ├── stylist_cache.json      # Theme+analysis hash keyed mood cache
 │   │   ├── editor_cache.json       # Editorial cards cache
-│   │   └── director_cache.json     # Final lookbook cache
+│   │   ├── director_cache.json     # Final lookbook cache
+│   │   ├── visual_director_cache.json  # Art-direction prompts + generated asset paths
+│   │   └── image_cache.json        # Prompt-hash keyed Stable Diffusion image cache
+│   ├── generated/                  # Rendered cover and mood-card artwork (PNG), served at /generated
 │   ├── uploads/                    # Runtime image uploads (URL downloads + base64)
 │   └── *.jpg / *.png               # Local sample fashion images
 │
 ├── templates/
-│   └── index.html                  # Jinja2 HTML template (web interface)
+│   └── index.html                  # Jinja2 template — editorial magazine web interface
 │
 ├── static/
-│   ├── style.css                   # Interface styling
-│   └── script.js                   # Frontend interaction logic
+│   ├── styles.css                  # Editorial design system (Fraunces/Inter, palette, dark mode)
+│   └── app.js                      # Frontend interaction logic, results rendering, progress rail
 │
 ├── notebooks/                      # Experimental Jupyter notebooks
 └── logs/                           # Application log files
@@ -439,6 +520,7 @@ Agentic-Lookbook-Generator/
 | Module | Purpose |
 |--------|---------|
 | `src/agents/` | Self-contained agent classes with private caching, LLM binding, and Pydantic structured output |
+| `src/services/` | External-service clients decoupled from agent logic — currently the Stable Diffusion XL image generator |
 | `src/pipeline/` | LangGraph orchestration — nodes, edges, graph compilation, and mermaid PNG export |
 | `src/prompts/` | Single source of truth for all system and user prompt templates |
 | `src/schemas/` | Pydantic v2 models for type-safe serialization across all agent boundaries |
@@ -446,7 +528,7 @@ Agentic-Lookbook-Generator/
 | `src/utils/` | Reusable helpers (base64 image encoding, tiktoken counting, markdown fence stripping) |
 | `src/logger/` | Singleton logger with colored console output and rotating file handlers |
 | `src/exception/` | Custom exceptions that auto-parse `sys.exc_info()` and emit structured logs |
-| `api.py` | FastAPI entrypoint with CORS, file upload handling, URL downloads, base64 support |
+| `api.py` | FastAPI entrypoint with CORS, file upload handling, URL downloads, base64 support, `/generated` static mount, and visual-lookbook URL serialization |
 | `main.py` | CLI entrypoint for local testing with hardcoded sample images |
 
 ---
@@ -461,6 +543,7 @@ sequenceDiagram
     participant S as 🎨 Stylist Agent
     participant E as ✍️ Editor Agent
     participant D as 🎬 Director Agent
+    participant V as 🖼️ Visual Director Agent
 
     User->>C: 1. Post Images + Theme Prompt
     activate C
@@ -477,15 +560,19 @@ sequenceDiagram
     deactivate E
     activate D
     Note over D: Compile & validate lookbook via Groq 70B.
-    D->>User: 5. Return Complete WeeklyLookbook JSON
+    D->>V: 5. Transmit WeeklyLookbook
     deactivate D
+    activate V
+    Note over V: Write art-direction prompts via Groq 70B.<br>Render cover + mood artwork via SDXL.
+    V->>User: 6. Return WeeklyLookbook + VisualLookbook JSON
+    deactivate V
 ```
 
 ---
 
 ## 💾 Caching Layer
 
-AINAA implements a **four-tier persistent caching strategy** — one cache per agent — that writes structured JSON to disk between pipeline runs.
+AINAA implements a **six-tier persistent caching strategy** — one cache per agent, plus a dedicated image cache — that writes structured JSON (and PNG artwork) to disk between pipeline runs.
 
 ### Cache Architecture
 
@@ -495,6 +582,8 @@ AINAA implements a **four-tier persistent caching strategy** — one cache per a
 | **Stylist Cache** | `data/cache/stylist_cache.json` | SHA-256 of `theme_prompt + analyses_json` | Per (theme, image set) pair |
 | **Editor Cache** | `data/cache/editor_cache.json` | SHA-256 of card briefs + theme | Per editorial context |
 | **Director Cache** | `data/cache/director_cache.json` | SHA-256 of `theme_prompt + draft_json` | Per finalization context |
+| **Visual Director Cache** | `data/cache/visual_director_cache.json` | SHA-256 of `WeeklyLookbook JSON + image_model` | Per finalized edition — also re-validates that cached image files still exist on disk |
+| **Image Generation Cache** | `data/cache/image_cache.json` | SHA-256 of `positive_prompt + negative_prompt + width + height + steps` | Per unique render request (content-addressed, shared across editions) |
 
 ### Engineering Design
 
@@ -502,19 +591,23 @@ AINAA implements a **four-tier persistent caching strategy** — one cache per a
 
 **Downstream caches use semantic content hashing.** The Stylist, Editor, and Director caches hash the full semantic content of their inputs (prompts + upstream outputs). Any change in theme, image set, or upstream agent output produces a new cache key and triggers a fresh LLM call.
 
+**The Visual Director cache is self-healing.** Because its cache entries reference generated image files on disk, a cache hit first checks that `cover.image_path` and every `mood.image_path` still exist before trusting the cached prompts. If artwork was deleted or moved, the entry is discarded and regenerated automatically rather than serving broken image paths.
+
+**The image generation cache is prompt-addressed, not edition-addressed.** Because it hashes only the render parameters (prompts + dimensions + steps), identical artwork requests are deduplicated even across completely different lookbook runs — reusing the same rendered PNG rather than calling Stable Diffusion again.
+
 **Cached token usage is zeroed out.** When a cache hit occurs, the returned `TokenUsage` object reports 0 input, 0 output, and 0 total tokens — accurately reflecting that no API call was made. This keeps token telemetry truthful.
 
-**Cost optimization:** In practice, the Curator is the most expensive agent (vision API calls for each image). Caching image analyses eliminates the dominant cost driver for repeated runs with the same images.
+**Cost optimization:** In practice, the Curator (vision calls) and Visual Director (image synthesis) are the most expensive stages. Caching both eliminates the dominant cost drivers for repeated runs with the same images or the same editorial output.
 
-**Latency reduction:** Complete pipeline runs on fully cached inputs return in milliseconds. Cold runs on 4 images typically complete in 15–30 seconds.
+**Latency reduction:** Complete pipeline runs on fully cached inputs return in milliseconds. Cold runs on 4 images — including cover and mood-card image generation — typically complete in 30–90 seconds.
 
-**Engineering tradeoff:** The current design does not support cache invalidation by TTL or version. Cache entries persist until manually cleared. For production deployment, a Redis-backed cache with TTL would be appropriate.
+**Engineering tradeoff:** The current design does not support cache invalidation by TTL or version. Cache entries persist until manually cleared. For production deployment, a Redis-backed cache with TTL, plus object storage (S3/GCS) for generated artwork, would be appropriate.
 
 ---
 
 ## 🔌 API Documentation
 
-The FastAPI application (`api.py`) exposes four routes with CORS enabled for local development origins.
+The FastAPI application (`api.py`) exposes four routes with CORS enabled for local development origins, plus two static file mounts (`/static` for frontend assets, `/generated` for rendered artwork).
 
 ### `GET /`
 
@@ -586,15 +679,39 @@ Primary endpoint. Accepts image URLs or base64 data URLs and runs the full pipel
       }
     ]
   },
+  "visual_lookbook": {
+    "cover": {
+      "edition_title": "Quiet Systems",
+      "visual_language": "cinematic urban minimalism, muted neon",
+      "camera_style": "35mm anamorphic, shallow depth of field",
+      "color_palette": ["#1A1A1A", "#FF4F81", "#C9C9C9"],
+      "art_direction": "Editorial night photography, rain-slicked streets",
+      "image_path": "data/generated/quiet_systems_57d836d340b05631.png",
+      "image_hash": "57d836d340b05631...",
+      "image_url": "/generated/quiet_systems_57d836d340b05631.png"
+    },
+    "moods": [
+      {
+        "card_number": "01",
+        "mood_title": "Tokyo Fog",
+        "image_path": "data/generated/01_tokyo_fog_b57dcf1e30f025ee.png",
+        "image_hash": "b57dcf1e30f025ee...",
+        "image_url": "/generated/01_tokyo_fog_b57dcf1e30f025ee.png"
+      }
+    ]
+  },
   "token_usage": [
     {"agent_name": "Curator Agent", "input_tokens": 420, "output_tokens": 85, "total_tokens": 505},
     {"agent_name": "Stylist Agent", "input_tokens": 312, "output_tokens": 148, "total_tokens": 460},
     {"agent_name": "Editor Agent", "input_tokens": 580, "output_tokens": 210, "total_tokens": 790},
-    {"agent_name": "Director Agent", "input_tokens": 720, "output_tokens": 340, "total_tokens": 1060}
+    {"agent_name": "Director Agent", "input_tokens": 720, "output_tokens": 340, "total_tokens": 1060},
+    {"agent_name": "Visual Director Agent", "input_tokens": 1180, "output_tokens": 640, "total_tokens": 1820}
   ],
-  "total_tokens": 2815
+  "total_tokens": 4635
 }
 ```
+
+**Image URL serialization:** The Visual Director stores images at filesystem paths like `data/generated/<file>.png`. `api.py` mounts that directory at `/generated` via `StaticFiles` and adds a browser-ready `image_url` field alongside the original `image_path` on both the cover and every mood card — normalizing Windows-style path separators in the process. The original `image_path`/`image_hash` fields are left untouched; `image_url` is purely additive, so nothing that already depends on the raw path is affected.
 
 ---
 
@@ -618,13 +735,28 @@ Runs the pipeline on images already present in the `data/` directory. Useful for
 
 The web interface is a minimal, self-contained HTML/CSS/JavaScript application rendered via Jinja2 templates.
 
-**`templates/index.html`** — Jinja2 template providing the application shell. Renders a form for theme prompt input and image URL collection. Displays the generated lookbook as formatted editorial cards.
+The web interface is a self-contained, luxury-editorial HTML/CSS/vanilla JavaScript application rendered via Jinja2 — designed to feel like a fashion-magazine platform (SSENSE, COS, Apple, Linear, Notion) rather than a developer tool, and to present the pipeline's output as an actual lookbook rather than raw JSON.
 
-**`static/style.css`** — Interface styling. Designed to be minimal and editorial — reflecting the aesthetic sensibility of the platform itself.
+**`templates/index.html`** — Jinja2 application shell. A masthead, a theme + image-source composer (drag-and-drop upload or image URLs, tab-switchable), a live agent-by-agent progress rail, and a `results` container that JavaScript populates entirely from the `/generate` response — no server-side templating of the lookbook itself.
 
-**`static/script.js`** — Frontend interaction logic. Handles form submission, async fetch to `/generate`, JSON response parsing, and dynamic rendering of lookbook cards. Supports adding/removing image URL inputs.
+**`static/styles.css`** — The editorial design system: `Fraunces` for display/italic editorial voice, `Inter` for UI text, a warm-paper/near-black-ink palette with a single bordeaux accent, hairline dividers, and a light/dark theme toggle. Motion is deliberate rather than decorative — a masthead entrance animation, a masthead that condenses on scroll, scroll-triggered reveal-on-enter for every lookbook section, a slow Ken-Burns zoom on the cover image, subtle hover-zoom on mood-card artwork, and a spinning loading state on the Generate button — all wrapped in a single `prefers-reduced-motion` override so every animation and transition collapses to near-zero duration for users who request it. A faint SVG-noise paper-grain overlay and `:focus-visible` accent outlines round out the print-editorial feel without adding any interactive risk.
 
-The frontend is mounted as a static files directory at `/static` and served by the FastAPI application via `StaticFiles(directory="static")`.
+**`static/app.js`** — Frontend interaction logic: drag-and-drop / file-picker / URL-list image collection with client-side validation, tab switching, an animated progress rail that steps through Curator → Stylist → Editor → Director → Visual Director → Generating imagery → Done (with a live "n / 8" step counter) while the request is in flight, and a rendering layer that turns the `/generate` JSON response into the actual lookbook layout described below. All DOM building goes through `escapeHtml()` and every generated `<img>` has an `onerror` fallback, so a missing or failed image degrades to a labeled placeholder instead of a broken-image icon or a thrown error.
+
+### Lookbook Output Layout
+
+Rather than printing the raw API response, the frontend renders it as a magazine spread, in reading order:
+
+1. **Cover** — the Visual Director's generated cover artwork, with the edition title set in italic serif over a dark gradient scrim
+2. **Edition information** — edition title, art direction, visual language, and camera style, pulled directly from `visual_lookbook.cover`
+3. **Color palette** — `cover.color_palette` rendered as real rectangular swatches (not hex text), each with its hex value underneath
+4. **Mood cards** — one per entry in `lookbook.collection`, matched to its generated artwork in `visual_lookbook.moods` by `card_number`, each showing the image, card number, mood title, brand/designer, product type, sub-tags, and vibe description in an alternating image/text spread
+
+No image is regenerated or re-requested by the frontend — every asset shown was already produced by the Visual Director agent and is served as-is from `/generated`.
+
+### Serving
+
+The frontend's static assets are mounted at `/static` (`StaticFiles(directory="static")`), and generated artwork is separately mounted at `/generated` (`StaticFiles(directory="data/generated")`) so the browser can load Visual Director output directly without any additional backend endpoint.
 
 ---
 
@@ -660,6 +792,9 @@ Create a `.env` file in the project root:
 NVIDIA_API_KEY=nvapi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 GROQ_API_KEY=gsk_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+# Required for the Visual Director's image generation step
+IMAGE_GENERATION_API=https://your-stable-diffusion-xl-endpoint
+
 # Optional — enables LangSmith tracing
 LANGSMITH_API_KEY=lsv2_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
@@ -667,7 +802,8 @@ LANGSMITH_API_KEY=lsv2_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 | Variable | Required | Provider | Purpose |
 |---|---|---|---|
 | `NVIDIA_API_KEY` | ✅ Yes | [NVIDIA NIM](https://build.nvidia.com) | Vision analysis via Llama 3.2 90B |
-| `GROQ_API_KEY` | ✅ Yes | [Groq](https://console.groq.com) | Mood, editorial, and direction agents |
+| `GROQ_API_KEY` | ✅ Yes | [Groq](https://console.groq.com) | Mood, editorial, direction, and visual-direction agents |
+| `IMAGE_GENERATION_API` | ✅ Yes | Stable Diffusion XL endpoint | Cover and mood-card artwork rendering (`src/services/image_generator.py`) |
 | `LANGSMITH_API_KEY` | Optional | [LangSmith](https://smith.langchain.com) | Pipeline observability and tracing |
 
 ---
@@ -700,6 +836,7 @@ docker run -d \
   -p 8000:8000 \
   -e NVIDIA_API_KEY="nvapi-YOUR_API_KEY" \
   -e GROQ_API_KEY="gsk_YOUR_API_KEY" \
+  -e IMAGE_GENERATION_API="https://your-stable-diffusion-xl-endpoint" \
   -e LANGSMITH_API_KEY="lsv2_YOUR_API_KEY" \
   --name ainaa-app \
   ainaa:latest
@@ -788,6 +925,45 @@ Access the interactive API docs at: [http://localhost:8000/docs](http://localhos
 </details>
 
 <details>
+<summary><strong>Sample VisualLookbook JSON</strong></summary>
+
+```json
+{
+  "cover": {
+    "edition_title": "Quiet Systems",
+    "positive_prompt": "editorial fashion photography, cinematic night city street, rain-slicked pavement, neon reflections, lone figure in oversized graphic tee, 35mm anamorphic lens, shallow depth of field, muted color grade",
+    "visual_language": "cinematic urban minimalism, muted neon, high-contrast shadow",
+    "color_palette": ["#1A1A1A", "#FF4F81", "#C9C9C9", "#0E2A3A"],
+    "camera_style": "35mm anamorphic, shallow depth of field, low-key lighting",
+    "negative_prompt": "cartoon, illustration, oversaturated, watermark, text, logo, deformed hands",
+    "art_direction": "Editorial night photography inspired by System Magazine and 032c — restraint over spectacle.",
+    "image_path": "data/generated/quiet_systems_57d836d340b05631.png",
+    "image_hash": "57d836d340b05631a29..."
+  },
+  "moods": [
+    {
+      "card_number": "01",
+      "mood_title": "Tokyo Fog",
+      "positive_prompt": "editorial fashion photograph, oversized graphic tee with abstract anime print, rain-soaked Tokyo alley at night, neon signage bokeh, cinematic composition",
+      "negative_prompt": "cartoon, illustration, oversaturated, watermark, text, logo, deformed hands",
+      "image_path": "data/generated/01_tokyo_fog_b57dcf1e30f025ee.png",
+      "image_hash": "b57dcf1e30f025ee91c..."
+    },
+    {
+      "card_number": "02",
+      "mood_title": "Sakura Static",
+      "positive_prompt": "editorial fashion photograph, fitted long-sleeve graphic tee with floral motif, soft grunge lighting, cherry blossoms rendered in television static texture",
+      "negative_prompt": "cartoon, illustration, oversaturated, watermark, text, logo, deformed hands",
+      "image_path": "data/generated/02_sakura_static_7b1652cdda9526e5.png",
+      "image_hash": "7b1652cdda9526e5f3a..."
+    }
+  ]
+}
+```
+
+</details>
+
+<details>
 <summary><strong>Sample Token Usage Breakdown</strong></summary>
 
 ```
@@ -801,13 +977,14 @@ Access the interactive API docs at: [http://localhost:8000/docs](http://localhos
 -> Stylist Agent           | Input: 890  | Output: 210 | Total: 1100
 -> Editor Agent            | Input: 1120 | Output: 380 | Total: 1500
 -> Director Agent          | Input: 1580 | Output: 420 | Total: 2000
+-> Visual Director Agent   | Input: 1180 | Output: 640 | Total: 1820
 
 ============================================================
  TOTAL PIPELINE SUMMARY
 ============================================================
- Total Input Tokens  : 5,233
- Total Output Tokens : 1,353
- Total Pipeline Cost : 6,586 tokens
+ Total Input Tokens  : 6,413
+ Total Output Tokens : 1,993
+ Total Pipeline Cost : 8,406 tokens
 ============================================================
 ```
 
